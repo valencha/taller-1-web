@@ -26,6 +26,70 @@ body {
   height: 100%;
 }
 
+.pushbar {
+  background: #121212;
+  padding: 20px;
+  text-align: center;
+}
+
+.lineaCarrito {
+  width: 100%;
+  background: #424242;
+  height: 1px;
+  border: none;
+  margin-top: 1em;
+}
+
+.btnContinuar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3em;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btnContinuar a {
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  padding: 1em;
+  color: #ffff;
+  background: #FFAE67;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tituloCarrito {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+}
+
+.pushbar .btn-cerrar button {
+  background: none;
+  color: #808080;
+  border: none;
+  font-weight: lighter;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.pushbar .btn-cerrar.izquierda {
+  text-align: left;
+}
+
 .encabezado {
   background: #FFAE67;
   width: 100%;
@@ -36,7 +100,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
 .encabezado__enlace {
@@ -598,6 +661,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .descuento {

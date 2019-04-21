@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/valencha/taller-1-web#readme",
   "dependencies": {
-    "node": "^11.14.0"
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "handlebars": "^4.1.2",
+    "node": "^11.14.0",
+    "require": "^2.4.20"
   }
 }

@@ -24,6 +24,62 @@ body {
 	height: 100%;
 	
 }
+.pushbar{
+
+	background: #121212;
+	padding: 20px;
+	text-align: center;
+}
+.lineaCarrito{
+	width: 100%;
+	background: #424242;
+	height: 1px;
+	border: none;
+	margin-top: 1em;	
+}
+.btnContinuar{
+	display: flex;
+	margin-top: 3em;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	outline: none;
+	border: none;
+	align-items: center;
+	justify-content: center;
+
+
+	
+}
+.btnContinuar a{
+	text-align: center;
+	width: 200px;
+	border-radius: 5px;
+	border: none;
+	padding: 1em;
+	color: #ffff;
+	background: #FFAE67;
+	text-decoration: none;
+	align-items: center;
+
+}
+
+.tituloCarrito{
+	color: #fff;
+	font-family: 'Rubik', sans-serif;
+}
+.pushbar .btn-cerrar button{
+	background: none;
+	color: #808080;
+	border: none;
+	font-weight: lighter;
+	cursor: pointer;
+	font-size: 20px;
+}
+.pushbar .btn-cerrar.izquierda{
+
+text-align: left;
+}
 
 .encabezado{
 	background: #FFAE67;
@@ -31,9 +87,9 @@ body {
 	display: flex;
 	padding: 2em;
 	justify-content: space-between;
-	position: relative;
+
 	
-	
+
 	&__enlace{
 		color: #ffff;
 		margin-right: 3em;
@@ -97,6 +153,7 @@ body {
 	
 	&__icono{
 		margin-right: 2em;
+		
 	}
 	
 	.search-box{
@@ -159,6 +216,8 @@ body {
 	
 	
 }
+
+
 
 .intro{
 	display: flex;
@@ -554,6 +613,7 @@ body {
 		border-radius: 5px;
 		text-align: center;
 		align-items: center;
+		cursor: pointer;
 	}
 	
 }

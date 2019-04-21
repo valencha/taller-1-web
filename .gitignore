@@ -1,6 +1,7 @@
 styles/main.css
 styles/main.css.map
 styles/swipe.css
+styles/pushbar.css
 script/libs
 swiper.min.css
 node_modules
