@@ -7,17 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./styles/main.css">
+  
+  <link rel="stylesheet" href="swiper.min.css">
+  <link rel="stylesheet" href="./styles/swipe.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
-
-
+  
+  
   <title>Taller 1</title>
 </head>
 
 <body>
-
-
   <div class="app">
     <header>
       <div class="encabezado">
@@ -28,275 +29,433 @@
           <a class="encabezado__enlace linea" href="#section4">SALE</a>
         </nav>
         <div class="encabezado__nav-der">
-
+          
           <div class="search-box">
             <input class="search-txt" type="text" name="" placeholder="Type to Search">
             <a class="search-btn" href="#">
               <i class="fas fa-search"></i>
             </a>
-
-
+            
+            
           </div>
-
+          
           <a class="encabezado__enlace--micuenta linea " href="#">MY ACCOUNT</a>
           <a class="encabezado__icono" href="#"><img width=20px src="./images/carrito.png" /></a>
         </div>
       </div>
-
+      
     </header>
-
-
-
-    <div class="intro" id="section1" data-src="/images/banner.jpg" data-pos-x="left" data-parallax>
+    
+    
+    
+    <div class="intro" id="section1">
       <aside class="contenedor">
         <div class="contenedor__titulo">
-          <h1>Can <span>Shop</span></h1>
+          <h1 data-aos= "slide-right"  data-aos-duration="8000"> Can <span>Shop</span></h1>
         </div>
         <div class="contenedor__descripcion">
-          <p>We know how much you love your pet, so consents with beautiful accessories</p>
+          <p   data-aos= "slide-right"  data-aos-duration="8000"     
+          >We know how much you love your pet, so consents with beautiful accessories</p>
         </div>
-
-        <div class="contenedor__boton">
+        
+        <div class="contenedor__boton"  data-aos= "slide-right"  data-aos-duration="8000">
           <a href="#section3" class="botonprin">SEE CATALOG</a>
         </div>
-
+        
       </aside>
     </div>
-
-
-    <article class="sobrenosotros" id="section2">
-
-      <div>
-        <h1 class="sobrenosotros__titulo">
-          ABOUT US
-          <hr>
-        </h1>
-
-        <p class="sobrenosotros__descripcion">We are a company specialized in products for your dog. We know how much
-          you love them, that is why, we decided to create a place to find everything for them.</p>
+  </section>
+  
+  <article class="sobrenosotros" id="section2">
+    
+    <div >
+      <h1 data-aos="fade-up" class="sobrenosotros__titulo">
+        ABOUT US
+        <hr>
+      </h1>
+      
+      <p class="sobrenosotros__descripcion">We are a company specialized in products for your dog. We know how much
+        you love them, that is why, we decided to create a place to find everything for them.</p>
       </div>
-
+      
       <section class="sobrenosotros__cualidades">
-
-        <div class="sobrenosotros__cualidades trans">
-
-          <img class="sobrenosotros__cualidades trans__img" src="./images/box.png" alt="">
-
-          <div class="sobrenosotros__cualidades trans__des">
+        
+        <div class="sobrenosotros__cualidades trans" >
+          
+          <img class="sobrenosotros__cualidades trans__img" src="./images/box.png"   data-aos= "slide-right"  alt="">
+          
+          <div class="sobrenosotros__cualidades trans__des" data-aos="fade-in">
             <hr>
             <h2 class="sobrenosotros__cualidades trans__titulo">Shipping on time</h2>
-
+            
             <p class="sobrenosotros__cualidades trans__texto">Your order will arrive at the door of your house in less
               than 5 days.</p>
-
+              
+            </div>
           </div>
-        </div>
-
-
-
-        <div class="sobrenosotros__cualidades calidad">
-
-
-
-          <div class="sobrenosotros__cualidades calidad__des">
-            <hr>
-            <h2 class="sobrenosotros__cualidades calidad__titulo">
-              Quality Products</h2>
-
-            <p class="sobrenosotros__cualidades calidad__texto">Your order will arrive at the door of your house in less
-              than 5 days.</p>
-
-          </div>
-
-          <img class="sobrenosotros__cualidades calidad__img" src="./images/shield.png" alt="">
-        </div>
-
-
-        <div class="sobrenosotros__cualidades saludable">
-
-          <img class="sobrenosotros__cualidades saludable__img" src="./images/heartbeat.png" alt="">
-
-          <div class="sobrenosotros__cualidades saludable__des">
-            <hr>
-            <h2 class="sobrenosotros__cualidades saludable__titulo">Healthy dog ​​food</h2>
-
-            <p class="sobrenosotros__cualidades saludable__texto">Your order will arrive at the door of your house in
-              less than 5 days.</p>
-
-          </div>
-        </div>
-
-
-      </section>
-
-
-    </article>
-
-
-    <article class="catalogo" id="section3">
-      <h1 class="catalogo__titulo">CATALOG</h1>
-
-      <div class="columnas">
-
-
-        <article class="producto columnas__col">
-          <section class="producto__info--img1 hvr-grow">
-            <div class="producto__contenedorboton"> <input type="button" value="FOOD" class="producto__boton"></div>
-
-
-          </section>
-
-        </article>
-
-        <article class="producto columnas__col">
-          <section class="producto__info--img2 hvr-grow ">
-
-            <div class="producto__contenedorboton"> <input type="button" value="CLOTHING" class="producto__boton"></div>
-
-          </section>
-
-        </article>
-
-        <article class="producto columnas__col">
-          <section class="producto__info--img3 hvr-grow">
-
-            <div class="producto__contenedorboton"> <input type="button" value="TOYS" class="producto__boton"></div>
-
-          </section>
-
-        </article>
-
-        <article class="producto columnas__col">
-          <section class="producto__info--img4 hvr-grow">
-
-            <div class="producto__contenedorboton"> <input type="button" value="FOR WALKS" class="producto__boton">
-            </div>
-
-          </section>
-
-        </article>
-
-
-
-
-      </div>
-
-    </article>
-
-
-    <article class="descuento" id="section4">
-      <aside class="aside">
-        <h1 class="aside__izq">SALE</h1>
-      </aside>
-
-
-      <div class="colu">
-
-
-        <article class="sale colu__co">
-          <section class="sale__info--sale1">
-
-            <div class="etiqueta">
-              <h1 class="etiqueta__porc">-%5</h1>
-
-            </div>
-
-            <div class="info">
-
-            </div>
-          </section>
-
-        </article>
-
-
-        <article class="sale colu__co">
-          <section class="sale__info--sale2">
-
-            <div class="etiqueta">
-              <h1 class="etiqueta__porc">-%10</h1>
-            </div>
-
-          </section>
-
-        </article>
-
-
-        <article class="sale colu__co">
-          <section class="sale__info--sale3">
-
-            <div class="etiqueta">
-              <h1 class="etiqueta__porc">-%5</h1>
-            </div>
-
-          </section>
-
-        </article>
-
-        <article class="sale colu__co">
-          <section class="sale__info--sale4">
-
-            <div class="etiqueta">
-              <h1 class="etiqueta__porc">-%9</h1>
-            </div>
-
-
-          </section>
-
-
-
-        </article>
-
-      </div>
-      <aside class="der">
-        <h1 class="der--large">SALE</h1>
-      </aside>
-
-
-    </article>
-
-
-
-    <footer>
-
-      <h1 class="titulopie">GET HELP</h1>
-
-      <div class="pie">
-
-
-        <div class="pie__izq">
-          <a class="pie__izq__enlace" href="#">Order Status</a>
-          <a class="pie__izq__enlace" href="#">Shopping</a>
-          <a class="pie__izq__enlace" href="#">Delivery</a>
-        </div>
-
-
-        <div class="pie__der">
-          <a class="pie__der__enlace" href="#">Returns</a>
-          <a class="pie__der__enlace" href="#">Payment Options</a>
-          <a class="pie__der__enlace" href="#">Contact Us</a>
-        </div>
-      </div>
-
-    </footer>
-
-
-    <!-- library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./script/libs/parallax.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-
-    <script src="./script/main.js"></script>
-
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
-      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-      crossorigin="anonymous"></script>
-
-
-
-      <div>
-        <h3></h3>
-      </div>
-
-</body>
-
-</html>
+          
+          
+          
+          <div class="sobrenosotros__cualidades calidad"  >
+            
+            
+            
+            <div class="sobrenosotros__cualidades calidad__des" data-aos="fade-in">
+              <hr>
+              <h2 class="sobrenosotros__cualidades calidad__titulo">
+                Quality Products</h2>
+                
+                <p class="sobrenosotros__cualidades calidad__texto"> All our products are of excellent quality. They are made with the best properties.
+                  </p>
+                  
+                </div>
+                
+                <img class="sobrenosotros__cualidades calidad__img" data-aos= "slide-left" src="./images/shield.png" alt="">
+              </div>
+              
+              
+              <div class="sobrenosotros__cualidades saludable">
+                
+                <img class="sobrenosotros__cualidades saludable__img" src="./images/heartbeat.png" 
+                data-aos= "slide-right" 
+                
+                alt="">
+                
+                <div class="sobrenosotros__cualidades saludable__des" data-aos="fade-in">
+                  <hr>
+                  <h2 class="sobrenosotros__cualidades saludable__titulo">Healthy dog ​​food</h2>
+                  
+                  <p class="sobrenosotros__cualidades saludable__texto">Our food is made with the best ingredients. Your dog friend will be healthy and strong.</p>
+                    
+                  </div>
+                </div>
+                
+                
+              </section>
+              
+              
+            </article>
+            
+            
+  <article class="catalogo" id="section3">
+              <h1  data-aos="fade-up" class="catalogo__titulo">CATALOG</h1>
+              
+              <div class="columnas">
+                
+                
+                <article class="producto columnas__col">
+                  <section class="producto__info--img1 hvr-grow">
+                    <div class="producto__contenedorboton"> <input type="button" value="FOOD" class="producto__boton"></div>
+                    
+                    
+                  </section>
+                  
+  </article>
+                
+                <article class="producto columnas__col">
+                  <section class="producto__info--img2 hvr-grow ">
+                    
+                    <div class="producto__contenedorboton"> <input type="button" value="CLOTHING" class="producto__boton"></div>
+                    
+                  </section>
+                  
+                </article>
+                
+                <article class="producto columnas__col">
+                  <section class="producto__info--img3 hvr-grow">
+                    
+                    <div class="producto__contenedorboton"> <input type="button" value="TOYS" class="producto__boton"></div>
+                    
+                  </section>
+                  
+                </article>
+                
+                <article class="producto columnas__col">
+                  <section class="producto__info--img4 hvr-grow">
+                    
+                    <div class="producto__contenedorboton"> <input type="button" value="FOR WALKS" class="producto__boton">
+                    </div>
+                    
+                  </section>
+                  
+                </article>
+                
+                
+                
+                
+              </div>
+              
+            </article>
+            
+            
+            <article class="descuento"  id="section4">
+              <aside class="aside">
+                <h1  data-aos="fade-right" class="aside__izq">SALE</h1>
+              </aside>
+              
+              
+              <div class="colu">
+                
+                
+                <article class="sale colu__co" data-aos="fade-up">
+                  <section class="sale__info--sale1">
+                    
+                    <div class="etiqueta">
+                      <h1 class="etiqueta__porc">-%5</h1>
+                      
+                    </div>
+                    
+                    <div class="info">
+                      <div class="info__izq">
+                        <h1 class="info__izq__titulo">Hammock</h1>
+                        <p class="info__izq__des">A hammock made of 100% cotton so your dog can sleep</p>
+                        <p class="info__izq__cant"> <strong>In stock:</strong> 1</p>
+                      </div>
+                      
+                      <div class="info__der">
+                        <h1 class="info__der__pactual">$38</h1>
+                        <p class="info__der__panterior" >$40</p>
+                        
+                        <input type="button" value="SEE PRODUCT" class="info__der__boton">
+                        
+                      </div>
+                      
+                    </div>
+                    
+                  </section>
+                  
+                </article>
+                
+                
+                <article class="sale colu__co" data-aos="fade-up">
+                  <section class="sale__info--sale2">
+                    
+                    <div class="etiqueta">
+                      <h1 class="etiqueta__porc">-%10</h1>
+                    </div>
+                    
+                    <div class="info">
+                      <div class="info__izq">
+                        <h1 class="info__izq__titulo">Beret</h1>
+                        <p class="info__izq__des">Woven beret, comes in different sizes, so your dog has the best style</p>
+                        <p class="info__izq__cant"> <strong>In stock:</strong>10</p>
+                      </div>
+                      
+                      <div class="info__der">
+                        <h1 class="info__der__pactual">$45</h1>
+                        <p class="info__der__panterior" >$50</p>
+                        
+                        <input type="button" value="SEE PRODUCT" class="info__der__boton">
+                        
+                      </div>
+                      
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                  </section>
+                  
+                </article>
+                
+                
+                <article class="sale colu__co" data-aos="fade-up">
+                  <section class="sale__info--sale3">
+                    
+                    <div class="etiqueta">
+                      <h1 class="etiqueta__porc">-%5</h1>
+                    </div>
+                    
+                    <div  class="info">
+                      <div class="info__izq">
+                        <h1 class="info__izq__titulo">Sunglasses</h1>
+                        <p class="info__izq__des">Take care of your pet's eyes from the sun, with these maximum coverage goggles</p>
+                        <p class="info__izq__cant"> <strong>In stock:</strong> 4</p>
+                      </div>
+                      
+                      <div class="info__der">
+                        <h1 class="info__der__pactual">$38</h1>
+                        <p class="info__der__panterior" >$40</p>
+                        
+                        <input type="button" value="SEE PRODUCT" class="info__der__boton">
+                        
+                      </div>
+                      
+                    </div>
+                    
+                  </section>
+                  
+                </article>
+                
+                <article class="sale colu__co" data-aos="fade-up">
+                  <section class="sale__info--sale4">
+                    
+                    <div class="etiqueta">
+                      <h1 class="etiqueta__porc">-%9</h1>
+                    </div>
+                    
+                    <div class="info">
+                      <div class="info__izq">
+                        <h1 class="info__izq__titulo">Backpack</h1>
+                        <p class="info__izq__des">
+                          Take your dog friend to wherever you go, with this backpack with cotton interior</p>
+                          <p class="info__izq__cant"> <strong>In stock:</strong>5</p>
+                        </div>
+                        
+                        <div class="info__der">
+                          <h1 class="info__der__pactual">$91</h1>
+                          <p class="info__der__panterior" >$100</p>
+                          
+                          <input type="button" value="SEE PRODUCT" class="info__der__boton">
+                          
+                        </div>
+                        
+                      </div>
+                      
+                      
+                    </section>
+                    
+                    
+                    
+                  </article>
+                  
+                </div>
+                <aside class="der">
+                  <h1  data-aos="slide-left" class="der--large">SALE</h1>
+                </aside>
+                
+                
+              </article>
+              
+              
+              
+              <article class="galeria" >
+                
+                
+                <div class="galeria__titulo"><h1>Select</h1>
+                
+              </div>
+             
+                
+                <section class="galeria__banner" >
+                  
+                  
+                  
+                </section>
+
+                <input type="button" value="SEE PRODUCT" class="galeria__btn">
+                <div class="swiper-container">
+                  
+                  
+                  <div class="galeria__miniaturas swiper-wrapper" >
+                    <div class="swiper-slide">  <img class="galeria__img" src="./images/corbataminatura.png" alt=""></div>
+                    <div class="swiper-slide">  <img class="galeria__img " src="./images/monosminatura.png" alt=""></div>
+                    <div class="swiper-slide"> <img class="galeria__img  " src="./images/panoletaminatura.png" alt=""></div>
+                    <div class="swiper-slide">  <img class="galeria__img " src="./images/gafasminiatura.png" alt=""></div>
+                    <div class="swiper-slide">   <img class="galeria__img " src="./images/monominatura.png" alt=""></div>
+                    
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </article>
+              
+              
+              
+              <footer>
+                
+                <h1 class="titulopie">GET HELP</h1>
+                
+                <div class="pie">
+                  
+                  
+                  <div class="pie__izq">
+                    <a class="pie__izq__enlace" href="#">Order Status</a>
+                    <a class="pie__izq__enlace" href="#">Shopping</a>
+                    <a class="pie__izq__enlace" href="#">Delivery</a>
+                  </div>
+                  
+                  
+                  <div class="pie__der">
+                    <a class="pie__der__enlace" href="#">Returns</a>
+                    <a class="pie__der__enlace" href="#">Payment Options</a>
+                    <a class="pie__der__enlace" href="#">Contact Us</a>
+                  </div>
+
+                  <hr width="1" size="200">
+                  <h1 class="pie__suscribirse">
+                    Already have an account? Subscribe</h1>
+                  <input type="email" placeholder="Email" class="pie__campo">
+                  <input class="pie__boton" type="button" value="Submit">
+                </div>
+
+        
+                
+              </footer>
+              
+              
+              <!-- library -->
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+              <script src="./script/libs/parallax.js"></script>
+              <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+              
+              <script src="./script/main.js"></script>
+              <script src="./script/libs/swipe.min.js"></script>
+              
+              <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+              
+              
+              
+              <script
+              src="https://code.jquery.com/jquery-3.3.1.js"
+              integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+              crossorigin="anonymous"></script>
+              
+              
+              <script>
+                var appendNumber = 4;
+                var prependNumber = 1;
+                var swiper = new Swiper('.swiper-container', {
+                  slidesPerView: 3,
+                  centeredSlides: true,
+                  spaceBetween: 30,
+                  pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                  },
+                  navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+                });
+                
+                document.querySelector('.swiper-wrapper').addEventListener('click',function (e) {
+                  e.preventDefault();
+                });
+              </script>
+              
+              
+                
+              </script>
+              
+              <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+              <script>
+                AOS.init();
+              </script>
+              
+              
+              <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+              integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+              crossorigin="anonymous"></script>
+              
+              
+              
+              
+              
+            </body>
+            
+            </html>

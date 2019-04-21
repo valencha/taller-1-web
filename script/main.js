@@ -1,17 +1,31 @@
+ 
+  var miniaturas = document.querySelectorAll('.galeria__img');
 
-var seccion = document.querySelector('#section1');
+  var banner = document.querySelector('.galeria__banner');   
+    var imgArray= ["./images/corbata.png", "./images/monos.png","./images/panoleta.png","./images/gafas.png","./images/corbatin.png"];
+    var imageIndex= 0;
 
-console.log(seccion.getBoundingClientRect()); 
+function recorrerMiniaturas(miniatura,index){
 
-function moverScroll(event) {
-  console.log(window.scrollY);
-  seccion.getBoundingClientRect();
+ 
+  function mostrarImagen(event){
+
+    var img = imgArray[index];
   
+    banner.style.backgroundImage = 'url("'+img+'")';
+  
+  }
 
-
+  if(index === 0){
+    mostrarImagen();
 }
 
-window.addEventListener('scroll',moverScroll);
+  miniatura.addEventListener('click',mostrarImagen);
+  
+}
+
+miniaturas.forEach(recorrerMiniaturas);
+
 
 
 
