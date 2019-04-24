@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./styles/pushbar.css">
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="styles/pushbar.css">
+  <link rel="stylesheet" href="styles/main.css">
   
-  <link rel="stylesheet" href="swiper.min.css">
-  <link rel="stylesheet" href="./styles/swipe.css">
+  <link rel="stylesheet" href="/swiper.min.css">
+  <link rel="stylesheet" href="styles/swipe.css">
 
   <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -44,7 +44,7 @@
           </div>
           
           <a class="encabezado__enlace--micuenta linea " href="#">MY ACCOUNT</a>
-          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="./images/carrito.png" /></a>
+          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="images/carrito.png" /></a>
           <div data-pushbar-id="pushbar-carrito" class="pushbar from_right pushbar-carrito" >
             <div class="btn-cerrar izquierda">
               <button data-pushbar-close> <i class="fas fa-times"></i></button>
@@ -96,7 +96,7 @@
         
         <div class="sobrenosotros__cualidades trans" >
           
-          <img class="sobrenosotros__cualidades trans__img" src="./images/box.png"   data-aos= "slide-right"  alt="">
+          <img class="sobrenosotros__cualidades trans__img" src="images/box.png"   data-aos= "slide-right"  alt="">
           
           <div class="sobrenosotros__cualidades trans__des" data-aos="fade-in">
             <hr>
@@ -124,13 +124,13 @@
                   
                 </div>
                 
-                <img class="sobrenosotros__cualidades calidad__img" data-aos= "slide-left" src="./images/shield.png" alt="">
+                <img class="sobrenosotros__cualidades calidad__img" data-aos= "slide-left" src="images/shield.png" alt="">
               </div>
               
               
               <div class="sobrenosotros__cualidades saludable">
                 
-                <img class="sobrenosotros__cualidades saludable__img" src="./images/heartbeat.png" 
+                <img class="sobrenosotros__cualidades saludable__img" src="images/heartbeat.png" 
                 data-aos= "slide-right" 
                 
                 alt="">
@@ -159,9 +159,10 @@
                 
                 <article class="producto columnas__col">
                   <section class="producto__info--img1 hvr-grow">
-                    <div class="producto__contenedorboton"> <input type="button" value="FOOD" class="producto__boton"></div>
-                    
-                    
+                    <div class="producto__contenedorboton"> <button class="producto__boton">  <a href="/food">FOOD</a> </button> 
+                      
+                    </div>
+                  
                   </section>
                   
   </article>
@@ -364,11 +365,11 @@
                   
                   
                   <div class="galeria__miniaturas swiper-wrapper" >
-                    <div class="swiper-slide">  <img class="galeria__img" src="./images/corbataminatura.png" alt=""></div>
-                    <div class="swiper-slide">  <img class="galeria__img " src="./images/monosminatura.png" alt=""></div>
-                    <div class="swiper-slide"> <img class="galeria__img  " src="./images/panoletaminatura.png" alt=""></div>
-                    <div class="swiper-slide">  <img class="galeria__img " src="./images/gafasminiatura.png" alt=""></div>
-                    <div class="swiper-slide">   <img class="galeria__img " src="./images/monominatura.png" alt=""></div>
+                    <div class="swiper-slide">  <img class="galeria__img" src="images/corbataminatura.png" alt=""></div>
+                    <div class="swiper-slide">  <img class="galeria__img " src="images/monosminatura.png" alt=""></div>
+                    <div class="swiper-slide"> <img class="galeria__img  " src="images/panoletaminatura.png" alt=""></div>
+                    <div class="swiper-slide">  <img class="galeria__img " src="images/gafasminiatura.png" alt=""></div>
+                    <div class="swiper-slide">   <img class="galeria__img " src="images/monominatura.png" alt=""></div>
                     
                   </div>
                   <div class="swiper-pagination"></div>
@@ -417,9 +418,9 @@
               <script src="./script/libs/parallax.js"></script>
               <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
               
-              <script src="./script/main.js"></script>
-              <script src="./script/libs/swipe.min.js"></script>
-              <script src="./script/libs/pushbar.js"></script>
+              <script src="../script/main.js"></script>
+              <script src="../script/libs/swipe.min.js"></script>
+              <script src="../script/libs/pushbar.js"></script>
               <script>
               var pushbar = new Pushbar ({
                 blur: true,
@@ -469,7 +470,6 @@
               integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
               crossorigin="anonymous"></script>
               
-              <script src="index.js"></script>
               
               
               

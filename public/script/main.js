@@ -1,7 +1,7 @@
  
   var miniaturas = document.querySelectorAll('.galeria__img');
   var banner = document.querySelector('.galeria__banner');   
-  var imgArray= ["./images/corbata.png", "./images/monos.png","./images/panoleta.png","./images/gafas.png","./images/corbatin.png"];
+  var imgArray= ["images/corbata.png", "images/monos.png","images/panoleta.png","images/gafas.png","images/corbatin.png"];
   var botonCarrito = document.querySelector('.encabezado__icono');
   var miCarrito = document.querySelector('.miCarrito');
 
@@ -27,15 +27,6 @@ function recorrerMiniaturas(miniatura,index){
 miniaturas.forEach(recorrerMiniaturas);
 
 
-function carritoVista (event){
-  miCarrito.style.display="flex";
- //miCarrito.style.justifyContent="flex-end";
-  //miCarrito.style.flexDirection ="colum";
-  
-  
-}
-
-botonCarrito.addEventListener("click",carritoVista);
 
 
 
