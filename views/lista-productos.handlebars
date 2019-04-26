@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/pushbar.css">
-    <link rel="stylesheet" href="styles/listado-productos.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/styles/pushbar.css">
+    <link rel="stylesheet" href="/styles/listado-productos.css">
+    <link rel="stylesheet" href="/styles/main.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
-    <title>FOOD</title>
+    <title>Store</title>
 </head>
 <body>
    <header>
@@ -37,7 +37,7 @@
           </div>
           
           <a class="encabezado__enlace--micuenta linea " href="#">MY ACCOUNT</a>
-          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="images/carrito.png" /></a>
+          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="/images/carrito.png" /></a>
           <div data-pushbar-id="pushbar-carrito" class="pushbar from_right pushbar-carrito" >
             <div class="btn-cerrar izquierda">
               <button data-pushbar-close> <i class="fas fa-times"></i></button>
@@ -74,7 +74,7 @@
         <article class="lista-productos__item producto">
 
         
-        <a href="/{{href}}/{{titulo}}"><img  class="producto__imagen" src="{{imagen}}"alt="" /></a>
+        <a href="/producto/{{id}}"><img  class="producto__imagen" src="{{imagen}}"alt="" /></a>
         <p class="producto__precio">${{precio}}</p>
        
         <h1 class="producto__titulo">{{titulo}}</h1>

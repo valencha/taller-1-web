@@ -1,116 +1,133 @@
-var express= require('express');
-var motorRender = require ('express-handlebars');
+var express = require('express');
+var motorRender = require('express-handlebars');
 var app = express();
 
-var fs = require ('fs');
+var fs = require('fs');
 console.log(__dirname);
 
 app.use(express.static('public'));
 
-var productosComida = [];
+var productos = [];
 
- productosComida.push( {
+productos.push({
   titulo: 'Pedigree Food',
-  precio : '5.3',
+  precio: '5,3',
   imagen: '../images/miniatura.png',
   descripcion: 'nwnwnowivnowvnwovw',
   disponible: true,
-  detalle:'sffwfs',
-  detalles:'qdqfwf',
-  cuidado:'dqdqd',
-  cuidados:'dqdqfq',
-  href:'food',
+  detalle: 'sffwfs',
+  detalles: 'qdqfwf',
+  cuidado: 'dqdqd',
+  cuidados: 'dqdqfq',
+  tipo: 'food',
+  id: 0
 
-  });
-  
+});
 
-  productosComida.push( {
-    titulo: 'NutreCan',
-    precio : '15.3',
-    imagen: '../images/miniatura.png',
-    descripcion: 'nwnwnowivnowvnwovw',
-    detalle:'sffwfs',
-    detalles:'qdqfwf',
-    cuidado:'dqdqd',
-    cuidados:'dqdqfq',
-    href:'food',
-    });
 
-    productosComida.push( {
-      titulo: 'DogChow',
-      precio : '12.4',
-      imagen: '../images/miniatura.png',
-      descripcion: 'nwnwnowivnowvnwovw',
-      detalle:'sffwfs',
-      detalles:'qdqfwf',
-      cuidado:'dqdqd',
-      cuidados:'dqdqfq',
-      disponible: true,
-      href:'food',
-      });
-      productosComida.push( {
-        titulo: 'Chunky',
-        precio : '12,4',
-        imagen: '../images/miniatura.png',
-        descripcion: 'nwnwnowivnowvnwovw',
-        detalle:'sffwfs',
-        detalles:'qdqfwf',
-        cuidado:'dqdqd',
-        cuidados:'dqdqfq',
-        href:'food',
-        });
-        productosComida.push( {
-          titulo: 'RoyalCanin',
-          precio : '1.4',
-          imagen: '../images/miniatura.png',
-          descripcion: 'nwnwnowivnowvnwovw',
-          detalle:'sffwfs',
-          detalles:'qdqfwf',
-          cuidado:'dqdqd',
-          cuidados:'dqdqfq',
-          disponible: true,
-          href:'food',
-          });
+productos.push({
+  titulo: 'NutreCan',
+  precio: '15,3',
+  imagen: '../images/miniatura.png',
+  descripcion: 'nwnwnowivnowvnwovw',
+  detalle: 'sffwfs',
+  detalles: 'qdqfwf',
+  cuidado: 'dqdqd',
+  cuidados: 'dqdqfq',
+  tipo: 'food',
+  id: 1
+});
+
+productos.push({
+  titulo: 'DogChow',
+  precio: '12,4',
+  imagen: '../images/miniatura.png',
+  descripcion: 'nwnwnowivnowvnwovw',
+  detalle: 'sffwfs',
+  detalles: 'qdqfwf',
+  cuidado: 'dqdqd',
+  cuidados: 'dqdqfq',
+  disponible: true,
+  tipo: 'food',
+  id: 2
+});
+productos.push({
+  titulo: 'Chunky',
+  precio: '12,4',
+  imagen: '../images/miniatura.png',
+  descripcion: 'nwnwnowivnowvnwovw',
+  detalle: 'sffwfs',
+  detalles: 'qdqfwf',
+  cuidado: 'dqdqd',
+  cuidados: 'dqdqfq',
+  tipo: 'food',
+  id: 3
+});
+productos.push({
+  titulo: 'RoyalCanin',
+  precio: '1,4',
+  imagen: '../images/miniatura.png',
+  descripcion: 'nwnwnowivnowvnwovw',
+  detalle: 'sffwfs',
+  detalles: 'qdqfwf',
+  cuidado: 'dqdqd',
+  cuidados: 'dqdqfq',
+  disponible: true,
+  tipo: 'food',
+  id: 4
+});
 
 
 app.engine('handlebars', motorRender());
 app.set('view engine', 'handlebars');
-console.log(productosComida);
 
- 
-  app.get('/', function (req, res) {
 
-    res.sendfile('./index.html');
+app.get('/', function (req, res) {
+
+  res.sendfile('./index.html');
+});
+
+app.get('/store/:categoria', function (request, res) {
+
+  var arrayProductos = [];
+
+  productos.forEach(function (producto) {
+    if (producto.tipo == request.params.categoria) {
+      arrayProductos.push(producto);
+    }
+    
+
   });
 
-  app.get('/food', function (req, res) {
 
-    var contexto = {
-      categoria: 'Food',
-      titulo: 'Food',
-      listaProductos: productosComida,
+
+  var contexto = {
+    categoria: request.params.categoria,
+    listaProductos: arrayProductos,
   };
+
+
   res.render('lista-productos', contexto);
   console.log(contexto.listaProductos);
 });
 
-  app.get('/food/:producto', function(request, response) {
-    var contexto = null;
-    productosComida.forEach(function(producto) {
-     if (producto.titulo == request.params.producto){
-        contexto = producto;
-       }
-       console.log( request.params.producto);
-
-    });
-
-
-    if (contexto== null){
-    response.send('no encontre'+ request.params.producto);
-    }else {
-    response.render('producto',contexto);
+app.get('/producto/:id', function (request, response) {
+  var contexto = null;
+  productos.forEach(function (producto) {
+    if (producto.id == request.params.id) {
+      contexto = producto;
     }
-    });
-   
   
-  app.listen(5000);
+
+  });
+
+
+  if (contexto == null) {
+    response.send('no encontre' + request.params.producto);
+  } else {
+    response.render('producto', contexto);
+  }
+});
+
+
+app.listen(5000);

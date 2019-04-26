@@ -1,0 +1,36 @@
+[
+
+    {      
+        "nombre": "Pedigree Food",
+        "precio": "5,3",
+        "imagen": "../images/miniatura.png",
+        "descripcion":"nwnwnowivnowvnwovwç",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "food",
+        "id": "0",
+        "color":null,
+        "talla": null
+    }
+
+    {      
+        "nombre": "NutreCan",
+        "precio": "15,3",
+        "imagen": "../images/miniatura.png",
+        "descripcion":"nwnwnowivnowvnwovwç",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "food",
+        "id": "0",
+        "color":null,
+        "talla": null
+    }
+
+    
+]
