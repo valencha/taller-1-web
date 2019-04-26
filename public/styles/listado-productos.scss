@@ -11,15 +11,140 @@ body{
 
 .lista-productos{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     &__item{
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        margin-right: 3em;
+    }
+  
+}
+.cajaFiltro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+    height: 20px;
+    margin-right:7em; 
 
+    
+
+  .filtro{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    border: 1px solid #ccc;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+ 
+    background-color: #fff;
+  }
+  .filtro:before {
+    content: '';
+    width: 0;
+    position: absolute;
+    right: 7px;
+    top: 2px;
+    font-family: 'PT Sans', sans-serif;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  
+  .filtro select {
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+}
+.categoria{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+    margin-left: 3em;
+    margin-top: 3em;
+   
+    width: 100%;
+    &__titulo{
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+
+    }
+    &__linea{
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        width: 190px;
+        height: 2px;
+        border: none;
+        background-color: black;
+
+    }
+   
+}
+
+.filtro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    &__caja{
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
     }
 }
 
+
 .producto{
-    background: gray;
-    margin-right: 30px;
+    margin-top: 4em;
+    margin-bottom: 10em;
+    
     &__imagen{
-        width: 100px;
+        width: 220px;
+        height: 302px;
+    }
+    &__precio{
+        font-family: 'PT Sans', sans-serif;
+      color: #FFAE67;
+        font-size: 24px;
+    }
+    &__titulo{
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+    }
+    &__disponible{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 15px;
     }
 }

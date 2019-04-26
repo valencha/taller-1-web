@@ -598,6 +598,7 @@ text-align: left;
 		flex-basis: auto;
 		padding: 2em;
 		justify-content: center;
+	
 		
 	}
 	
@@ -613,8 +614,19 @@ text-align: left;
 		border-radius: 5px;
 		text-align: center;
 		align-items: center;
+			
+		
 		cursor: pointer;
+		a.producto__enlace{
+			text-decoration-line: none;
+			color: #fff
+		}
+		
 	}
+
+
+	
+	
 	
 }
 

@@ -664,6 +664,12 @@ body {
   cursor: pointer;
 }
 
+.producto__boton a.producto__enlace {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #fff;
+}
+
 .descuento {
   background-image: url(../images/backgroundsale.png);
   -ms-flex-preferred-size: auto;

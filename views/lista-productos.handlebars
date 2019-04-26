@@ -52,24 +52,39 @@
       </div>
       
     </header>
-  
+
     <div class="lista-productos">
 
+      <section class="categoria">
+      <h1 class="categoria__titulo">{{categoria}}</h1>
+      <hr class="categoria__linea">
+      </section>
+          <article class="cajaFiltro">
+   <div class="filtro">
+    <select>
+  <option value="">Filters</option>
+   <option value="1">Colour</option> 
+   <option value="2">Price</option> 
+    </select>
+   </div>
+    </article>
+
       {{#each listaProductos}}
+       
         <article class="lista-productos__item producto">
 
-        <img src="{{imagen}}" alt="">
-        <p>${{precio}}</p>
-        <h1>{{titulo}}</h1>
+        
+        <a href="/{{href}}/{{titulo}}"><img  class="producto__imagen" src="{{imagen}}"alt="" /></a>
+        <p class="producto__precio">${{precio}}</p>
+       
+        <h1 class="producto__titulo">{{titulo}}</h1>
+         <p class="producto__disponible">{{descripcion}}</p>
         {{#unless disponible}}
-        <p>Producto no disponible</p>
+        <p class="producto__disponible">Producto no disponible</p>
         {{/unless}}
       </article>
       {{/each}}
       </div>
-
-    <a class="boton-bonito" href="/food/gato">Gato</a>
-    <a class="boton-bonito" href="/food/perro">Perro</a>
                   <footer>
                 
                 <h1 class="titulopie">GET HELP</h1>

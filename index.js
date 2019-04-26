@@ -10,28 +10,67 @@ app.use(express.static('public'));
 var productosComida = [];
 
  productosComida.push( {
-  titulo: 'gato',
-  precio : '$124313253636',
-  imagen: 'http://estaticos.elmundo.es/assets/multimedia/imagenes/2017/02/20/14875913928853.jpg',
+  titulo: 'Pedigree Food',
+  precio : '5.3',
+  imagen: '../images/miniatura.png',
   descripcion: 'nwnwnowivnowvnwovw',
+  disponible: true,
   detalle:'sffwfs',
   detalles:'qdqfwf',
   cuidado:'dqdqd',
   cuidados:'dqdqfq',
+  href:'food',
 
   });
   
 
   productosComida.push( {
-    titulo: 'perro',
-    precio : '$124313253636',
-    imagen: 'https://fotografias.antena3.com/clipping/cmsimages01/2017/02/07/364CAAAC-A60E-43BB-8FED-05AA0B8F3AF9/58.jpg',
+    titulo: 'NutreCan',
+    precio : '15.3',
+    imagen: '../images/miniatura.png',
     descripcion: 'nwnwnowivnowvnwovw',
     detalle:'sffwfs',
     detalles:'qdqfwf',
     cuidado:'dqdqd',
     cuidados:'dqdqfq',
+    href:'food',
     });
+
+    productosComida.push( {
+      titulo: 'DogChow',
+      precio : '12.4',
+      imagen: '../images/miniatura.png',
+      descripcion: 'nwnwnowivnowvnwovw',
+      detalle:'sffwfs',
+      detalles:'qdqfwf',
+      cuidado:'dqdqd',
+      cuidados:'dqdqfq',
+      disponible: true,
+      href:'food',
+      });
+      productosComida.push( {
+        titulo: 'Chunky',
+        precio : '12,4',
+        imagen: '../images/miniatura.png',
+        descripcion: 'nwnwnowivnowvnwovw',
+        detalle:'sffwfs',
+        detalles:'qdqfwf',
+        cuidado:'dqdqd',
+        cuidados:'dqdqfq',
+        href:'food',
+        });
+        productosComida.push( {
+          titulo: 'RoyalCanin',
+          precio : '1.4',
+          imagen: '../images/miniatura.png',
+          descripcion: 'nwnwnowivnowvnwovw',
+          detalle:'sffwfs',
+          detalles:'qdqfwf',
+          cuidado:'dqdqd',
+          cuidados:'dqdqfq',
+          disponible: true,
+          href:'food',
+          });
 
 
 app.engine('handlebars', motorRender());
@@ -47,7 +86,8 @@ console.log(productosComida);
   app.get('/food', function (req, res) {
 
     var contexto = {
-      titulo: 'Productos',
+      categoria: 'Food',
+      titulo: 'Food',
       listaProductos: productosComida,
   };
   res.render('lista-productos', contexto);
