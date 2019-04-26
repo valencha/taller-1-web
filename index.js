@@ -12,7 +12,7 @@ var productos = [];
 productos.push({
   titulo: 'Pedigree Food',
   precio: '5,3',
-  imagen: '../images/miniatura.png',
+  imagen: '../images/pedigree.png',
   descripcion: 'nwnwnowivnowvnwovw',
   disponible: true,
   detalle: 'sffwfs',
@@ -28,7 +28,7 @@ productos.push({
 productos.push({
   titulo: 'NutreCan',
   precio: '15,3',
-  imagen: '../images/miniatura.png',
+  imagen: '../images/dogchow.png',
   descripcion: 'nwnwnowivnowvnwovw',
   detalle: 'sffwfs',
   detalles: 'qdqfwf',
@@ -41,7 +41,7 @@ productos.push({
 productos.push({
   titulo: 'DogChow',
   precio: '12,4',
-  imagen: '../images/miniatura.png',
+  imagen: '../images/royalcanin.png',
   descripcion: 'nwnwnowivnowvnwovw',
   detalle: 'sffwfs',
   detalles: 'qdqfwf',
