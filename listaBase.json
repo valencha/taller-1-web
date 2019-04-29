@@ -2,9 +2,10 @@
 
     {      
         "nombre": "Pedigree Food",
+        "titulo": "Pedigree Food",
         "precio": "5,3",
-        "imagen": "../images/miniatura.png",
-        "descripcion":"nwnwnowivnowvnwovwç",
+        "imagen": "../images/pedigree.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
         "detalle": "sffwfs",
         "detalles": "qdqfwf",
@@ -18,19 +19,330 @@
 
     {      
         "nombre": "NutreCan",
+        "titulo": "NutreCan",
         "precio": "15,3",
-        "imagen": "../images/miniatura.png",
-        "descripcion":"nwnwnowivnowvnwovwç",
+        "imagen": "../images/nutrecan.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
         "detalle": "sffwfs",
         "detalles": "qdqfwf",
         "cuidado": "dqdqd",
         "cuidados": "dqdqfq",
         "tipo": "food",
-        "id": "0",
+        "id": "1",
         "color":null,
         "talla": null
-    }
+    },
+    
+   
+    {      
+        "nombre": "DogChow",
+        "titulo": "DogChow",
+        "precio": "12,4",
+        "imagen": "../images/dogchow.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "food",
+        "id": "2",
+        "color":null,
+        "talla": null
+    },
 
+    {      
+        "nombre": "Chunky",
+        "titulo": "Chunky",
+        "precio": "12,4",
+        "imagen": "../images/chunky.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "food",
+        "id": "3",
+        "color":null,
+        "talla": null
+    },
+
+    {      
+        "nombre": "RoyalCanin",
+        "titulo": "RoyalCanin",
+        "precio": "1,4",
+        "imagen": "../images/royacanin.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "food",
+        "id": "4",
+        "color":null,
+        "talla": null
+    },
+
+   
+    {      
+        "nombre": "Simple dog leash",
+        "titulo": "Simple dog leash",
+        "precio": "11,4",
+        "imagen": "../images/correaP.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "walks",
+        "id": "5",
+        "color":null,
+        "talla": null
+    },
+
+    {      
+        "nombre": "Backpack for walks",
+        "titulo": "Backpack for walks",
+        "precio": "30,4",
+        "imagen": "../images/maletinP.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "walks",
+        "id": "6",
+        "color":null,
+        "talla": null
+    },
+
+    {      
+        "nombre": "Luxury leash",
+        "titulo": "Luxury leash",
+        "precio": "24,1",
+        "imagen": "../images/collarP.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "walks",
+        "id": "7",
+        "color":null,
+        "talla": null
+    },
+ 
+    {      
+        "nombre": "Cloth leash",
+        "titulo": "Cloth leash",
+        "precio": "10,9",
+        "imagen": "../images/correa2P.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "walks",
+        "id": "8",
+        "color":null,
+        "talla": null
+    },
+
+    {      
+        "nombre": "Leather leash",
+        "titulo": "Leather leash",
+        "precio": "20,9",
+        "imagen": "../images/collar3P.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "walks",
+        "id": "9",
+        "color":null,
+        "talla": null
+    },
+
+    {      
+        "nombre": "Bow tie",
+        "titulo": "Bow tie",
+        "precio": "15,5",
+        "imagen": "../images/corbatinP.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "clothing",
+        "id": "10",
+        "color":null,
+        "talla": null
+    },
+
+
+    {      
+        "nombre": "Glasses",
+        "titulo": "Glasses",
+        "precio": "12,3",
+        "imagen": "../images/gafasP.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "clothing",
+        "id": "11",
+        "color":null,
+        "talla": null
+    },
+
+
+    {      
+        "nombre": "Tie",
+        "titulo": "Tie",
+        "precio": "15,5",
+        "imagen": "../images/corbataP.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "clothing",
+        "id": "12",
+        "color":null,
+        "talla": null
+    },
+
+    {      
+        "nombre": "Beret",
+        "titulo": "Beret",
+        "precio": "25,5",
+        "imagen": "../images/gorroP.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "clothing",
+        "id": "13",
+        "color":null,
+        "talla": null
+    },
+
+    {      
+        "nombre": "Kerchief",
+        "titulo": "Kerchief",
+        "precio": "35,9",
+        "imagen": "../images/panoletaP.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "clothing",
+        "id": "14",
+        "color":null,
+        "talla": null
+    },  
+    {      
+        "nombre": "Toy bone",
+        "titulo": "Toy bone",
+        "precio": "5,9",
+        "imagen": "../images/juguete4P.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "clothing",
+        "id": "15",
+        "color":null,
+        "talla": null
+    },  
+
+    {      
+        "nombre": "Toy ball",
+        "titulo": "Toy ball",
+        "precio": "8,0",
+        "imagen": "../images/juguete2P.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "clothing",
+        "id": "16",
+        "color":null,
+        "talla": null
+    },  
+
+
+    {      
+        "nombre": "Toy owl",
+        "titulo": "Toy owl",
+        "precio": "18,0",
+        "imagen": "../images/juguete3P.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "clothing",
+        "id": "17",
+        "color":null,
+        "talla": null
+    },  
+    {      
+        "nombre": "Set toy vegetables",
+        "titulo": "Set toy vegetables",
+        "precio": "30,1",
+        "imagen": "../images/jugueteP.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "clothing",
+        "id": "18",
+        "color":null,
+        "talla": null
+    },  
+
+    {      
+        "nombre": "Toy flower",
+        "titulo": "Toy flower",
+        "precio": "20,2",
+        "imagen": "../images/juguete5P.png",
+        "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
+        "disponible": "true",
+        "detalle": "sffwfs",
+        "detalles": "qdqfwf",
+        "cuidado": "dqdqd",
+        "cuidados": "dqdqfq",
+        "tipo": "clothing",
+        "id": "19",
+        "color":null,
+        "talla": null
+    }  
+
+  
     
 ]

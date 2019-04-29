@@ -3,79 +3,15 @@ var motorRender = require('express-handlebars');
 var app = express();
 
 var fs = require('fs');
-console.log(__dirname);
+
+var readFile = fs.readFileSync('listaBase.json');
+var productos = JSON.parse(readFile);
+var min=0; 
+    var max=19;  
+    var random = Math.random() * (+max - +min) + +min; 
 
 app.use(express.static('public'));
 
-var productos = [];
-
-productos.push({
-  titulo: 'Pedigree Food',
-  precio: '5,3',
-  imagen: '../images/pedigree.png',
-  descripcion: 'nwnwnowivnowvnwovw',
-  disponible: true,
-  detalle: 'sffwfs',
-  detalles: 'qdqfwf',
-  cuidado: 'dqdqd',
-  cuidados: 'dqdqfq',
-  tipo: 'food',
-  id: 0
-
-});
-
-
-productos.push({
-  titulo: 'NutreCan',
-  precio: '15,3',
-  imagen: '../images/dogchow.png',
-  descripcion: 'nwnwnowivnowvnwovw',
-  detalle: 'sffwfs',
-  detalles: 'qdqfwf',
-  cuidado: 'dqdqd',
-  cuidados: 'dqdqfq',
-  tipo: 'food',
-  id: 1
-});
-
-productos.push({
-  titulo: 'DogChow',
-  precio: '12,4',
-  imagen: '../images/royalcanin.png',
-  descripcion: 'nwnwnowivnowvnwovw',
-  detalle: 'sffwfs',
-  detalles: 'qdqfwf',
-  cuidado: 'dqdqd',
-  cuidados: 'dqdqfq',
-  disponible: true,
-  tipo: 'food',
-  id: 2
-});
-productos.push({
-  titulo: 'Chunky',
-  precio: '12,4',
-  imagen: '../images/miniatura.png',
-  descripcion: 'nwnwnowivnowvnwovw',
-  detalle: 'sffwfs',
-  detalles: 'qdqfwf',
-  cuidado: 'dqdqd',
-  cuidados: 'dqdqfq',
-  tipo: 'food',
-  id: 3
-});
-productos.push({
-  titulo: 'RoyalCanin',
-  precio: '1,4',
-  imagen: '../images/miniatura.png',
-  descripcion: 'nwnwnowivnowvnwovw',
-  detalle: 'sffwfs',
-  detalles: 'qdqfwf',
-  cuidado: 'dqdqd',
-  cuidados: 'dqdqfq',
-  disponible: true,
-  tipo: 'food',
-  id: 4
-});
 
 
 app.engine('handlebars', motorRender());
@@ -87,9 +23,18 @@ app.get('/', function (req, res) {
   res.sendfile('./index.html');
 });
 
+app.get('/store', function (req, res) {
+    var contexto = {
+      categoria: "All",
+      listaProductos: productos,
+    };
+    res.render('lista-productos', contexto);
+});
+
 app.get('/store/:categoria', function (request, res) {
 
   var arrayProductos = [];
+  //var rand = arra[Math.floor(Math.random() * myArray.length)];
 
   productos.forEach(function (producto) {
     if (producto.tipo == request.params.categoria) {
@@ -108,7 +53,7 @@ app.get('/store/:categoria', function (request, res) {
 
 
   res.render('lista-productos', contexto);
-  console.log(contexto.listaProductos);
+
 });
 
 app.get('/producto/:id', function (request, response) {
@@ -130,4 +75,4 @@ app.get('/producto/:id', function (request, response) {
 });
 
 
-app.listen(5000);
+app.listen(4000);

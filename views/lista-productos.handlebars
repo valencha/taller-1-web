@@ -12,16 +12,16 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
-    <title>Store</title>
+    <title>Store | Can Shop </title>
 </head>
 <body>
    <header>
       <div class="encabezado">
         <nav class="encabezado__nav">
-          <a class="encabezado__enlace--primero linea" href="#section1">HOME</a>
-          <a class="encabezado__enlace linea" href="#section2">ABOUT US</a>
-          <a class="encabezado__enlace linea " href="#section3">CATALOG</a>
-          <a class="encabezado__enlace linea" href="#section4">SALE</a>
+          <a class="encabezado__enlace--primero linea" href="/">HOME</a>
+          <a class="encabezado__enlace linea" href="/#section2">ABOUT US</a>
+          <a class="encabezado__enlace linea " href="/#section3">CATALOG</a>
+          <a class="encabezado__enlace linea" href="/#section4">SALE</a>
         </nav>
         <div class="encabezado__nav-der">
           
@@ -73,8 +73,11 @@
        
         <article class="lista-productos__item producto">
 
-        
-        <a href="/producto/{{id}}"><img  class="producto__imagen" src="{{imagen}}"alt="" /></a>
+        <div class="producto__contenedor">
+
+      
+        <a class="producto__contenedor-enlace" href="/producto/{{id}}"><img  class="producto__contenedor-imagen" src="{{imagen}}"alt="" /></a>
+          </div>
         <p class="producto__precio">${{precio}}</p>
        
         <h1 class="producto__titulo">{{titulo}}</h1>
