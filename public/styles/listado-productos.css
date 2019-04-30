@@ -148,6 +148,10 @@ body {
   width: 100%;
 }
 
+.categoria__invisible {
+  display: none;
+}
+
 .categoria__titulo {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
@@ -261,7 +265,7 @@ body {
 }
 
 .producto__precio {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #FFAE67;
   width: 220px;
   -ms-flex-item-align: start;

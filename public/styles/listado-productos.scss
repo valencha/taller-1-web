@@ -95,6 +95,9 @@ body{
     margin-bottom: 4em;
    
     width: 100%;
+    &__invisible{
+        display: none;
+    }
     &__titulo{
         order: 0;
         flex: 0 1 auto;
@@ -172,7 +175,7 @@ body{
     
    
     &__precio{
-        font-family: 'PT Sans', sans-serif;
+        font-family: 'Rubik', sans-serif;
         color: #FFAE67;
         width: 220px;
         align-self: flex-start;

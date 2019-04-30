@@ -1,0 +1,310 @@
+.producto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 3em;
+
+    &-seccion{
+        order: 0;
+        flex: 0 1 auto;
+        align-self: center;
+    }
+    &__imagen{
+        width: 413px;
+        height:600px;
+    }
+    &__titulo{
+        font-family: 'Rubik', sans-serif;
+        font-size: 38px;
+    }
+
+    &__precio{
+        margin-top: 1em;
+        font-family: 'Rubik', sans-serif;
+        color: #FFAE67;
+        font-size: 25px;
+    }
+    &__detalle{
+        margin-top: 2em;
+        font-family: 'Rubik', sans-serif;
+
+    }
+    &__detalles{
+        margin-top: 1em;
+        font-family: 'PT Sans', sans-serif;
+
+    }
+    &__cuidado{
+        margin-top: 2em;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    &__cuidados{
+        margin-top: 1em;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    &__boton{
+        width: 200px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		background: #56AA8A;
+		padding: 1em;
+		outline: none;
+        color: #ffff;
+        margin-top: 3em;
+		border: none;
+		border-radius: 5px;
+        text-align: center;
+        align-self: center;
+	
+    }
+
+    
+
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+
+    .cantidad{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        background: #56AA8A;
+
+        &__mas{
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+            margin-right: 5em;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        &__num{
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+          text-align: center;
+        }
+
+        &__menos{
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+            width: 50px;
+            height: 50px;
+            margin-left: 5em;
+        }
+    }
+
+
+}
+
+.derecha{
+    display: flex;
+    width: 320px;
+    margin-right: 5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+
+  
+    &__color{
+        width: 100%;
+        order: 0;
+        flex: 0 1 auto;
+        font-family: 'Rubik', sans-serif;
+        align-self: auto;
+    }
+
+    &__talla{
+        width: 100%;
+        order: 0;
+        flex: 0 1 auto;
+        font-family: 'Rubik', sans-serif;
+        align-self: auto;
+        margin-top: 2em;
+    }
+
+    &__peso{
+        width: 100%;
+        order: 0;
+        flex: 0 1 auto;
+        font-family: 'Rubik', sans-serif;
+        align-self: auto;
+        margin-top: 2em;
+    }
+       
+        .opciones{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            .casilla{
+                margin-top: 1em;
+                width: 58px;
+                height: 58px;
+                order: 0;
+                flex: 0 1 auto;
+                align-self: auto;
+                margin-right: 2em;
+            }
+
+            .casilla-talla{
+                margin-top: 1em;
+                width: 58px;
+                height: 58px;
+                order: 0;
+                border: #000 solid 2px;
+                flex: 0 1 auto;
+                align-self: auto;
+                margin-right: 2em;
+                background: none;
+                text-align: center;
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+               
+            }
+
+                .casilla-talla h2{
+                    color: #000;
+                    justify-items: center;
+                    align-self: center;
+                    font-family: 'PT Sans', sans-serif;
+                
+            }
+
+            
+    
+        }
+
+        .opciones-peso{
+     
+            width: 100%;
+            margin-top: 2em;
+            height: 20px;
+            margin-right:7em; 
+        }
+
+        .cajaFiltro{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: center;
+            width: 100%;
+            margin-top: 2em;
+            height: 30px;
+           
+        
+            
+        
+          .filtro{
+            display: flex;
+            flex-direction: column;
+            order: 0;
+            flex: 0 1 auto;
+            align-self: center;
+            border: 1px solid #ccc;
+            width: 300px;
+            height: 30px;
+            padding-block-start: 3px;
+            padding-left: 3px;
+            align-content: center;
+            justify-content: center;
+            font-family: 'PT Sans', sans-serif;
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+          
+            background-color: #fff;
+          }
+          .filtro:before {
+            content: '';
+            display: flex;
+            flex-direction: column;
+            width: 0;
+            position: absolute;
+            right: 7px;
+            top: 10px;
+            cursor: pointer;
+            height: 0;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+            align-self:center;
+            border-style: solid;
+            font-size: 50px;
+            border-width: 7px 5px 0 5px;
+            border-color: #000000 transparent transparent transparent;
+    
+          }
+        
+          
+          .filtro select {
+            display: flex;
+            border: none;
+            box-shadow: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            background-color: transparent;
+            background-image: none;
+            appearance: none;
+          
+    
+          }
+
+
+        
+        }
+      
+       
+    }
+
+
+.izq{
+   
+    width: 320px;
+    margin-left: 5em;
+
+   
+}
+
+.izq hr{
+    border: none;
+    background: #000;
+    height: 1px;
+    width: 200px;
+}
+
+footer{
+    margin-top: 5em;
+}

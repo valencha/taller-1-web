@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/styles/pushbar.css">
     <link rel="stylesheet" href="/styles/main.css">
+     <link rel="stylesheet" href="/styles/producto.css">
 
 
 
@@ -18,10 +19,10 @@
    <header>
       <div class="encabezado">
         <nav class="encabezado__nav">
-          <a class="encabezado__enlace--primero linea" href="#section1">HOME</a>
-          <a class="encabezado__enlace linea" href="#section2">ABOUT US</a>
-          <a class="encabezado__enlace linea " href="#section3">CATALOG</a>
-          <a class="encabezado__enlace linea" href="#section4">SALE</a>
+          <a class="encabezado__enlace--primero linea" href="/">HOME</a>
+          <a class="encabezado__enlace linea" href="/#section2">ABOUT US</a>
+          <a class="encabezado__enlace linea " href="/#section3">CATALOG</a>
+          <a class="encabezado__enlace linea" href="/#section4">SALE</a>
         </nav>
         <div class="encabezado__nav-der">
           
@@ -54,28 +55,97 @@
     </header>
     <article class="producto">
 
-
+<div class="producto-seccion izq">
   <h1 class="producto__titulo">{{titulo}}</h1>
+  <hr>
   <h3 class="producto__precio">${{precio}}</h3>
 
-  <h3 class="producto__detalle">${{detalle}}</h3>
+  <h3 class="producto__detalle">Details</h3>
     
-    <p>{{detalles}}</p>
+    <p class="producto__detalles">{{detalles}}</p>
 
-     <h3 class="producto__cuidado">${{cuidado}}</h3>
+     <h3 class="producto__cuidado">Care</h3>
    
-    <p>{{cuidados}}</p>
+    <p class="producto__cuidados">{{cuidados}}</p>
 
+</div>
+<div class="producto-seccion centro">
     {{#if imagen}}
-    <img src="{{imagen}}" alt="">
+    <img class= "producto__imagen"src="{{imagen}}" alt="">
 
 
     {{else}}
     <p>SORRY</p>
         {{/if}}
-
-    <button>ADD TO CART</button>
+<div class="cantidad">   
+        <button class="cantidad__mas">+</button>
+        <h2 "cantidad__num">1</h2>
+         <button class="cantidad__menos">-</button></div>
+     
+             <button class="producto__boton">ADD TO CART</button>
     
+</div>
+<div class="producto-seccion derecha">
+  <div class="producto-seccion derecha__color">
+    {{#if color}}
+  <h1>Colors</h1>
+  <section class="opciones">
+
+  
+  <div class="casilla" style="background: {{color}}">
+    
+  </div>
+  <div class="casilla"  style="background: {{color}}">
+    
+  </div>
+  
+    {{else}}
+  
+        {{/if}}
+       </section> 
+        </div>
+ <div class="producto-seccion derecha__talla">
+  {{#if talla}}
+  <h1>Size</h1>
+  <section class="opciones">
+    <div class="casilla-talla">
+    <h2>{{talla}}</h2>
+    </div>
+       <div class="casilla-talla">
+    <h2>{{talla}}</h2>
+    </div>
+       <div class="casilla-talla">
+    <h2>{{talla}}</h2>
+    </div>
+    {{else}}
+  
+        {{/if}}
+        </section> 
+          </div>
+ 
+
+
+<div  class="producto-seccion derecha__peso">
+        {{#if peso}}
+  <h1>Weight</h1>
+        <article class="cajaFiltro opciones-peso">
+   <div class="filtro">
+    <select>
+  <option value="">Select Weight</option>
+   <option value="1">{{peso}}</option> 
+   <option value="2">{{peso}}</option> 
+    </select>
+   </div>
+    </article>
+
+    {{else}}
+  
+        {{/if}}
+  </div>
+ 
+
+         </div>
+
 
 
     </article>   
