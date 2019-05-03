@@ -60,7 +60,9 @@
        <h1 class="categoria__titulo">{{titulo}}</h1>
       <hr class="categoria__linea">
       </section>
+ 
           <article class="cajaFiltro">
+            <input value="{{precio}}" class ="precio" type="range">
    <div class="filtro">
     <select>
   <option value="">Filters</option>
@@ -69,6 +71,8 @@
     </select>
    </div>
     </article>
+
+  
 
       {{#each listaProductos}}
        
@@ -133,6 +137,15 @@
 
               });
               
+              </script>
+              <script>
+                var rango = document.querySelector('.precio');
+                function buscarPorPrecio(){
+                  console.log(rango.value);
+                  location.href = '/store?precio='+ rango.value;
+
+                }
+                rango.addEventListener('change',buscarPorPrecio);
               </script>
     
 </body>

@@ -57,10 +57,16 @@
 		outline: none;
         color: #ffff;
         margin-top: 3em;
-		border: none;
+        border: none;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 		border-radius: 5px;
         text-align: center;
         align-self: center;
+
+        .iconCarrito{
+            margin-left: 25px;
+        }
 	
     }
 
@@ -75,38 +81,56 @@
     align-self: center;
 
     .cantidad{
+        align-self: center;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-content: center;
         align-items: center;
-        background: #56AA8A;
+        font-family: 'Rubik', sans-serif;
+        width: 300px;
 
         &__mas{
             order: 0;
             flex: 0 1 auto;
             align-self: auto;
-            margin-right: 5em;
             width: 50px;
+            font-family: 'Rubik', sans-serif;
             height: 50px;
             font-size: 20px;
+            background: none;
+            border-radius: 3px;
+            box-sizing: border-box;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-color: #FFAE67;
+            color: #FFAE67;
         }
 
         &__num{
             order: 0;
             flex: 0 1 auto;
+            font-size: 20px;
             align-self: auto;
-          text-align: center;
+            font-family: 'Rubik', sans-serif;
+            text-align: center;
         }
 
         &__menos{
             order: 0;
             flex: 0 1 auto;
+            background: none;
+            font-size: 20px;
             align-self: auto;
+            font-family: 'Rubik', sans-serif;
+            border-radius: 3px;
+            border-color: #FFAE67;
+            border-radius: 3px;
+            color: #FFAE67;
+            box-sizing: border-box;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             width: 50px;
             height: 50px;
-            margin-left: 5em;
         }
     }
 
@@ -132,6 +156,7 @@
         flex: 0 1 auto;
         font-family: 'Rubik', sans-serif;
         align-self: auto;
+        
     }
 
     &__talla{
@@ -166,8 +191,12 @@
                 height: 58px;
                 order: 0;
                 flex: 0 1 auto;
+                border-radius: 3px;
                 align-self: auto;
                 margin-right: 2em;
+                box-sizing: border-box;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            
             }
 
             .casilla-talla{
@@ -181,9 +210,12 @@
                 margin-right: 2em;
                 background: none;
                 text-align: center;
+                border-radius: 3px;
                 display: flex;
                 justify-items: center;
                 align-items: center;
+                box-sizing: border-box;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
                 justify-content: center;
                 align-content: center;
                
@@ -227,6 +259,7 @@
             display: flex;
             flex-direction: column;
             order: 0;
+            border-radius: 3px;
             flex: 0 1 auto;
             align-self: center;
             border: 1px solid #ccc;

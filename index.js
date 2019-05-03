@@ -1,28 +1,19 @@
 var express = require('express');
 var motorRender = require('express-handlebars');
 var MongoClient = require('mongodb').MongoClient;
+
 var assert = require('assert');
 const url = 'mongodb://localhost:27017';
 const dbName = 'tienda';
-const client = new MongoClient(url);
+
+const client = new MongoClient(url, {useNewUrlParser: true });
+var db= null;
 client.connect(function(err){
   
   assert.equal(null, err);
-  console.log("Connected successfully to server");
 
-  const db = client.db(dbName);
-
-  const articulos = db.collection('productos');
-  articulos.find({}, {sort: ['precio']}).toArray(function(err,docs){
-    assert.equal(null,err);
-    console.log('encontre los docs');
-    docs.forEach(function(prod){
-      console.log(prod.precio);
-    });
-  });
-
-
-  client.close();
+  db = client.db(dbName);
+  //client.close();
 
 });
 
@@ -49,54 +40,63 @@ app.get('/', function (req, res) {
   res.sendfile('./index.html');
 });
 
-app.get('/store', function (req, res) {
-    var contexto = {
-      categoria: "All",
-      titulo:"All",
-      listaProductos: productos,
-    };
-    res.render('lista-productos', contexto);
-});
+app.get('/store/:categoria?', function (request, res) {
+  var query = {};
+  if ( request.params.categoria){
+    query.tipo = request.params.categoria;
+    //request.params.titulo=query.titulo;
+  }
+   
+  if(request.query.precio){
+    query.precio = { $lte: request.query.precio};
+  }
 
-app.get('/store/:categoria', function (request, res) {
+  var articulos = db.collection('productos');
+  articulos.find(query).toArray(function(err,docs){
+    assert.equal(err,null);
+    if(request.params.categoria == "food"){
+      request.params.categoria = "Food";
+     request.params.titulo= query.titulo;
+    }
 
-  var arrayProductos = [];
-  //var rand = arra[Math.floor(Math.random() * myArray.length)];
+    if(request.params.categoria == "clothing"){
+      request.params.categoria = "Clothing";
+     request.params.titulo= query.titulo;
+    }
 
-  productos.forEach(function (producto) {
-    if (producto.tipo == request.params.categoria) {
-      arrayProductos.push(producto);
-      
+
+    if(request.params.categoria == "toys"){
+      request.params.categoria = "Toys";
+     request.params.titulo= query.titulo;
+    }
+
+
+    if(request.params.categoria == null){
+      request.params.categoria = "All";
+     request.params.titulo= query.titulo;
     }
     
 
+    if(request.params.categoria == "forwalks"){
+      request.params.categoria = "For Walks";
+     request.params.titulo= query.titulo;
+    }
+    
+    var contexto = {
+      listaProductos: docs,
+      categoria:request.params.categoria,
+      titulo: request.params.categoria,
+      sonTodos: request.params.categoria= "",
+      precio: request.query.precio,
+      //titulo: titulo,
+      
+    };
+
+    
+
+    res.render('lista-productos', contexto);
   });
 
-
-  var titulo = '';
-  if(request.params.categoria == 'food'){
-    titulo = 'Food';
-  }
-
-  if(request.params.categoria == 'clothing'){
-    titulo = 'Clothing';
-  }
-
-  if(request.params.categoria == 'toys'){
-    titulo = 'Toys';
-  }
-  if(request.params.categoria == 'forwalks'){
-    titulo = 'For Walks';
-  }
-
-  var contexto = {
-    
-    categoria: request.params.categoria,
-    titulo: titulo,
-    listaProductos: arrayProductos,
-  };
-
-  res.render('lista-productos', contexto);
 
 });
 

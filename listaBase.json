@@ -12,7 +12,7 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "food",
         "id": "0",
-        "color":"red",
+        "color":"red, green",
         "talla":"S"
     },
 
