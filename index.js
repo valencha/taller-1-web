@@ -86,7 +86,7 @@ app.get('/store/:categoria?', function (request, res) {
       listaProductos: docs,
       categoria:request.params.categoria,
       titulo: request.params.categoria,
-      sonTodos: request.params.categoria= "",
+      sonTodos: request.params.categoria== "All",
       precio: request.query.precio,
       //titulo: titulo,
       

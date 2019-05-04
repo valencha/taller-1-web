@@ -60,7 +60,7 @@
        <h1 class="categoria__titulo">{{titulo}}</h1>
       <hr class="categoria__linea">
       </section>
- 
+       {{#if sonTodos}}
           <article class="cajaFiltro">
             <input value="{{precio}}" class ="precio" type="range">
    <div class="filtro">
@@ -71,6 +71,7 @@
     </select>
    </div>
     </article>
+    {{/if}}
 
   
 

@@ -4,7 +4,7 @@
         "nombre": "Pedigree",
         "titulo": "Pedigree",
         "precio": "5",
-        "peso":"500gr",
+        "peso":["50 gr","100 gr","500 gr"],
         "imagen": "../images/pedigree.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -12,15 +12,15 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "food",
         "id": "0",
-        "color":"red, green",
-        "talla":"S"
+        "color":null,
+        "tallas":null
     },
 
     {      
         "nombre": "NutreCan",
         "titulo": "NutreCan",
         "precio": "15",
-        "peso":"500gr",
+        "peso":["50 gr","100 gr","500 gr"],
         "imagen": "../images/nutrecan.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -29,7 +29,7 @@
         "tipo": "food",
         "id": "1",
         "color":null,
-        "talla": null
+        "tallas": null
     },
     
    
@@ -37,7 +37,7 @@
         "nombre": "DogChow",
         "titulo": "DogChow",
         "precio": "12",
-        "peso":"500gr",
+        "peso":["50 gr","100 gr","500 gr"],
         "imagen": "../images/dogchow.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -46,14 +46,14 @@
         "tipo": "food",
         "id": "2",
         "color":null,
-        "talla": null
+        "tallas": null
     },
 
     {      
         "nombre": "Chunky",
         "titulo": "Chunky",
         "precio": "12",
-        "peso":"500gr",
+        "peso":["50 gr","100 gr","500 gr"],
         "imagen": "../images/chunky.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -62,14 +62,14 @@
         "tipo": "food",
         "id": "3",
         "color":null,
-        "talla": null
+        "tallas": null
     },
 
     {      
         "nombre": "RoyalCanin",
         "titulo": "RoyalCanin",
-        "precio": "1.4",
-        "peso":"500gr",
+        "precio": "14",
+        "peso":["50 gr","100 gr","500 gr"],
         "imagen": "../images/royacanin.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -78,14 +78,15 @@
         "tipo": "food",
         "id": "4",
         "color":null,
-        "talla": null
+        "tallas": null
     },
 
    
     {      
         "nombre": "Simple dog leash",
         "titulo": "Simple dog leash",
-        "precio": "11.4",
+        "peso":null,
+        "precio": "11",
         "imagen": "../images/correaP.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -93,14 +94,16 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "forwalks",
         "id": "5",
-        "color":null,
-        "talla": null
+        "color":["#FC6E81" , "#FFE500"],
+        "tallas":["S","M","L"]
+
     },
 
     {      
         "nombre": "Backpack for walks",
         "titulo": "Backpack for walks",
-        "precio": "30.4",
+        "precio": "30",
+        "peso":null,
         "imagen": "../images/maletinP.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -108,14 +111,15 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "forwalks",
         "id": "6",
-        "color":null,
-        "talla": null
+        "color":["beige" , "#45453E"],
+        "tallas": null
     },
 
     {      
         "nombre": "Luxury leash",
         "titulo": "Luxury leash",
-        "precio": "24.1",
+        "precio": "24",
+        "peso":null,
         "imagen": "../images/collarP.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -123,14 +127,15 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "forwalks",
         "id": "7",
-        "color":null,
-        "talla": null
+        "color":["beige" , "#DCECEF"],
+        "tallas":["S","M","L"]
     },
  
     {      
         "nombre": "Cloth leash",
         "titulo": "Cloth leash",
-        "precio": "10.9",
+        "precio": "10",
+        "peso":null,
         "imagen": "../images/correa2P.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -138,14 +143,15 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "forwalks",
         "id": "8",
-        "color":null,
-        "talla": null
+        "color":["black" , "#27C87D"],
+        "tallas":["S","M","L"]
     },
 
     {      
         "nombre": "Leather leash",
         "titulo": "Leather leash",
-        "precio": "20.9",
+        "precio": "21",
+        "peso":null,
         "imagen": "../images/collar3P.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -153,14 +159,15 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "forwalks",
         "id": "9",
-        "color":null,
-        "talla": null
+        "color":["#8BA5AC","black"],
+        "tallas":["S","M","L"]
     },
 
     {      
         "nombre": "Bow tie",
         "titulo": "Bow tie",
-        "precio": "15.5",
+        "precio": "16",
+        "peso":null,
         "imagen": "../images/corbatinP.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -168,14 +175,15 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "clothing",
         "id": "10",
-        "color":null,
-        "talla": null
+        "color":["#050B19","grey"],
+        "tallas":["S","M","L"]
     },
 
 
     {      
         "nombre": "Glasses",
         "titulo": "Glasses",
+        "peso":null,
         "precio": "12.3",
         "imagen": "../images/gafasP.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
@@ -184,15 +192,16 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "clothing",
         "id": "11",
-        "color":null,
-        "talla": null
+        "color":["white","black"],
+        "tallas":["S","M","L"]
     },
 
 
     {      
         "nombre": "Tie",
         "titulo": "Tie",
-        "precio": "15.5",
+        "precio": "16",
+        "peso":null,
         "imagen": "../images/corbataP.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -200,14 +209,15 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "clothing",
         "id": "12",
-        "color":null,
-        "talla": null
+        "color":["white","black"],
+        "tallas":["S","M","L"]
     },
 
     {      
         "nombre": "Beret",
         "titulo": "Beret",
-        "precio": "25.5",
+        "precio": "26",
+        "peso":null,
         "imagen": "../images/gorroP.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -215,14 +225,15 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "clothing",
         "id": "13",
-        "color":null,
-        "talla": null
+        "color":["red","black"],
+        "tallas":["S","M","L"]
     },
 
     {      
         "nombre": "Kerchief",
         "titulo": "Kerchief",
-        "precio": "35.9",
+        "precio": "36",
+        "peso":null,
         "imagen": "../images/panoletaP.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -231,12 +242,14 @@
         "tipo": "clothing",
         "id": "14",
         "color":null,
-        "talla": null
+        "fondo": ["palmas.png","flores.png"],
+        "tallas":["S","M","L"]
     },  
     {      
         "nombre": "Toy bone",
         "titulo": "Toy bone",
-        "precio": "5.4",
+        "precio": "6",
+        "peso":null,
         "imagen": "../images/juguete4P.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -244,14 +257,15 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "toys",
         "id": "15",
-        "color":null,
-        "talla": null
+        "color":["red","black"],
+        "tallas": null
     },  
 
     {      
         "nombre": "Toy ball",
         "titulo": "Toy ball",
-        "precio": "8.4",
+        "precio": "8",
+        "peso":null,
         "imagen": "../images/juguete2P.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -259,15 +273,16 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "toys",
         "id": "16",
-        "color":null,
-        "talla": null
+        "color":["#FC8F02","black"],
+        "tallas": null
     },  
 
 
     {      
         "nombre": "Toy owl",
         "titulo": "Toy owl",
-        "precio": "18.0",
+        "precio": "18",
+        "peso":null,
         "imagen": "../images/juguete3P.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -276,12 +291,13 @@
         "tipo": "toys",
         "id": "17",
         "color":null,
-        "talla": null
+        "tallas": null
     },  
     {      
         "nombre": "Set toy vegetables",
         "titulo": "Set toy vegetables",
-        "precio": "30.1",
+        "precio": "30",
+        "peso":null,
         "imagen": "../images/jugueteP.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -296,7 +312,8 @@
     {      
         "nombre": "Toy flower",
         "titulo": "Toy flower",
-        "precio": "20.2",
+        "precio": "21",
+        "peso":null,
         "imagen": "../images/juguete5P.png",
         "descripcion":"Lorem ipsum dolor sit amet consectetur adipiscing, elit consequat",
         "disponible": "true",
@@ -304,8 +321,8 @@
         "cuidados": "Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus risus convallis vehicula dignissim elementum proin integer",
         "tipo": "toys",
         "id": "19",
-        "color":"violet",
-        "talla": null
+        "color":["#FB397B","#FFE500"],
+        "tallas": null
     }  
 
   

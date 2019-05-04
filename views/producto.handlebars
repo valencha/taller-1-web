@@ -93,10 +93,27 @@
   <section class="opciones">
 
   
-  <div class="casilla" style="background: {{color.[1]}}">
+  <div class="casilla" style="background: {{color.[0]}}">
     
   </div>
-  <div class="casilla"  style="background: {{color.[2]}}">
+  <div class="casilla"  style="background: {{color.[1]}}">
+    
+  </div>
+  
+    {{else}}
+  
+        {{/if}}
+
+
+            {{#if fondo}}
+  <h1>Stamp</h1>
+  <section class="opciones">
+
+  
+  <div class="casilla" style="background-image: url("{{fondo.[0]}}")">
+    
+  </div>
+  <div class="casilla"  style="background-image: url("{{fondo.[1]}}")">
     
   </div>
   
@@ -106,17 +123,17 @@
        </section> 
         </div>
  <div class="producto-seccion derecha__talla">
-  {{#if talla}}
+  {{#if tallas}}
   <h1>Size</h1>
   <section class="opciones">
     <div class="casilla-talla">
-    <h2>{{talla}}</h2>
+    <h2>{{tallas.[0]}}</h2>
     </div>
        <div class="casilla-talla">
-    <h2>{{talla}}</h2>
+    <h2>{{tallas.[1]}}</h2>
     </div>
        <div class="casilla-talla">
-    <h2>{{talla}}</h2>
+    <h2>{{tallas.[2]}}</h2>
     </div>
     {{else}}
   
@@ -133,8 +150,9 @@
    <div class="filtro">
     <select>
   <option value="">Select Weight</option>
-   <option value="1">{{peso}}</option> 
-   <option value="2">{{peso}}</option> 
+   <option value="1">{{peso.[0]}}</option> 
+   <option value="2">{{peso.[1]}}</option> 
+   <option value="3">{{peso.[2]}}</option> 
     </select>
    </div>
     </article>
