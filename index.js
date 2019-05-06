@@ -100,23 +100,32 @@ app.get('/store/:categoria?', function (request, res) {
 
 });
 
-app.get('/producto/:id', function (request, response) {
-  var contexto = null;
-  productos.forEach(function (producto) {
-    if (producto.id == request.params.id) {
+app.get('/producto/:id?', function (request, response) {
+  var query = {};
+  if ( request.params.id){
+    query.id = request.params.id;
+    //request.params.titulo=query.titulo;
+  }
+   
+var productos = db.collection('productos');
+productos.find({}).toArray(function(err,docs){
+  assert.equal(null,err);
+   
+  
+  docs.forEach(function(producto){
+    if ( query.id == request.params.id){
       contexto = producto;
+      //request.params.titulo=query.titulo;
     }
+     
+  });
+    
   
 
-  });
 
-
-  if (contexto == null) {
-    response.send('no encontre' + request.params.producto);
-  } else {
     response.render('producto', contexto);
-  }
+
+  });
 });
 
-
-app.listen(4000);
+app.listen(5000);
