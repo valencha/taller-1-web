@@ -48,6 +48,9 @@
         font-family: 'PT Sans', sans-serif;
     }
 
+    .icono{
+        align-self: center;
+    }
     &__boton{
         width: 200px;
 		font-family: 'Roboto', sans-serif;
@@ -65,7 +68,7 @@
         align-self: center;
 
         .iconCarrito{
-            margin-left: 25px;
+        align-self: center;
         }
 	
     }

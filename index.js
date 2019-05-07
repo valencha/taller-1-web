@@ -100,32 +100,18 @@ app.get('/store/:categoria?', function (request, res) {
 
 });
 
-app.get('/producto/:id?', function (request, response) {
-  var query = {};
-  if ( request.params.id){
-    query.id = request.params.id;
-    //request.params.titulo=query.titulo;
-  }
-   
-var productos = db.collection('productos');
-productos.find({}).toArray(function(err,docs){
-  assert.equal(null,err);
-   
+app.get('/store/producto/:id', function (request, response) {
   
-  docs.forEach(function(producto){
-    if ( query.id == request.params.id){
-      contexto = producto;
-      //request.params.titulo=query.titulo;
-    }
-     
-  });
-    
-  
-
-
-    response.render('producto', contexto);
+  var collection = db.collection('productos');
+  collection.find({ id: request.params.id})
+      .toArray(function(err, docs){
+          console.log(docs);
+          var contexto = {
+              producto: docs[0]
+          };
+          response.render('producto', contexto);
+      });
 
   });
-});
 
-app.listen(5000);
+app.listen(4000);

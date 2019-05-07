@@ -69,6 +69,12 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+.producto .icono {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .producto__boton {
   width: 200px;
   font-family: 'Roboto', sans-serif;
@@ -91,7 +97,9 @@
 }
 
 .producto__boton .iconCarrito {
-  margin-left: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .centro {

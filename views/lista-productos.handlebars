@@ -61,13 +61,26 @@
       <hr class="categoria__linea">
       </section>
        {{#if sonTodos}}
-          <article class="cajaFiltro">
-            <input value="{{precio}}" class ="precio" type="range">
+
+       <article class="cajaFiltro">
+          <div class="container">
+            <div class="range-slider">
+    <span id="rs-bullet" class="rs-label">{{precio}}</span>
+    <input id="rs-range-line" class="rs-range precio" type="range" value="{{precio}}" min="0" max="50">
+    
+  </div>
+  
+  <div class="box-minmax">
+    <span>0</span><span>50</span>
+  </div>
+    
+             </div>
    <div class="filtro">
     <select>
   <option value="">Filters</option>
    <option value="1">Colour</option> 
    <option value="2">Price</option> 
+   
     </select>
    </div>
     </article>
@@ -82,7 +95,7 @@
         <div class="producto__contenedor">
 
       
-        <a class="producto__contenedor-enlace" href="/producto/{{id}}"><img  class="producto__contenedor-imagen" src="{{imagen}}"alt="" /></a>
+        <a class="producto__contenedor-enlace" href="/store/producto/{{id}}"><img  class="producto__contenedor-imagen" src="/images/{{imagen}}"alt="" /></a>
           </div>
         <p class="producto__precio">${{precio}}</p>
        
@@ -124,13 +137,13 @@
         
                 
               </footer>
-
+    <script src="/script/tienda.js"></script>
                             
             <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
               integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
               crossorigin="anonymous"></script>
 
-            <script src="../script/libs/pushbar.js"></script>
+            <script src="/script/libs/pushbar.js"></script>
               <script>
               var pushbar = new Pushbar ({
                 blur: true,
@@ -139,15 +152,8 @@
               });
               
               </script>
-              <script>
-                var rango = document.querySelector('.precio');
-                function buscarPorPrecio(){
-                  console.log(rango.value);
-                  location.href = '/store?precio='+ rango.value;
-
-                }
-                rango.addEventListener('change',buscarPorPrecio);
-              </script>
+       
+     
     
 </body>
 </html>

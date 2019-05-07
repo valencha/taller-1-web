@@ -56,22 +56,22 @@
     <article class="producto">
 
 <div class="producto-seccion izq">
-  <h1 class="producto__titulo">{{titulo}}</h1>
+  <h1 class="producto__titulo">{{producto.titulo}}</h1>
   <hr>
-  <h3 class="producto__precio">${{precio}}</h3>
+  <h3 class="producto__precio">${{producto.precio}}</h3>
 
   <h3 class="producto__detalle">Details</h3>
     
-    <p class="producto__detalles">{{detalles}}</p>
+    <p class="producto__detalles">{{producto.detalles}}</p>
 
      <h3 class="producto__cuidado">Care</h3>
    
-    <p class="producto__cuidados">{{cuidados}}</p>
+    <p class="producto__cuidados">{{producto.cuidados}}</p>
 
 </div>
 <div class="producto-seccion centro">
-    {{#if imagen}}
-    <img class= "producto__imagen"src="{{imagen}}" alt="">
+    {{#if producto.imagen}}
+    <img class= "producto__imagen"src="/images/{{producto.imagen}}" alt="">
 
 
     {{else}}
@@ -79,24 +79,24 @@
         {{/if}}
 <div class="cantidad">   
         <button class="cantidad__mas">+</button>
-        <h2 "cantidad__num">1</h2>
+        <h2 class="cantidad__num">1</h2>
          <button class="cantidad__menos">-</button></div>
      
-             <button class="producto__boton">ADD TO CART  <a class="icono" href="#" data-pushbar-target="pushbar-carrito"><img class="iconCarrito"width=20px src="/images/carrito.png" /></a>
-             </button>
+            <a class="icono" href="#" data-pushbar-target="pushbar-carrito"><button class="producto__boton">ADD TO CART   <img class="iconCarrito"width=20px src="/images/carrito.png" />   </button> </a>
+       
     
 </div>
 <div class="producto-seccion derecha">
   <div class="producto-seccion derecha__color">
-    {{#if color}}
+    {{#if producto.color}}
   <h1>Colors</h1>
   <section class="opciones">
 
   
-  <div class="casilla" style="background: {{color.[0]}}">
+  <div class="casilla" style="background: {{producto.color.[0]}}">
     
   </div>
-  <div class="casilla"  style="background: {{color.[1]}}">
+  <div class="casilla"  style="background: {{producto.color.[1]}}">
     
   </div>
   
@@ -105,15 +105,15 @@
         {{/if}}
 
 
-            {{#if fondo}}
+            {{#if producto.fondo}}
   <h1>Stamp</h1>
   <section class="opciones">
 
   
-  <div class="casilla" style="background-image: url("{{fondo.[0]}}")">
+  <div class="casilla" style="background-image: url("{{producto.fondo.[0]}}")">
     
   </div>
-  <div class="casilla"  style="background-image: url("{{fondo.[1]}}")">
+  <div class="casilla"  style="background-image: url("{{producto.fondo.[1]}}")">
     
   </div>
   
@@ -123,17 +123,17 @@
        </section> 
         </div>
  <div class="producto-seccion derecha__talla">
-  {{#if tallas}}
+  {{#if producto.tallas}}
   <h1>Size</h1>
   <section class="opciones">
     <div class="casilla-talla">
-    <h2>{{tallas.[0]}}</h2>
+    <h2>{{producto.tallas.[0]}}</h2>
     </div>
        <div class="casilla-talla">
-    <h2>{{tallas.[1]}}</h2>
+    <h2>{{producto.tallas.[1]}}</h2>
     </div>
        <div class="casilla-talla">
-    <h2>{{tallas.[2]}}</h2>
+    <h2>{{producto.tallas.[2]}}</h2>
     </div>
     {{else}}
   
@@ -144,15 +144,15 @@
 
 
 <div  class="producto-seccion derecha__peso">
-        {{#if peso}}
+        {{#if producto.peso}}
   <h1>Weight</h1>
         <article class="cajaFiltro opciones-peso">
    <div class="filtro">
     <select>
   <option value="">Select Weight</option>
-   <option value="1">{{peso.[0]}}</option> 
-   <option value="2">{{peso.[1]}}</option> 
-   <option value="3">{{peso.[2]}}</option> 
+   <option value="1">{{producto.peso.[0]}}</option> 
+   <option value="2">{{producto.peso.[1]}}</option> 
+   <option value="3">{{producto.peso.[2]}}</option> 
     </select>
    </div>
     </article>
@@ -200,12 +200,12 @@
                 
               </footer>
 
-                            
+            <script src="/script/tienda.js"></script>
             <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
               integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
               crossorigin="anonymous"></script>
 
-            <script src="../script/libs/pushbar.js"></script>
+            <script src="/script/libs/pushbar.js"></script>
               <script>
               var pushbar = new Pushbar ({
                 blur: true,

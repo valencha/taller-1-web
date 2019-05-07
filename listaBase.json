@@ -1,7 +1,7 @@
 [
 
     {      
-        "nombre": "Pedigree",
+        "nombre": "pedigree",
         "titulo": "Pedigree",
         "precio": "5",
         "peso":["50 gr","100 gr","500 gr"],
@@ -17,7 +17,7 @@
     },
 
     {      
-        "nombre": "NutreCan",
+        "nombre": "nutreCan",
         "titulo": "NutreCan",
         "precio": "15",
         "peso":["50 gr","100 gr","500 gr"],
