@@ -48,9 +48,12 @@ app.get('/store/:categoria?', function (request, res) {
   }
    
   if(request.query.precio){
-    query.precio = { $lte: request.query.precio};
+    query.precio = { $lte: parseInt(request.query.precio)};
   }
-
+ 
+  if(request.query.nuevo){
+    query.nuevo = { $lte: request.query.nuevo};
+  }
   var articulos = db.collection('productos');
   articulos.find(query).toArray(function(err,docs){
     assert.equal(err,null);
@@ -86,8 +89,9 @@ app.get('/store/:categoria?', function (request, res) {
       listaProductos: docs,
       categoria:request.params.categoria,
       titulo: request.params.categoria,
+      nuevo: request.params.nuevo==true,
       sonTodos: request.params.categoria== "All",
-      precio: request.query.precio,
+      precio: request.query.precio|5,
       //titulo: titulo,
       
     };
@@ -114,4 +118,4 @@ app.get('/store/producto/:id', function (request, response) {
 
   });
 
-app.listen(4000);
+app.listen(3000);

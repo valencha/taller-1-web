@@ -1,56 +1,54 @@
 function paginaCargada(){
-    var rango = document.querySelector('.precio');
-   
+    var rango = document.querySelector('.rs-range');
+   var todos = document.querySelector('.all__boton');
+   var nuevos= document.querySelector('.new__boton');
+   var productoNuevo= document.querySelector('.producto__nuevo');
     var rangeBullet = document.getElementById("rs-bullet");
 
-    rango.addEventListener("input", showSliderValue);
+    function buscarPorPrecio(){
+        console.log(rango.value);
+        location.href = '/store?precio='+ rango.value;
+      
+      }
+      function buscarPorNuevo(){
+      
+        location.href = '/store?nuevo=';
+      
+      }
+      if(nuevos!=null){
+        nuevos.addEventListener('input', buscarPorNuevo);   
+      }
+   
+
 
         function showSliderValue() {
         rangeBullet.innerHTML = rango.value;
-        var bulletPosition = (rango.value /rango.max);
-        rangeBullet.style.left = (bulletPosition * 240) + "px";
+   
         }
-    
-  
-    function buscarPorPrecio(){
-      console.log(rango.value);
-      location.href = '/store?precio='+ rango.value;
-    
-    }
+     
+   
     if(rango != null){
-        rango.addEventListener('change',buscarPorPrecio);
+        rango.addEventListener("change",buscarPorPrecio);
+        rango.addEventListener('change', showSliderValue);
     }
+
+
+
+
     var listaProductos = [];
     if(localStorage.getItem('listaProductos') != null){
         listaProductos = JSON.parse(localStorage.getItem('listaProductos'));
     }
 
-/*
-    var botones = document.querySelectorAll('.producto__boton');
-
-    function recorrerBotones (boton){
-        function anadirCarrito(){
-            var padre = boton.parentNode;
-            var nombre = padre.querySelector('.producto__titulo').innerText;
-            var precio = padre.querySelector('.producto__precio').innerText;
-            var imagen = padre.querySelector('.producto__imagen').src;
-    
-            var producto = {
-                titulo: nombre,
-                precio: precio,
-                imagen: imagen,
-            }
-    
-            listaProductos.push(producto);
-            localStorage.setItem ('listaProductos',JSON.stringify(producto));
-    
-        }
-        boton.addEventListener('click',anadirCarrito);
-    }
-    botones.forEach(recorrerBotones);
-  
-*/
-
+    var listaCarrito = document.querySelector('.carrito-desplegado__lista');
+    function actualizarCarrito(){
+        
+        listaCarrito.innerHTML = '';
+        listaProductos.forEach(function(producto){
+            listaCarrito.innerHTML += '<img src="' + producto.imagen + '" width="100">' + producto.titulo;
+        });
+    }  
+    actualizarCarrito();
 
 var botonProductoDetalle = document.querySelector('.producto__boton');
 function agregarAlCarritoDetalle(){
@@ -70,6 +68,8 @@ function agregarAlCarritoDetalle(){
 if(botonProductoDetalle != null){
     botonProductoDetalle.addEventListener('click', agregarAlCarritoDetalle);
 }
+
+
 
 var cantidad = document.querySelector('.cantidad__num');
 var contador= 1;

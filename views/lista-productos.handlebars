@@ -16,6 +16,7 @@
 </head>
 <body>
    <header>
+
       <div class="encabezado">
         <nav class="encabezado__nav">
           <a class="encabezado__enlace--primero linea" href="/">HOME</a>
@@ -45,6 +46,10 @@
             <h1 class="tituloCarrito">MY CART</h1>
             <hr class="lineaCarrito">
             <hr class="lineaCarrito">
+            <div class="carrito-desplegado">
+        <h3>Carrito</h3>
+        <ul class="carrito-desplegado__lista"></ul>
+    </div>
             <div class="btnContinuar">
             <a href="#" >CONTINUE TO CHECK OUT</a>
           </div>
@@ -54,7 +59,7 @@
     </header>
 
     <div class="lista-productos">
-
+<div class="primeraLinea">
       <section class="categoria">
       <h1 class="categoria__invisible">{{categoria}}</h1>
        <h1 class="categoria__titulo">{{titulo}}</h1>
@@ -65,25 +70,38 @@
        <article class="cajaFiltro">
           <div class="container">
             <div class="range-slider">
+              <div class="contenedorCirculo">
+       
     <span id="rs-bullet" class="rs-label">{{precio}}</span>
-    <input id="rs-range-line" class="rs-range precio" type="range" value="{{precio}}" min="0" max="50">
+             
+              </div>
+    <input id="rs-range-line" class="rs-range" type="range" value="{{precio}}" min="0" max="40">
     
   </div>
-  
+   
   <div class="box-minmax">
-    <span>0</span><span>50</span>
+    <span>0</span><span>40</span>
   </div>
     
              </div>
+
+             
    <div class="filtro">
-    <select>
-  <option value="">Filters</option>
-   <option value="1">Colour</option> 
-   <option value="2">Price</option> 
-   
-    </select>
-   </div>
+    <label class="radio">
+        <input type="radio" name="r" value="1" checked="checked" class="all__boton">
+        <span>All</span>
+    </label>
+    <label class="radio">
+        <input type="radio" name="r" value="2" class="new__boton">
+        <span>New Products</span>
+    </label>
+      
+ 
+      </div>
+    
     </article>
+      </div>
+    
     {{/if}}
 
   
@@ -101,9 +119,9 @@
        
         <h1 class="producto__titulo">{{titulo}}</h1>
          <p class="producto__disponible">{{descripcion}}</p>
-        {{#unless disponible}}
-        <p class="producto__disponible">Producto no disponible</p>
-        {{/unless}}
+        {{#if nuevo}}
+        <p class="producto__nuevo">¡New Product!</p>
+        {{/if}}
       </article>
       {{/each}}
       </div>
