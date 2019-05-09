@@ -37,9 +37,17 @@
   height: 600px;
 }
 
+.producto__imagen2 {
+  display: none;
+}
+
 .producto__titulo {
   font-family: 'Rubik', sans-serif;
   font-size: 38px;
+}
+
+.producto__descripcion {
+  display: none;
 }
 
 .producto__precio {

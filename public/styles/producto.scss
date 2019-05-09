@@ -17,9 +17,15 @@
         width: 413px;
         height:600px;
     }
+    &__imagen2{
+       display: none;
+    }
     &__titulo{
         font-family: 'Rubik', sans-serif;
         font-size: 38px;
+    }
+    &__descripcion{
+        display: none;
     }
 
     &__precio{

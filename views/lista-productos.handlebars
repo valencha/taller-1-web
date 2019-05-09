@@ -38,18 +38,20 @@
           </div>
           
           <a class="encabezado__enlace--micuenta linea " href="#">MY ACCOUNT</a>
-          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="/images/carrito.png" /></a>
+          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="/images/carrito.png" /><span class="carrito__num"></span></a>
           <div data-pushbar-id="pushbar-carrito" class="pushbar from_right pushbar-carrito" >
             <div class="btn-cerrar izquierda">
               <button data-pushbar-close> <i class="fas fa-times"></i></button>
             </div>
             <h1 class="tituloCarrito">MY CART</h1>
             <hr class="lineaCarrito">
-            <hr class="lineaCarrito">
-            <div class="carrito-desplegado">
-        <h3>Carrito</h3>
-        <ul class="carrito-desplegado__lista"></ul>
+              <div class="carrito-desplegado">
+        <ul class="carrito-desplegado__lista">
+
+        </ul>
     </div>
+            <hr class="lineaCarrito">
+          
             <div class="btnContinuar">
             <a href="#" >CONTINUE TO CHECK OUT</a>
           </div>
@@ -60,11 +62,11 @@
 
     <div class="lista-productos">
 <div class="primeraLinea">
-      <section class="categoria">
+      <div class="categoria">
       <h1 class="categoria__invisible">{{categoria}}</h1>
        <h1 class="categoria__titulo">{{titulo}}</h1>
       <hr class="categoria__linea">
-      </section>
+      </div>
        {{#if sonTodos}}
 
        <article class="cajaFiltro">
@@ -88,12 +90,14 @@
              
    <div class="filtro">
     <label class="radio">
-        <input type="radio" name="r" value="1" checked="checked" class="all__boton">
-        <span>All</span>
+      <a href="/store">
+        <input type="radio" name="r" value="1" class="all__boton">
+        <span>All</span>  </a>
     </label>
     <label class="radio">
+
         <input type="radio" name="r" value="2" class="new__boton">
-        <span>New Products</span>
+       <span>New Products</span>
     </label>
       
  
@@ -103,8 +107,9 @@
       </div>
     
     {{/if}}
+        </div>
 
-  
+  <div class="productos">
 
       {{#each listaProductos}}
        
@@ -112,19 +117,22 @@
 
         <div class="producto__contenedor">
 
+
       
-        <a class="producto__contenedor-enlace" href="/store/producto/{{id}}"><img  class="producto__contenedor-imagen" src="/images/{{imagen}}"alt="" /></a>
+        <a class="producto__contenedor-enlace" href="/store/producto/{{id}}"><img  class="producto__contenedor-imagen" src="/images/{{imagen.[0]}}"alt="" /></a>
           </div>
         <p class="producto__precio">${{precio}}</p>
        
         <h1 class="producto__titulo">{{titulo}}</h1>
-         <p class="producto__disponible">{{descripcion}}</p>
+         <p class="producto__descripcion">{{descripcion}}</p>
         {{#if nuevo}}
         <p class="producto__nuevo">¡New Product!</p>
         {{/if}}
       </article>
       {{/each}}
       </div>
+  
+
                   <footer>
                 
                 <h1 class="titulopie">GET HELP</h1>

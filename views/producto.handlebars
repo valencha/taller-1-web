@@ -38,24 +38,24 @@
           </div>
           
           <a class="encabezado__enlace--micuenta linea " href="#">MY ACCOUNT</a>
-          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="/images/carrito.png" /></a>
+          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="/images/carrito.png" /><span class="carrito__num"></span></a>
           <div data-pushbar-id="pushbar-carrito" class="pushbar from_right pushbar-carrito" >
             <div class="btn-cerrar izquierda">
               <button data-pushbar-close> <i class="fas fa-times"></i></button>
             </div>
             <h1 class="tituloCarrito">MY CART</h1>
             <hr class="lineaCarrito">
+              <ul class="carrito-desplegado__lista"></ul>
+    
             <hr class="lineaCarrito">
             <div class="carrito-desplegado">
-        <h3>Carrito</h3>
-        <ul class="carrito-desplegado__lista"></ul>
-    </div>
+      
             <div class="btnContinuar">
             <a href="#" >CONTINUE TO CHECK OUT</a>
           </div>
         </div>
       </div>
-      
+      </div>
     </header>
     <article class="producto">
 
@@ -67,6 +67,7 @@
   <h3 class="producto__detalle">Details</h3>
     
     <p class="producto__detalles">{{producto.detalles}}</p>
+    <p class="producto__descripcion">{{producto.descripcion}}</p>
 
      <h3 class="producto__cuidado">Care</h3>
    
@@ -75,8 +76,8 @@
 </div>
 <div class="producto-seccion centro">
     {{#if producto.imagen}}
-    <img class= "producto__imagen"src="/images/{{producto.imagen}}" alt="">
-
+    <img class= "producto__imagen"src="/images/{{producto.imagen.[0]}}" alt="">
+    <img class= "producto__imagen2"src="/images/{{producto.imagen.[1]}}" alt="">
 
     {{else}}
     <p>SORRY</p>

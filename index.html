@@ -44,13 +44,16 @@
           </div>
           
           <a class="encabezado__enlace--micuenta linea " href="#">MY ACCOUNT</a>
-          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="images/carrito.png" /></a>
+          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="images/carrito.png" /><span class="carrito__num"></span></a>
           <div data-pushbar-id="pushbar-carrito" class="pushbar from_right pushbar-carrito" >
             <div class="btn-cerrar izquierda">
               <button data-pushbar-close> <i class="fas fa-times"></i></button>
             </div>
             <h1 class="tituloCarrito">MY CART</h1>
             <hr class="lineaCarrito">
+            <div class="carrito-desplegado">
+              <ul class="carrito-desplegado__lista"></ul>
+          </div>
             <hr class="lineaCarrito">
             <div class="btnContinuar">
             <a href="#" >CONTINUE TO CHECK OUT</a>
@@ -419,7 +422,7 @@
                 
               </footer>
               
-              
+              <script src="../script/tienda.js"></script>
               <!-- library -->
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
               <script src="./script/libs/parallax.js"></script>

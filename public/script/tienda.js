@@ -11,16 +11,16 @@ function paginaCargada(){
       
       }
       function buscarPorNuevo(){
-      
-        location.href = '/store?nuevo=';
+       
+        location.href = '/store?nuevo='+1; 
+            nuevos.checked=true; 
+           
       
       }
       if(nuevos!=null){
-        nuevos.addEventListener('input', buscarPorNuevo);   
-      }
-   
-
-
+        nuevos.addEventListener('change', buscarPorNuevo);  
+       }
+    
         function showSliderValue() {
         rangeBullet.innerHTML = rango.value;
    
@@ -39,13 +39,30 @@ function paginaCargada(){
     if(localStorage.getItem('listaProductos') != null){
         listaProductos = JSON.parse(localStorage.getItem('listaProductos'));
     }
-
+    var carritoNum = document.querySelector('.carrito__num');
     var listaCarrito = document.querySelector('.carrito-desplegado__lista');
     function actualizarCarrito(){
-        
+        carritoNum.innerHTML = '('+listaProductos.length+')';
         listaCarrito.innerHTML = '';
+        var intImg= ".[1]";
+  
+
         listaProductos.forEach(function(producto){
-            listaCarrito.innerHTML += '<img src="' + producto.imagen + '" width="100">' + producto.titulo;
+            listaCarrito.innerHTML += `<article class="articulo">
+                <div class="imagen">
+                <img class="articulo__imagen"src="${producto.imagen}">
+                <h1 class="articulo__precio"> <span class="precioColor"> price: </span>  ${producto.precio}</h1>
+                </div>
+                <div class="texto">
+                <h1 class="articulo__titulo">${producto.nombre}</h1>
+                <p class="articulo__descripcion">${producto.descripcion}</p>
+                <div class="cantidad">   
+                <button class="cantidad__mas">+</button>
+                <h2 class="cantidad__num">1</h2>
+                <button class="cantidad__menos">-</button></div>
+                </div>
+                </article>`
+                
         });
     }  
     actualizarCarrito();
@@ -54,11 +71,13 @@ var botonProductoDetalle = document.querySelector('.producto__boton');
 function agregarAlCarritoDetalle(){
     var nombre = document.querySelector('.producto__titulo').innerText;
     var precio = document.querySelector('.producto__precio').innerText;
-    var imagen = document.querySelector('.producto__imagen').src;
+    var imagen = document.querySelector('.producto__imagen2').src;
+    var descripcion= document.querySelector('.producto__descripcion').innerText;
     var producto = {
         nombre: nombre,
         precio: precio,
         imagen: imagen,
+        descripcion: descripcion
     };
     
     listaProductos.push(producto);

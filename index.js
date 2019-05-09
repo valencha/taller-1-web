@@ -52,8 +52,10 @@ app.get('/store/:categoria?', function (request, res) {
   }
  
   if(request.query.nuevo){
-    query.nuevo = { $lte: request.query.nuevo};
+    query.nuevo = { $lte: parseInt(request.query.nuevo)};
   }
+
+
   var articulos = db.collection('productos');
   articulos.find(query).toArray(function(err,docs){
     assert.equal(err,null);
