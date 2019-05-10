@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/styles/pushbar.css">
+    <link rel="stylesheet" href="/styles/check.css">
     <link rel="stylesheet" href="/styles/listado-productos.css">
     <link rel="stylesheet" href="/styles/main.css">
+     
 
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
-    <title>Store | Can Shop </title>
+    <title>Check Out | Can Shop </title>
 </head>
 <body>
    <header>
@@ -53,92 +55,46 @@
             <hr class="lineaCarrito">
            <button class="btnLimpiar">CLEAR</button>
             <div class="btnContinuar">
-            <a href="/checkout" >CONTINUE TO CHECK OUT</a>
+            <a href="/store/checkout" >CONTINUE TO CHECK OUT</a>
           </div>
         </div>
       </div>
       
     </header>
-
-    <div class="lista-productos">
-<div class="primeraLinea">
-      <div class="categoria">
-      <h1 class="categoria__invisible">{{categoria}}</h1>
-       <h1 class="categoria__titulo">{{titulo}}</h1>
-      <hr class="categoria__linea">
-      </div>
-       {{#if sonTodos}}
-
-       <article class="cajaFiltro">
-          <div class="container">
-            <div class="range-slider">
-              <div class="contenedorCirculo">
-       
-    <span id="rs-bullet" class="rs-label">{{precio}}</span>
-             
-              </div>
-    <input id="rs-range-line" class="rs-range" type="range" value="{{precio}}" min="0" max="40">
     
-  </div>
-   
-  <div class="box-minmax">
-    <span>0</span><span>40</span>
-  </div>
-    
-             </div>
+    <h1 class="titulo">Check Out</h1>
+     <hr class="categoria__linea">
+    </div>
 
-             
-   <div class="filtro">
-    <label class="radio">
-      <a  class="btn__all"href="/store">
-        <input type="radio" name="r" value="1" class="all__boton" checked>
-        <span>All</span>  </a>
-    </label>
-    <label class="radio">
-        {{#if nuevo}}
-        <input type="radio" name="r" value="2" class="new__boton" checked>
-        {{else}}
-         <input type="radio" name="r" value="2" class="new__boton" >
-        {{/if}}
+    <div class="wrap">
 
-       <span>New Products</span>
-    </label>
-      
- 
+      <ul class="tabs">
+        <li><a href="#tab1"><span class="fas fa-user"></span > <span class="tab-text">1. Profile</span></a></li>
+            <li><a href="#tab2"><span class="fas fa-map-marker-alt"></span class="tab-text"> <span>2. Ubication</span></a></li>
+             <li><a href="#tab3"><span class="fas fa-credit-card"></span class="tab-text"> <span>3. Payment</span></a></li>
+            
+      </ul>
+
+      <div class="secciones">
+
+        <article id="tab1">
+          <h1>Profile</h1>
+        </article>
+
+        <article id="tab2">
+          <h1>Ubication</h1>
+        </article>
+        
+
+        <article id="tab3">
+          <h1>Payment</h1>
+        </article>
+
       </div>
-    
-    </article>
-      </div>
-    
-    {{/if}}
-        </div>
-
-  <div class="productos">
-
-      {{#each listaProductos}}
-       
-        <article class="lista-productos__item producto">
-
-        <div class="producto__contenedor">
-
-
-      
-        <a class="producto__contenedor-enlace" href="/store/producto/{{id}}"><img  class="producto__contenedor-imagen" src="/images/{{imagen.[0]}}"alt="" /></a>
-          </div>
-        <p class="producto__precio">${{precio}}</p>
-       
-        <h1 class="producto__titulo">{{titulo}}</h1>
-         <p class="producto__descripcion">{{descripcion}}</p>
-        {{#if nuevo}}
-        <p class="producto__nuevo">¡New Product!</p>
-        {{/if}}
-      </article>
-      {{/each}}
-      </div>
-  
+    </div>
 
                   <footer>
-                
+
                 <h1 class="titulopie">GET HELP</h1>
                 
                 <div class="pie">
@@ -167,12 +123,19 @@
         
                 
               </footer>
+   
     <script src="/script/tienda.js"></script>
+      
                             
             <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
               integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
               crossorigin="anonymous"></script>
 
+              <script
+              src="https://code.jquery.com/jquery-3.3.1.js"
+              integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+              crossorigin="anonymous"></script>
+            <script src="/script/check.js"></script>
             <script src="/script/libs/pushbar.js"></script>
               <script>
               var pushbar = new Pushbar ({

@@ -1,0 +1,82 @@
+
+html{
+    background-image: url("/public/images/checkFondo.png");
+    background-size: cover;
+}
+
+
+
+.titulo{
+    color: #000;
+    text-align: start;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 3em;
+    margin-top: 3em;
+
+}
+.categoria{
+
+    &__linea{ 
+        margin-left: 6em;  
+    }
+    }
+
+.wrap{
+    width: 800px;
+    max-width: 98%;
+    margin: 30px auto;
+}
+
+ul.tabs{
+    width: 100%;
+    height: 67px;
+    background: #000;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+ul.tabs li{
+    order: 0;
+    flex: 0 1 auto;
+    width: 18%;
+    align-self: auto;
+
+}
+ul.tabs li a{
+    color: #ffff;
+    text-decoration: none;
+    padding: 20px 0px;
+}
+.active{
+    background: #FFAE67;
+    height: 67px;
+}
+ul.tabs li a .tab-text{
+    margin-left: 20px;
+}
+.secciones{
+    width: 100%;
+    background: #FBFBFB;
+}
+
+.secciones article{
+   padding: 30px;
+}
+
+
+@media screen and (max-width: 700px){
+    ul.tabs li{
+        order: 0;
+        flex: 0 1 auto;
+        width: none;
+        align-self: auto;
+        flex-basis: 0;
+        flex-grow: 1;
+    
+    }
+
+}

@@ -520,6 +520,20 @@ body {
   width: 220px;
 }
 
+.producto__nuevo {
+  font-family: 'Rubik', sans-serif;
+  color: #FFAE67;
+  width: 220px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 15px;
+}
+
+.btn__all {
+  text-decoration: none;
+  color: black;
+}
+
 footer {
   width: 100%;
   margin-top: 5em;

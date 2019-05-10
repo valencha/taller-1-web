@@ -91,12 +91,14 @@ app.get('/store/:categoria?', function (request, res) {
       listaProductos: docs,
       categoria:request.params.categoria,
       titulo: request.params.categoria,
-      nuevo: request.params.nuevo==true,
+      nuevo: request.query.nuevo=="1",
       sonTodos: request.params.categoria== "All",
       precio: request.query.precio|5,
       //titulo: titulo,
       
     };
+    console.log(contexto, request.query);
+
 
     
 
@@ -119,5 +121,14 @@ app.get('/store/producto/:id', function (request, response) {
       });
 
   });
-
+  app.get('/checkout', function (request, response) {
+    var contexto = {
+      titulo: 'Check Out',
+     
+  };
+ 
+            response.render('check');
+            
+  
+    });
 app.listen(3000);

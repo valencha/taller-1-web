@@ -368,6 +368,24 @@ body{
         font-size: 15px;
         width: 220px;
     }
+
+    &__nuevo{
+        font-family: 'Rubik', sans-serif;
+        color: #FFAE67;
+        width: 220px;
+        align-self: flex-start;
+        font-size: 15px;
+    }
+    
+}
+
+.btn{
+    
+
+    &__all{
+        text-decoration: none;
+        color: black;
+    }
 }
 
 
