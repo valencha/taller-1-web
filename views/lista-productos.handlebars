@@ -121,19 +121,26 @@
 
         <div class="producto__contenedor">
 
-
+      
       
         <a class="producto__contenedor-enlace" href="/store/producto/{{id}}"><img  class="producto__contenedor-imagen" src="/images/{{imagen.[0]}}"alt="" /></a>
-          <img class= "producto__imagen2"src="/images/{{producto.imagen.[1]}}" alt="">
+          <img class= "producto__img"src="/images/{{imagen.[1]}}" alt="">
           </div>
         <p class="producto__precio">${{precio}}</p>
        
-        <h1 class="producto__titulo">{{titulo}}</h1>
+        <div class="btn">
+           <h1 class="producto__titulo">{{titulo}}</h1>
+         <button class="btn__agregar"><img width=20px src="/images/carrito2.png" /></button>
+     
+       </section>
+       
+          </div>
+    
          <p class="producto__descripcion">{{descripcion}}</p>
         {{#if nuevo}}
         <p class="producto__nuevo">¡New Product!</p>
         {{/if}}
-         <button class="btn__agregar">agregar</button>
+            
       </article>
       {{/each}}
      

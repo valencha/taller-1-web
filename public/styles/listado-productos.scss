@@ -345,10 +345,13 @@ body{
             height: 302px;
             
         }
+        
     
     }
     
-   
+    &__img{
+        display: none;
+     }
     &__precio{
         font-family: 'Rubik', sans-serif;
         color: #FFAE67;
@@ -360,7 +363,8 @@ body{
         font-family: 'Rubik', sans-serif;
         align-self: flex-start;
         font-size: 18px;
-        width: 220px;
+        width: 90%;
+
     }
     &__disponible{
         font-family: 'PT Sans', sans-serif;
@@ -375,6 +379,31 @@ body{
         width: 220px;
         align-self: flex-start;
         font-size: 15px;
+    }
+
+    .contPb{
+    width: 100%;
+    display: flex;
+    }
+    .btn{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        justify-items: flex-end;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        &__agregar{
+       
+		font-family: 'Roboto', sans-serif;
+		font-size: 11px;
+		outline: none;
+        border: none;   
+        box-sizing: border-box;
+		border-radius: 5px;
+        text-align: end;
+        align-self: flex-end;
+        cursor: pointer;
+        }
     }
     
 }

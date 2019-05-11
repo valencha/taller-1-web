@@ -495,6 +495,10 @@ body {
   height: 302px;
 }
 
+.producto__img {
+  display: none;
+}
+
 .producto__precio {
   font-family: 'Rubik', sans-serif;
   color: #FFAE67;
@@ -509,7 +513,7 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 18px;
-  width: 220px;
+  width: 90%;
 }
 
 .producto__disponible {
@@ -527,6 +531,44 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 15px;
+}
+
+.producto .contPb {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.producto .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  justify-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.producto .btn__agregar {
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  text-align: end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
 }
 
 .btn__all {

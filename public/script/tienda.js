@@ -111,11 +111,13 @@ function paginaCargada(){
             var padre = boton.parentNode;
             var nombre = padre.querySelector('.producto__titulo').innerText;
             var precio = padre.querySelector('.producto__precio').innerText;
-            //var imagen = padre.querySelector('.producto__imagen2').src;
+            var imagen = padre.querySelector('.producto__img').src;
+            var descripcion= document.querySelector('.producto__descripcion').innerText;
             var producto = {
                 nombre: nombre,
                 precio: precio,
-              //  imagen: imagen,
+                imagen: imagen,
+                descripcion: descripcion
             };
             
             listaProductos.push(producto);

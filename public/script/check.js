@@ -1,3 +1,8 @@
+
+
+
+
+
 $(document).ready(function(){
 $('ul.tabs li a:first').addClass('active');
 $('.secciones article').hide();
@@ -14,7 +19,7 @@ function cambiar(){
     return false;
 }
 
-$('button').click(cambiar);
+
 
 });
 

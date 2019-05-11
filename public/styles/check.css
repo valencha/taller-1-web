@@ -11,6 +11,13 @@ html {
   margin-top: 3em;
 }
 
+.lineaTitulo {
+  width: 190px;
+  height: 3px;
+  border: none;
+  background-color: black;
+}
+
 .categoria__linea {
   margin-left: 6em;
 }
@@ -89,6 +96,7 @@ ul.tabs li a .tab-text {
 }
 
 .tituloTab {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-family: 'Rubik', sans-serif;
   color: #000;
 }
@@ -231,6 +239,121 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
 .pay__img {
   width: 50px;
   height: 50px;
+}
+
+.opcionesDes {
+  position: relative;
+  z-index: 1;
+  font-family: 'Open Sans', sans-serif;
+  color: #858585;
+  font-weight: lighter;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-left: 2em;
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+.dropdown {
+  width: 300px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #cccccc;
+          box-shadow: 0 0 2px #cccccc;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #FFAE67;
+  height: 100%;
+  text-align: left;
+  font-family: 'Rubik', sans-serif;
+}
+
+.dropdown .select {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown .select > i {
+  font-size: 13px;
+  color: #888;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  float: right;
+  line-height: 20px;
+}
+
+.dropdown:hover {
+  -webkit-box-shadow: 0 0 4px #cccccc;
+          box-shadow: 0 0 4px #cccccc;
+}
+
+.dropdown:active {
+  background-color: #f8f8f8;
+}
+
+.dropdown.active:hover,
+.dropdown.active {
+  -webkit-box-shadow: 0 0 4px #cccccc;
+          box-shadow: 0 0 4px #cccccc;
+  border-radius: 5px 5px 0 0;
+  background-color: #f8f8f8;
+}
+
+.dropdown.active .select > i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  margin-top: 1px;
+  -webkit-box-shadow: 0 1px 2px #cccccc;
+          box-shadow: 0 1px 2px #cccccc;
+  border-radius: 0 1px 5px 5px;
+  overflow: hidden;
+  display: none;
+  max-height: 144px;
+  overflow-y: auto;
+  z-index: 9;
+}
+
+.dropdown .dropdown-menu li {
+  padding: 10px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.dropdown .dropdown-menu {
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown .dropdown-menu li:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown .dropdown-menu li:active {
+  background-color: #e2e2e2;
+}
+
+span.msg {
+  color: #555;
+  padding: 5px 0 10px;
+  display: inherit;
+}
+
+.li {
+  text-align: end;
+  float: right;
 }
 
 @media screen and (max-width: 700px) {

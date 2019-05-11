@@ -63,7 +63,7 @@
     </header>
     
     <h1 class="titulo">Check Out</h1>
-     <hr class="categoria__linea">
+       <hr class="lineaTitulo">
     </div>
 
     <div class="wrap">
@@ -89,13 +89,19 @@
 
         <article id="tab2">
           <h1 class="tituloTab" >Ubication</h1>
-          <select>
-            <option value="">Country</option>
-             <option value="">Colombia</option>
-              <option value="">EEUU</option>
-               <option value="">Mexico</option>
-          </select>
-
+        <section class="opcionesDes">
+      <div class="dropdown">
+        <div class="select">
+          <span>Select Country</span>
+          <i class="fa fa-chevron-down li"></i>
+        </div>
+        <input type="hidden" name="country">
+        <ul class="dropdown-menu">
+          <li id="Co">Colombia</li>
+          <li id="EEUU">EEUU</li>
+        </ul>
+      </div>
+</section>
             <input class="city" type="text" name="city" id="" placeholder="City">
 
             <input class="address" type="text" name="address" id="" placeholder="Address">
@@ -107,15 +113,27 @@
 
           <input type="text" class="card" name= "noCard" placeholder="No. Card">
           <input type="text" class="idHolder" name="idHolder" id="" placeholder="Id Holder">
-            <select>
-            <option value="">Number of Installments</option>
-          </select>
+          
+        <section class="opcionesDes">
+      <div class="dropdown">
+        <div class="select">
+          <span>Select # of installments</span>
+          <i class="fa fa-chevron-down li"></i>
+        </div>
+        <input type="hidden" name="country">
+        <ul class="dropdown-menu">
+          <li id="Co">1</li>
+          <li id="EEUU">2</li>
+        </ul>
+      </div>
+</section>
           <div class="pay">
           <h1 class="pay__aviso">Payments through:</h1>
           <img class="pay__img"src="/images/payu.png" alt="" srcset="" width="50px">
           </div>
 
-          <button type="submit">CHECKOUT</button>
+        
+           <div class="contenedorBoton"> <button  type="submit" href=""class="next">CHECKOUT</button></div>
 
         </article>
 
@@ -160,7 +178,6 @@
               </footer>
    
     <script src="/script/tienda.js"></script>
-
       
                             
             <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
@@ -172,6 +189,8 @@
               integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
               crossorigin="anonymous"></script>
             <script src="/script/check.js"></script>
+           <script src="/script/select.js"></script>
+
             <script src="/script/libs/pushbar.js"></script>
               <script>
               var pushbar = new Pushbar ({
