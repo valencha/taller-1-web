@@ -69,27 +69,62 @@
     <div class="wrap">
 
       <ul class="tabs">
-        <li><a href="#tab1"><span class="fas fa-user"></span > <span class="tab-text">1. Profile</span></a></li>
-            <li><a href="#tab2"><span class="fas fa-map-marker-alt"></span class="tab-text"> <span>2. Ubication</span></a></li>
-             <li><a href="#tab3"><span class="fas fa-credit-card"></span class="tab-text"> <span>3. Payment</span></a></li>
+        <li><a href="#tab1"><span class="tab-text">1. Profile</span><span class="fas fa-user"></span > </a></li>
+            <li><a href="#tab2"><span  class="tab-text">2. Ubication</span><span class="fas fa-map-marker-alt"></span> </a></li>
+             <li><a href="#tab3"><span  class="tab-text">3. Payment</span><span class="fas fa-credit-card"></span> </a></li>
             
       </ul>
 
       <div class="secciones">
-
+ <form action="/pago" method="POST">
         <article id="tab1">
-          <h1>Profile</h1>
+          <h1 class="tituloTab" >Profile</h1>
+          <input class="name" name="name"type="text" placeholder="Name">
+          <input class="id" name="id"type="text" name="" id="" placeholder="Id">
+          <input class="email"  type="email" name="email" id="" placeholder="Email">
+   
+           <div id="tab6"  class="contenedorBoton"> <button href=""class="next">Next</button></div>
+         
         </article>
 
         <article id="tab2">
-          <h1>Ubication</h1>
+          <h1 class="tituloTab" >Ubication</h1>
+          <select>
+            <option value="">Country</option>
+             <option value="">Colombia</option>
+              <option value="">EEUU</option>
+               <option value="">Mexico</option>
+          </select>
+
+            <input class="city" type="text" name="city" id="" placeholder="City">
+
+            <input class="address" type="text" name="address" id="" placeholder="Address">
         </article>
-        
+      
 
         <article id="tab3">
-          <h1>Payment</h1>
+          <h1 class="tituloTab" >Payment</h1>
+
+          <input type="text" class="card" name= "noCard" placeholder="No. Card">
+          <input type="text" class="idHolder" name="idHolder" id="" placeholder="Id Holder">
+            <select>
+            <option value="">Number of Installments</option>
+          </select>
+          <div class="pay">
+          <h1 class="pay__aviso">Payments through:</h1>
+          <img class="pay__img"src="/images/payu.png" alt="" srcset="" width="50px">
+          </div>
+
+          <button type="submit">CHECKOUT</button>
+
         </article>
 
+          <article id="tab4">
+          <h1>Summary</h1>
+
+
+        </article>
+</form>
       </div>
     </div>
 
@@ -125,6 +160,7 @@
               </footer>
    
     <script src="/script/tienda.js"></script>
+
       
                             
             <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"

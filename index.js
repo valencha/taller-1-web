@@ -34,6 +34,8 @@ app.use(express.static('public'));
 app.engine('handlebars', motorRender());
 app.set('view engine', 'handlebars');
 
+app.use(express.urlencoded({extended: true}));
+
 
 app.get('/', function (req, res) {
 
@@ -122,6 +124,9 @@ app.get('/store/producto/:id', function (request, response) {
 
   });
   app.get('/checkout', function (request, response) {
+    console.log(request.body);
+
+    
     var contexto = {
       titulo: 'Check Out',
      
@@ -131,4 +136,22 @@ app.get('/store/producto/:id', function (request, response) {
             
   
     });
+
+    app.post('/pago', function(request, response){
+      var pedido = {
+          name: request.body.name,
+          email: request.body.emil,
+          fecha: new Date(),
+          estado: 'nuevo',
+      };
+  
+      var collection = db.collection('pedidos');
+      collection.insertOne(pedido, function(err){
+          assert.equal(err, null);
+  
+          console.log('pedido guardado');
+      });
+    response.redirect('/');
+  });
+  
 app.listen(3000);

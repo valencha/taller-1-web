@@ -124,6 +124,7 @@
 
       
         <a class="producto__contenedor-enlace" href="/store/producto/{{id}}"><img  class="producto__contenedor-imagen" src="/images/{{imagen.[0]}}"alt="" /></a>
+          <img class= "producto__imagen2"src="/images/{{producto.imagen.[1]}}" alt="">
           </div>
         <p class="producto__precio">${{precio}}</p>
        
@@ -132,8 +133,10 @@
         {{#if nuevo}}
         <p class="producto__nuevo">¡New Product!</p>
         {{/if}}
+         <button class="btn__agregar">agregar</button>
       </article>
       {{/each}}
+     
       </div>
   
 
@@ -167,7 +170,6 @@
         
                 
               </footer>
-    <script src="/script/tienda.js"></script>
                             
             <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
               integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
@@ -185,5 +187,6 @@
        
      
     
+              <script src="/script/tienda.js"></script>
 </body>
 </html>
