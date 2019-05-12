@@ -1280,6 +1280,7 @@ footer .titulopie {
 }
 
 .articulo {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1297,6 +1298,8 @@ footer .titulopie {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 2em;
+  padding: 5px;
 }
 
 .articulo__basura {
@@ -1450,22 +1453,81 @@ footer .titulopie {
   color: #FFAE67;
 }
 
-.btnLimpiar {
-  height: 40px;
-  -webkit-box-orient: vertical;
+.numP, .subtotal, .total {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.numP__titulo, .subtotal__titulo, .total__titulo {
+  color: #fff;
+  text-align: start;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+}
+
+.numP__num, .subtotal__num, .total__num {
+  color: #FFAE67;
+  text-align: start;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+}
+
+.numP__total, .subtotal__total, .total__total {
+  color: #FFAE67;
+  text-align: start;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+}
+
+.btnLimpiar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
-  background: #fff;
+  background: #af2f08;
   padding: 10px;
   text-align: center;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 5px;
-  color: #000;
+  color: #fff;
   border: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 2em;
+}
+
+.btnLimpiar span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  color: #fff;
+}
+
+.basuraImg {
+  margin-right: 1em;
 }
 
 @media (max-width: 800px) {
@@ -1531,7 +1593,12 @@ footer .titulopie {
     font-size: 20px;
   }
   .encabezado__icono {
-    display: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .encabezado .search-box {
     display: none;

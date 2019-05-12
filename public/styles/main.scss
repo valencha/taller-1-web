@@ -29,6 +29,7 @@ body {
 	background: #121212;
 	padding: 20px;
 	text-align: center;
+
 }
 .lineaCarrito{
 	width: 100%;
@@ -51,6 +52,7 @@ body {
 
 	
 }
+
 .btnContinuar a{
 	text-align: center;
 	width: 200px;
@@ -1108,12 +1110,17 @@ footer{
 	
 }
 .articulo{
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
+	margin-top: 2em;
+	padding: 5px;
+
+
 	&__basura{
 		width: 20px;
 		cursor: pointer;
@@ -1219,19 +1226,68 @@ footer{
 	}
 }
 
-.btnLimpiar{
-	
+
+	.numP, .subtotal, .total{
+		margin-top: 1em;
+		display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+		align-items: center;
+		
+		&__titulo{
+			color: #fff;
+		text-align: start;
+		font-family: 'PT Sans', sans-serif;
+		font-size: 15px;
+		}
+		&__num{
+			color: #FFAE67;
+			text-align: start;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 15px;
+		}
+		&__total{
+			color: #FFAE67;
+			text-align: start;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 15px;
+		}
+	}
+
+
+	.btnLimpiar{
+		display: flex;
 		height: 40px;
-		flex-direction: column;
 		flex-basis: 200px;
-		background: #fff;
+		background: rgb(175, 47, 8);
 		padding: 10px;
 		text-align: center;
-		align-content: flex-end;
+		justify-content: center;
 		border-radius: 5px;
-		color:#000;
+		color:#fff;
 		border: none;
-}
+		align-content: center;
+		margin-top: 2em;
+
+		
+	}
+.btnLimpiar 	span {
+	display: flex;
+	align-self: center;
+		text-align: center;
+		color:#fff;
+	
+		
+	}
+
+
+	.basuraImg{
+		margin-right: 1em;
+	
+	}
+
 
 
 
@@ -1289,7 +1345,10 @@ footer{
 	}
 	
 	&__icono{
-		display: none;
+		align-self: center;
+		margin-top: 10px;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.search-box{

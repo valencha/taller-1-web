@@ -282,7 +282,7 @@ body{
     &__linea{
         order: 0;
         flex: 0 1 auto;
-        align-self: auto;
+        align-self: flex-start;
         width: 190px;
         height: 2px;
         border: none;
@@ -358,15 +358,18 @@ body{
         width: 220px;
         align-self: flex-start;
         font-size: 24px;
+        margin-top: 2px;
     }
     &__titulo{
+        margin-top: 2px;
         font-family: 'Rubik', sans-serif;
         align-self: flex-start;
         font-size: 18px;
         width: 90%;
 
     }
-    &__disponible{
+    &__descripcion{
+        margin-top: 2px;
         font-family: 'PT Sans', sans-serif;
         align-self: flex-start;
         font-size: 15px;
@@ -377,34 +380,35 @@ body{
         font-family: 'Rubik', sans-serif;
         color: #FFAE67;
         width: 220px;
+        margin-top: 2px;
         align-self: flex-start;
         font-size: 15px;
     }
 
-    .contPb{
-    width: 100%;
-    display: flex;
-    }
-    .btn{
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        justify-items: flex-end;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        &__agregar{
-       
-		font-family: 'Roboto', sans-serif;
-		font-size: 11px;
-		outline: none;
-        border: none;   
-        box-sizing: border-box;
-		border-radius: 5px;
-        text-align: end;
-        align-self: flex-end;
-        cursor: pointer;
-        }
-    }
+   .btn__agregar{
+       display: flex;
+       width: 100%;
+       justify-content: flex-end;
+       margin-top: 1px;
+       padding: 3px;
+       cursor: pointer;
+       background: x;
+       border: none;
+       border-radius: 5px;
+
+
+   }
+
+
+   .textAgregar{
+       margin-left: 5px;
+       margin-right: 5px;
+       margin-top: 10px;
+       text-align: center;
+       color: #56AA8A;
+       text-decoration: underline;
+       font-family: 'Roboto', sans-serif;
+   }
     
 }
 
@@ -422,4 +426,105 @@ body{
 footer{
     width: 100%;
     margin-top: 5em;
+}
+
+
+
+
+@media (max-width: 800px){
+.categoria{
+   
+    position: absolute;
+
+    &__titulo {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: flex-start;
+        font-size: 28px;
+
+    }
+}
+
+
+.container{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0em;
+    margin-top: 7em;
+    margin-left: 2em;
+}
+
+.filtro{
+    margin-right: 2em;
+    width: 50%;
+    
+}
+.lista-productos{
+  width: 500px;
+  justify-content: flex-start;
+  justify-items: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  flex-shrink: 0;
+
+
+  &__item{
+    flex-wrap: nowrap;
+    background:violet ;
+    align-self: flex-start;
+    flex-shrink: 0;
+    margin-right: 0em;
+    width: 200px;
+    height: 360px;
+  }
+
+  
+}
+.producto{
+    flex-wrap: nowrap;
+    align-self: flex-start;
+    flex-shrink: 0;
+    margin-right: 0em;
+    width: 200px;
+    height: 360px;
+
+    &__contenedor{
+        align-self: flex-start;
+        width: 180px;
+        height: 210px;
+        background: #FFAE67;
+        &-imagen{
+            align-self: flex-start;
+            width: 180px;
+            height: 210px;
+           
+            
+        }
+    }
+    &__precio{
+        width: 100%;
+        font-size: 22px;
+        margin-top: 0px;
+    }
+
+    &__titulo{
+        margin-top: 0px;
+        font-size: 15px;
+        width: 100%;
+
+    }
+    &__descripcion{
+        width: 100%;
+    }
+    &__nuevo{
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+   
+
+}
 }

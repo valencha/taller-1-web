@@ -41,6 +41,8 @@ function paginaCargada(){
         listaProductos = JSON.parse(localStorage.getItem('listaProductos'));
     }
     var carritoNum = document.querySelector('.carrito__num');
+    var totalNum = document.querySelector('.total__num');
+    var noProductos= document.querySelector('.numP__total');
     var btnEliminar= document.querySelector('.btnLimpiar');
 
     btnEliminar.addEventListener('click', limpiarCarrito);
@@ -49,21 +51,26 @@ function paginaCargada(){
         listaProductos = [];
         listaCarrito.innerHTML = '';
         localStorage.removeItem('listaProductos');
+
+        window.location.reload(true);
+                    
+        localStorage.setItem('listaProductos', JSON.stringify(listaProductos)); 
     };
 
     var listaCarrito = document.querySelector('.carrito-desplegado__lista');
 
     function actualizarCarrito(){
-
+        var suma = 0;
         carritoNum.innerHTML = '('+listaProductos.length+')';
+        noProductos.innerHTML = listaProductos.length;
         listaCarrito.innerHTML = '';
 
 
-        listaProductos.forEach(function(producto,index){
+        listaProductos.forEach(function(producto){
             listaCarrito.innerHTML += `<article class="articulo">
                 <div class="imagen">
                 <img class="articulo__imagen"src="${producto.imagen}">
-                <h1 class="articulo__precio"> <span class="precioColor"> price: </span>  ${producto.precio}</h1>
+                <h1 class="articulo__precio"> <span class="precioColor"> price: </span>${producto.precio} </h1>
                 </div>
                 <div class="texto">
                 <div class="icono">
@@ -76,10 +83,18 @@ function paginaCargada(){
                 <h2 class="cantidad__num">1</h2>
                 <button class="cantidad__mas">+</button></div>
                 </div>
-                </article>`
-                
-        });
-
+                </article>`;
+                console.log(producto.precio);
+                var temp = new String();
+                for (let i = 1; i < producto.precio.length; i++) {
+                    temp += producto.precio[i];
+                }
+                suma += parseInt(temp);
+                if (totalNum != null) {
+                    totalNum.innerHTML = "$" + suma;
+                }
+   
+            });
 
             var eliminarProducto = document.querySelectorAll('.articulo__basura');
             for (let i = 0; i < eliminarProducto.length; i++) {
@@ -92,7 +107,7 @@ function paginaCargada(){
                     localStorage.setItem('listaProductos', JSON.stringify(listaProductos)); 
                 }));
             
-
+            
             
               
         }
@@ -108,30 +123,36 @@ function paginaCargada(){
 
     function recorrerBotones(boton){
         function agregarAlCarrito(){
-            var padre = boton.parentNode;
+            var padre = this.parentNode;
             var nombre = padre.querySelector('.producto__titulo').innerText;
-            var precio = padre.querySelector('.producto__precio').innerText;
-            var imagen = padre.querySelector('.producto__img').src;
-            var descripcion= document.querySelector('.producto__descripcion').innerText;
+           var precio = padre.querySelector('.producto__precio').innerText;
+           var imagen = padre.querySelector('.producto__img').src;
+          var descripcion= padre.querySelector('.producto__descripcion').innerText;
             var producto = {
                 nombre: nombre,
                 precio: precio,
                 imagen: imagen,
-                descripcion: descripcion
+               descripcion: descripcion,
             };
+
+       
+             console.log(precio);
             
             listaProductos.push(producto);
-            actualizarCarrito();
             localStorage.setItem('listaProductos', JSON.stringify(listaProductos));
+            actualizarCarrito();     
+            //window.location.reload(true);
         }
         boton.addEventListener('click', agregarAlCarrito);
     }
-    botones.forEach(recorrerBotones);
+    if(botones != null){
+        botones.forEach(recorrerBotones);
+    }
 
-  
-       
 
 var botonProductoDetalle = document.querySelector('.producto__boton');
+
+var botonPeque= document.querySelector('.producto__boton-peque');
 
 function agregarAlCarritoDetalle(){
     var nombre = document.querySelector('.producto__titulo').innerText;
@@ -154,9 +175,11 @@ function agregarAlCarritoDetalle(){
 
 if(botonProductoDetalle != null){
     botonProductoDetalle.addEventListener('click', agregarAlCarritoDetalle);
+
 }
-
-
+if(botonPeque != null){
+botonPeque.addEventListener('click', agregarAlCarritoDetalle);
+}
 
 }  
 

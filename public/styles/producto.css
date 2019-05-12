@@ -500,4 +500,249 @@
 footer {
   margin-top: 5em;
 }
+
+@media (max-width: 800px) {
+  .producto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .producto__titulo {
+    font-size: 30px;
+    text-align: center;
+    float: left;
+  }
+  .producto-seccion__izq {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .producto-seccion__centro {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .producto-seccion__der {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .producto__precio {
+    margin-top: -30px;
+    font-family: 'Rubik', sans-serif;
+    color: #FFAE67;
+    font-size: 22px;
+    float: right;
+  }
+  .producto__imagen {
+    width: 250px;
+    height: 350px;
+  }
+  .producto__boton {
+    display: none;
+  }
+  .producto__detalle {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #FFAE67;
+  }
+  .producto__detalles {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .producto__cuidado {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #FFAE67;
+  }
+  .producto__cuidados {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .producto .izq {
+    margin-left: 0em;
+  }
+  .producto .derecha {
+    margin-right: 0em;
+  }
+  .producto .derecha__peso {
+    width: 100%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    font-family: 'Rubik', sans-serif;
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    margin-top: 2px;
+    font-size: 10px;
+  }
+  .producto .derecha .opciones-peso {
+    margin-top: 1em;
+    height: 20px;
+    margin-right: 0em;
+  }
+  .producto .derecha .cajaFiltro .filtro {
+    font-size: 10px;
+  }
+  .producto .centro {
+    margin-right: 0em;
+  }
+  .producto .cantidad {
+    display: none;
+  }
+  .producto .cantidad-peque {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    margin-top: 3em;
+  }
+  .producto .cantidad-peque__mas {
+    cursor: pointer;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    width: 50px;
+    font-family: 'Rubik', sans-serif;
+    height: 50px;
+    font-size: 20px;
+    background: none;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-color: #FFAE67;
+    color: #FFAE67;
+  }
+  .producto .cantidad-peque__num {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    font-size: 20px;
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+  }
+  .producto .cantidad-peque__menos {
+    cursor: pointer;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    background: none;
+    font-size: 20px;
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 3px;
+    border-color: #FFAE67;
+    border-radius: 3px;
+    color: #FFAE67;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+  }
+  .producto .icono-peque {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .producto__boton-peque {
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: #56AA8A;
+    padding: 1em;
+    outline: none;
+    margin-left: 6em;
+    color: #ffff;
+    margin-top: 2em;
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .producto__boton-peque .iconCarrito-peque {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
 /*# sourceMappingURL=producto.css.map */

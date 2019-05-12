@@ -382,9 +382,8 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   width: 190px;
   height: 2px;
   border: none;
@@ -506,9 +505,11 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 24px;
+  margin-top: 2px;
 }
 
 .producto__titulo {
+  margin-top: 2px;
   font-family: 'Rubik', sans-serif;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -516,7 +517,8 @@ body {
   width: 90%;
 }
 
-.producto__disponible {
+.producto__descripcion {
+  margin-top: 2px;
   font-family: 'PT Sans', sans-serif;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -528,19 +530,13 @@ body {
   font-family: 'Rubik', sans-serif;
   color: #FFAE67;
   width: 220px;
+  margin-top: 2px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 15px;
 }
 
-.producto .contPb {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.producto .btn {
+.producto .btn__agregar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,27 +544,22 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  justify-items: flex-end;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  margin-top: 1px;
+  padding: 3px;
+  cursor: pointer;
+  background: x;
+  border: none;
+  border-radius: 5px;
 }
 
-.producto .btn__agregar {
+.producto .textAgregar {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  text-align: center;
+  color: #56AA8A;
+  text-decoration: underline;
   font-family: 'Roboto', sans-serif;
-  font-size: 11px;
-  outline: none;
-  border: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 5px;
-  text-align: end;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  cursor: pointer;
 }
 
 .btn__all {
@@ -579,5 +570,111 @@ body {
 footer {
   width: 100%;
   margin-top: 5em;
+}
+
+@media (max-width: 800px) {
+  .categoria {
+    position: absolute;
+  }
+  .categoria__titulo {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 28px;
+  }
+  .container {
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0em;
+    margin-top: 7em;
+    margin-left: 2em;
+  }
+  .filtro {
+    margin-right: 2em;
+    width: 50%;
+  }
+  .lista-productos {
+    width: 500px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    justify-items: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .lista-productos__item {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    background: violet;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 0em;
+    width: 200px;
+    height: 360px;
+  }
+  .producto {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 0em;
+    width: 200px;
+    height: 360px;
+  }
+  .producto__contenedor {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 180px;
+    height: 210px;
+    background: #FFAE67;
+  }
+  .producto__contenedor-imagen {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 180px;
+    height: 210px;
+  }
+  .producto__precio {
+    width: 100%;
+    font-size: 22px;
+    margin-top: 0px;
+  }
+  .producto__titulo {
+    margin-top: 0px;
+    font-size: 15px;
+    width: 100%;
+  }
+  .producto__descripcion {
+    width: 100%;
+  }
+  .producto__nuevo {
+    width: 100%;
+    margin-top: 0px;
+  }
 }
 /*# sourceMappingURL=listado-productos.css.map */

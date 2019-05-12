@@ -43,17 +43,31 @@
             <div class="btn-cerrar izquierda">
               <button data-pushbar-close> <i class="fas fa-times"></i></button>
             </div>
-            <h1 class="tituloCarrito">MY CART</h1>
+           <h1 class="tituloCarrito">MY CART</h1>
             <hr class="lineaCarrito">
-              <ul class="carrito-desplegado__lista"></ul>
-    
-            <hr class="lineaCarrito">
-            <div class="carrito-desplegado">
+              <div class="carrito-desplegado">
+        <ul class="carrito-desplegado__lista">
 
-      
-            <button class="btnLimpiar">CLEAR</button>
+        </ul>
+    </div>
+         <button class="btnLimpiar"><img class="basuraImg" src="/images/basura.png" width=20px><span>CLEAN MY CART</span></button>
+            <hr class="lineaCarrito">
+     <div class="numP">
+              <h1 class="numP__titulo">Total Products:</h1>
+              <p class="numP__total"></p>
+              </div>
+              <div class="subtotal">
+              <h1 class="subtotal__titulo">Subtotal:</h1>
+              <p class="subtotal__num">$9</p>
+              </div>
+                 <div class="total">
+              <h1 class="total__titulo">Total:</h1>
+              <p class="total__num"></p>
+              </div>
+            <hr class="lineaCarrito">
+     
             <div class="btnContinuar">
-            <a href="/checkout"  >CONTINUE TO CHECK OUT</a>
+            <a href="/checkout" >CONTINUE TO CHECK OUT</a>
           </div>
         </div>
       </div>
@@ -61,7 +75,7 @@
     </header>
     <article class="producto">
 
-<div class="producto-seccion izq">
+<div class="producto-seccion__izq izq">
   <h1 class="producto__titulo">{{producto.titulo}}</h1>
   <hr>
   <h3 class="producto__precio">${{producto.precio}}</h3>
@@ -76,7 +90,7 @@
     <p class="producto__cuidados">{{producto.cuidados}}</p>
 
 </div>
-<div class="producto-seccion centro">
+<div class="producto-seccion__centro centro">
     {{#if producto.imagen}}
     <img class= "producto__imagen"src="/images/{{producto.imagen.[0]}}" alt="">
     <img class= "producto__imagen2"src="/images/{{producto.imagen.[1]}}" alt="">
@@ -93,7 +107,7 @@
        
     
 </div>
-<div class="producto-seccion derecha">
+<div class="producto-seccion__der derecha">
   <div class="producto-seccion derecha__color">
     {{#if producto.color}}
   <h1>Colors</h1>
@@ -167,6 +181,17 @@
     {{else}}
   
         {{/if}}
+
+        <div class="cantidad-peque">   
+        <button class="cantidad-peque__menos">-</button>
+        <h2 class="cantidad-peque__num">1</h2>
+         <button class="cantidad-peque__mas">+</button></div>
+     
+            <a class="icono-peque" href="#" data-pushbar-target="pushbar-carrito"><button class="producto__boton-peque">ADD TO CART   <img class="iconCarrito-peque"width=20px src="/images/carrito.png" /> 
+            
+            
+            
+              </button> </a>
   </div>
  
 

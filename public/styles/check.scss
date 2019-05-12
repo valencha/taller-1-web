@@ -28,7 +28,7 @@ html{
     }
 
 .wrap{
-    width: 800px;
+    width: 900px;
     max-width: 98%;
     margin: 30px auto;
 }
@@ -56,11 +56,13 @@ ul.tabs li a{
     color: #ffff;
    
     text-decoration: none;
-    padding: 20px 0px;
+    padding: 20px ;
 }
 .active{
-    background: #FFAE67;
-    height: 67px;
+    border-bottom:7px solid #FFAE67;
+
+
+
 }
 ul.tabs li a .tab-text{
 
@@ -264,7 +266,7 @@ input{
   }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     ul.tabs li{
         order: 0;
         flex: 0 1 auto;
@@ -274,5 +276,46 @@ input{
         flex-grow: 1;
     
     }
+
+    .titulo{
+    text-align: center;
+        margin-top: 3em;
+        margin-right: 3em;
+    }
+
+
+    .tab-text{
+        display: none;
+    }
+
+    ul.tabs li a{
+
+        margin-right: 0px;
+        font-family: 'Rubik', sans-serif;
+      
+    }
+    ul.tabs li{
+        width: 100%;
+        align-self: center;
+        justify-items: center;
+        text-align: center;
+    
+    }
+    .opcionesDes{
+   
+       padding-bottom: 10px;
+    }
+
+    ul.tabs{
+        background: #FFAE67;
+    }
+    .active{
+        border-bottom:7px solid #000;
+    
+    
+    
+    }
+
+    
 
 }
