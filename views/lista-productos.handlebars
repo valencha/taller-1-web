@@ -131,7 +131,7 @@
 
       {{#each listaProductos}}
        
-        <article class="lista-productos__item producto">
+        <article class="lista-productos__item producto hvr-grow">
 
         <div class="producto__contenedor">
 
@@ -151,6 +151,9 @@
          <p class="producto__descripcion">{{descripcion}}</p>
         {{#if nuevo}}
         <p class="producto__nuevo">¡New Product!</p>
+          {{else}}
+        
+        <p >-</p>
         {{/if}}
                <button class="btn__agregar"><img class="imgAgregar" width="20px" src="/images/carrito2.png" /> <span class="textAgregar">ADD TO CART</span> </button>
       </article>

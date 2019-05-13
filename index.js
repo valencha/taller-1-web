@@ -139,8 +139,13 @@ app.get('/store/producto/:id', function (request, response) {
 
     app.post('/pago', function(request, response){
       var pedido = {
-          name: request.body.name,
-          email: request.body.emil,
+          nombre: request.body.name,
+          id: request.body.id,
+          email: request.body.em,
+          ciudad: request.body.city,
+          dir: request.body.address,
+          tar: request.body.nocard,
+          idholder: request.body.idholder,
           fecha: new Date(),
           estado: 'nuevo',
       };

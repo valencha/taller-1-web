@@ -626,7 +626,6 @@ footer {
   .lista-productos__item {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    background: violet;
     -ms-flex-item-align: start;
         align-self: flex-start;
     -ms-flex-negative: 0;
@@ -651,7 +650,6 @@ footer {
         align-self: flex-start;
     width: 180px;
     height: 210px;
-    background: #FFAE67;
   }
   .producto__contenedor-imagen {
     -ms-flex-item-align: start;

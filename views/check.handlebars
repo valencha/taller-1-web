@@ -18,6 +18,8 @@
 </head>
 <body>
    <header>
+  
+     
 
       <div class="encabezado">
         <nav class="encabezado__nav">
@@ -65,7 +67,7 @@
                  <div class="total">
               <h1 class="total__titulo">Total:</h1>
               <p class="total__num"></p>
-              </div>="lineaCarrito">
+              </div>
 
             <div class="btnContinuar">
             <a href="/store/checkout" >CONTINUE TO CHECK OUT</a>
@@ -93,11 +95,10 @@
         <article id="tab1">
           <h1 class="tituloTab" >Profile</h1>
           <input class="name" name="name"type="text" placeholder="Name">
-          <input class="id" name="id"type="text" name="" id="" placeholder="Id">
-          <input class="email"  type="email" name="email" id="" placeholder="Email">
+          <input class="id" name="id"type="text" name="id" id="" placeholder="Id">
+          <input class="email"  type="email" name="em" id="" placeholder="Email">
    
-           <div id="tab6"  class="contenedorBoton"> <button href=""class="next">Next</button></div>
-         
+          
         </article>
 
         <article id="tab2">
@@ -124,8 +125,8 @@
         <article id="tab3">
           <h1 class="tituloTab" >Payment</h1>
 
-          <input type="text" class="card" name= "noCard" placeholder="No. Card">
-          <input type="text" class="idHolder" name="idHolder" id="" placeholder="Id Holder">
+          <input type="text" class="card" name= "nocard" placeholder="No. Card">
+          <input type="text" class="idHolder" name="idholder" id="" placeholder="Id Holder">
           
         <section class="opcionesDes">
       <div class="dropdown">
@@ -150,11 +151,6 @@
 
         </article>
 
-          <article id="tab4">
-          <h1>Summary</h1>
-
-
-        </article>
 </form>
       </div>
     </div>
@@ -211,7 +207,11 @@
                 overlay: false
 
               });
-              
+                  var pushbar = new Pushbar ({
+                blur: true,
+                overlay: false
+
+              });
               </script>
        
      

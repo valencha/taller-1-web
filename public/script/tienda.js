@@ -41,6 +41,7 @@ function paginaCargada(){
         listaProductos = JSON.parse(localStorage.getItem('listaProductos'));
     }
     var carritoNum = document.querySelector('.carrito__num');
+  
     var totalNum = document.querySelector('.total__num');
     var noProductos= document.querySelector('.numP__total');
     var btnEliminar= document.querySelector('.btnLimpiar');
@@ -62,6 +63,7 @@ function paginaCargada(){
     function actualizarCarrito(){
         var suma = 0;
         carritoNum.innerHTML = '('+listaProductos.length+')';
+
         noProductos.innerHTML = listaProductos.length;
         listaCarrito.innerHTML = '';
 
@@ -184,6 +186,7 @@ botonPeque.addEventListener('click', agregarAlCarritoDetalle);
 }  
 
 window.addEventListener('load',paginaCargada);
+var cantidad = document.querySelector('.cantidad__num');
 var cantidad = document.querySelector('.cantidad__num');
 var contador= 1;
 var btnmas = document.querySelector('.cantidad__mas');

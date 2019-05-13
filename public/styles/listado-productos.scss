@@ -30,6 +30,9 @@ body{
         align-self: auto;
         margin-right: 3em;
     }
+
+    
+
   
 }
 
@@ -249,7 +252,6 @@ body{
     }
 }
 
-
     
 .categoria{
     font-family: 'Rubik', sans-serif;
@@ -317,13 +319,15 @@ body{
     align-content: center;
     align-items: center;
 }
-.producto{
+
+    .producto{
     
     display: flex;
     width: 220px;
     height: 450px;
     flex-direction: row;
     margin-top: 2em;
+ 
     &__contenedor{
         align-self: center;
         justify-content: center;
@@ -473,7 +477,6 @@ footer{
 
   &__item{
     flex-wrap: nowrap;
-    background:violet ;
     align-self: flex-start;
     flex-shrink: 0;
     margin-right: 0em;
@@ -495,7 +498,6 @@ footer{
         align-self: flex-start;
         width: 180px;
         height: 210px;
-        background: #FFAE67;
         &-imagen{
             align-self: flex-start;
             width: 180px;
