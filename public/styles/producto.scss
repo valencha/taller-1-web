@@ -57,6 +57,7 @@
     .icono{
         align-self: center;
     }
+ 
     &__boton{
         width: 200px;
 		font-family: 'Roboto', sans-serif;
@@ -77,6 +78,10 @@
         align-self: center;
         }
 	
+    }
+
+    &__boton:hover,     &__boton:active,     &__boton:focus{
+        background: rgb(125, 207, 176);
     }
 
     
@@ -116,7 +121,16 @@
             border-color: #FFAE67;
             color: #FFAE67;
         }
-
+        &__mas:hover{
+            background: #FFAE67;
+        
+            color: #fff;
+        }
+        &__menos:hover{
+            background: #FFAE67;
+        
+            color: #fff;
+        }
         &__num{
             order: 0;
             flex: 0 1 auto;
@@ -211,6 +225,10 @@
                 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             
             }
+            .casilla:hover{
+                width: 60px;
+                height: 60px;
+            }
 
             .casilla-talla{
                 margin-top: 1em;
@@ -235,14 +253,18 @@
               
                
             }
+            .casilla-talla:hover{
+                background: #000;
+                color: #fff; 
+            }
 
-                .casilla-talla h2{
-                    color: #000;
-                    justify-items: center;
-                    align-self: center;
-                    font-family: 'PT Sans', sans-serif;
+                .casilla-talla h2:hover{
                 
             }
+            .casilla-talla h2{
+               
+            
+        }
 
             
     
@@ -362,6 +384,10 @@ footer{
     margin-top: 5em;
 }
 @media (max-width: 800px){
+    .icono-peque{
+        display: flex;
+        text-decoration: none;
+    }
 
     .producto{
         display: flex;
@@ -373,8 +399,8 @@ footer{
 
         &__titulo{
             font-size: 30px;
-            text-align: center;
-            float: left;
+            text-align: left;
+         
         }
 
     &-seccion__izq{
@@ -394,7 +420,7 @@ footer{
         align-self: center;
     }
     &__precio{
-        margin-top: -30px;
+        
         font-family: 'Rubik', sans-serif;
         color: #FFAE67;
         font-size: 22px;

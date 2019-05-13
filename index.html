@@ -23,6 +23,35 @@
 <body>
   <div class="app">
     <header>
+      <section class="top">
+<section class="menu-res">
+       <a href="#"data-pushbar-target="pushbar-menu"> <i class="fas fa-bars"></i></a>  
+
+       <div data-pushbar-id="pushbar-menu" class="pushbar from_top pushbar-menu" >
+          <div class="btn-cerrar izquierda">
+            <button data-pushbar-close> <i class="fas fa-times"></i></button>
+            <div class="encabezado-peque">
+                <nav class="encabezado__nav encabezado-peque__nav">
+                  <a class="encabezado__enlace--primero linea" href="#section1">HOME</a>
+                  <a class="encabezado__enlace linea" href="#section2">ABOUT US</a>
+                  <a class="encabezado__enlace linea " href="#section3">CATALOG</a>
+                  <a class="encabezado__enlace linea" href="#section4">SALE</a>
+                </nav>
+               
+                  
+                  
+                  
+              </div>
+          </div>
+        </div>
+
+
+        <h1>CanShop</h1>
+      </section>
+
+
+
+
       <div class="encabezado">
         <nav class="encabezado__nav">
           <a class="encabezado__enlace--primero linea" href="#section1">HOME</a>
@@ -44,7 +73,10 @@
           </div>
           
           <a class="encabezado__enlace--micuenta linea " href="#">MY ACCOUNT</a>
-          <a class="encabezado__icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="images/carrito.png" /><span class="carrito__num"></span></a>
+          
+      </div>
+      <div class="zonaCarrito">
+      <a class="icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="/images/carrito.png" /><span class="carrito__num"></span></a>
           <div data-pushbar-id="pushbar-carrito" class="pushbar from_right pushbar-carrito" >
             <div class="btn-cerrar izquierda">
               <button data-pushbar-close> <i class="fas fa-times"></i></button>
@@ -74,7 +106,7 @@
           </div>
         </div>
       </div>
-      
+      </section>
     </header>
     
     
@@ -494,7 +526,7 @@
               integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
               crossorigin="anonymous"></script>
               
-              
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
               
               
             </body>

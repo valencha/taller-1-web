@@ -186,6 +186,7 @@ botonPeque.addEventListener('click', agregarAlCarritoDetalle);
 }  
 
 window.addEventListener('load',paginaCargada);
+
 var cantidad = document.querySelector('.cantidad__num');
 var cantidad = document.querySelector('.cantidad__num');
 var contador= 1;
