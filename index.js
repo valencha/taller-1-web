@@ -37,9 +37,12 @@ app.set('view engine', 'handlebars');
 app.use(express.urlencoded({extended: true}));
 
 
+
+
 app.get('/', function (req, res) {
 
   res.sendfile('./index.html');
+ 
 });
 
 app.get('/store/:categoria?', function (request, res) {
