@@ -42,6 +42,7 @@ function paginaCargada(){
     }
     var carritoNum = document.querySelector('.carrito__num');
   
+    var subtotalNum = document.querySelector('.subtotal__num');
     var totalNum = document.querySelector('.total__num');
     var noProductos= document.querySelector('.numP__total');
     var btnEliminar= document.querySelector('.btnLimpiar');
@@ -62,7 +63,7 @@ function paginaCargada(){
 
     function actualizarCarrito(){
         var suma = 0;
-        carritoNum.innerHTML = '('+listaProductos.length+')';
+        carritoNum.innerHTML =listaProductos.length;
 
         noProductos.innerHTML = listaProductos.length;
         listaCarrito.innerHTML = '';
@@ -92,8 +93,15 @@ function paginaCargada(){
                     temp += producto.precio[i];
                 }
                 suma += parseInt(temp);
+                if (subtotalNum != null) {
+                    subtotalNum.innerHTML = "$" + suma;
+                }
+                var delivery=9;
+                var sumaTotal=suma;
+                sumaTotal+=delivery;
                 if (totalNum != null) {
-                    totalNum.innerHTML = "$" + suma;
+                
+                    totalNum.innerHTML = "$" + sumaTotal;
                 }
    
             });
@@ -124,6 +132,8 @@ function paginaCargada(){
     var botones = document.querySelectorAll('.btn__agregar');
 
     function recorrerBotones(boton){
+
+     
         function agregarAlCarrito(){
             var padre = this.parentNode;
             var nombre = padre.querySelector('.producto__titulo').innerText;

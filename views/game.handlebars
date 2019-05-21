@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="/styles/pushbar.css">
+		<link rel="stylesheet" href="/styles/main.css">
+		<link rel="stylesheet" href="/styles/splotmachine.css">
+	
+	<title>Slot Machine</title>
+</head>
+
+<body onload="toggleAudio()">
+		<header>
+				<section class="top">
+		  <section class="menu-res">
+				 <a href="#"data-pushbar-target="pushbar-menu"> <i class="fas fa-bars"></i></a>  
+		  
+				 <div data-pushbar-id="pushbar-menu" class="pushbar from_top pushbar-menu" >
+					<div class="btn-cerrar izquierda">
+					  <button data-pushbar-close> <i class="fas fa-times"></i></button>
+					  <div class="encabezado-peque">
+						  <nav class="encabezado__nav encabezado-peque__nav">
+							<a class="encabezado-peque__enlace--primero encabezado-peque__enlace--primero linea" href="/">HOME</a>
+							<a class="encabezado-peque__enlace linea" href="/#section2">ABOUT US</a>
+							<a class="encabezado-peque__enlace linea " href="/#section3">CATALOG</a>
+							<a class="encabezado-peque__enlace linea" href="/#section4">SALE</a>
+						  </nav>
+						 
+							
+							
+							
+						</div>
+					</div>
+				  </div>
+		  
+		  
+				  <h1>CanShop</h1>
+				</section>
+		  
+		  
+		  
+		  
+				<div class="encabezado">
+				  <nav class="encabezado__nav">
+					<a class="encabezado__enlace--primero linea" href="/">HOME</a>
+					<a class="encabezado__enlace linea" href="/#section2">ABOUT US</a>
+					<a class="encabezado__enlace linea " href="/#section3">CATALOG</a>
+					<a class="encabezado__enlace linea" href="/#section4">SALE</a>
+				  </nav>
+				  <div class="encabezado__nav-der">
+					
+					<div class="search-box">
+					  <input class="search-txt" type="text" name="" placeholder="Type to Search">
+					  <a class="search-btn" href="#">
+						<i class="fas fa-search"></i>
+					  </a>
+					 
+		  
+					  </div>
+					  
+					</div>
+					
+					<a class="encabezado__enlace--micuenta linea " href="#">MY ACCOUNT</a>
+					
+				</div>
+				<div class="zonaCarrito">
+				<a class="icono" href="#" data-pushbar-target="pushbar-carrito"><img class="imgCarrito" width=20px src="/images/carrito.png" /><h1 class="carrito__num"></h1></a>
+					<div data-pushbar-id="pushbar-carrito" class="pushbar from_right pushbar-carrito" >
+					  <div class="btn-cerrar izquierda">
+						<button data-pushbar-close> <i class="fas fa-times"></i></button>
+					  </div>
+					  <h1 class="tituloCarrito">MY CART</h1>
+					  <hr class="lineaCarrito">
+					  <div class="carrito-desplegado">
+						<ul class="carrito-desplegado__lista"></ul>
+					</div>
+					<button class="btnLimpiar"><img class="basuraImg" src="/images/basura.png" width=20px><span>CLEAN MY CART</span></button>
+					  <hr class="lineaCarrito">
+					  <div class="numP">
+						<h1 class="numP__titulo">Total Products:</h1>
+						<p class="numP__total"></p>
+						</div>
+						<div class="subtotal">
+						<h1 class="subtotal__titulo">Subtotal:</h1>
+						<p class="subtotal__num"></p>
+						</div>
+						<div class="delivery">
+						  <h1 class="delivery__titulo">Delivery:</h1>
+						  <p class="delivery__num">$9</p>
+						  </div>
+						   <div class="total">
+						<h1 class="total__titulo">Total:</h1>
+						<p class="total__num"></p>
+						</div>
+				 
+					  <div class="btnContinuar">
+					  <a href="/checkout" >CONTINUE TO CHECK OUT</a>
+					</div>
+				  </div>
+				</div>
+				</section>
+			  </header>
+
+			  <section class="app">
+				<article class="app__intro">
+
+
+
+				</article>
+
+
+
+
+
+					<article class="app__machine">
+							<section  class="machine__status" id="status">WELCOME!</section>
+							<section id="Slots">
+								<div id="slot1" class="a1"></div>
+								<div id="slot2" class="a1"></div>
+								<div id="slot3" class="a1"></div>
+							</section>
+							<section  onclick="doSlot()" id="Gira">TAKE A SPIN!</section>
+							<section id="options">
+								<img src="/res/icons/audioOn.png" id="audio" class="option" onclick="toggleAudio()" />
+							</section>
+						</article>
+			  </section>
+
+
+<footer>
+
+		<h1 class="titulopie">GET HELP</h1>
+		
+		<div class="pie">
+		  
+		  
+		  <div class="pie__izq">
+			<a class="pie__izq__enlace" href="#">Order Status</a>
+			<a class="pie__izq__enlace" href="#">Shopping</a>
+			<a class="pie__izq__enlace" href="#">Delivery</a>
+		  </div>
+		  
+		  
+		  <div class="pie__der">
+			<a class="pie__der__enlace" href="#">Returns</a>
+			<a class="pie__der__enlace" href="#">Payment Options</a>
+			<a class="pie__der__enlace" href="#">Contact Us</a>
+		  </div>
+
+		  <hr width="1" size="200">
+		  <h1 class="pie__suscribirse">
+			Already have an account? Subscribe</h1>
+		  <input type="email" placeholder="Email" class="pie__campo">
+		  <input class="pie__boton" type="button" value="Submit">
+		</div>
+
+
+		
+	  </footer>
+
+
+	
+   <script src="/script/libs/pushbar.js"></script>
+              <script>
+              var pushbar = new Pushbar ({
+                blur: true,
+                overlay: false
+
+              });
+                  var pushbar = new Pushbar ({
+                blur: true,
+                overlay: false 
+
+              });
+              </script>
+
+              <script src="https://code.jquery.com/jquery-3.3.1.js"
+              integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+              crossorigin="anonymous"></script>
+
+
+              <script src="/script/greenSock.js"></script>
+							          <script src="/script/libs/pushbar.js"></script>
+							            <script src="/script/tienda.js"></script>
+													  <script src="/script/splot.js"></script>
+
+              
+              <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+              <script>AOS.init();</script>
+              <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+              integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+              crossorigin="anonymous"></script>
+              <script>"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"</script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+</body>
+</html>

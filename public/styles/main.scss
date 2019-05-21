@@ -247,14 +247,34 @@ text-align: left;
 		justify-items: center;
 		align-items: center;
 		text-decoration: none;
-		font-family: 'Rubik', sans-serif;
-		color: #ffff;
-		font-size: 20px;	
+		color: #000;
+		font-size: 12px;
+		background: #fff;
+		border-radius: 3em;
+		height: 18px;
+		width: 18px;
+		margin-top:25px;	
+		margin-left: 14px;
+		position: absolute;	
 
 
 	}
 }
 
+.juego{
+	display: flex;
+	flex-basis: 100%;
+	background: #FFAE67;
+		
+	&__boton{
+		width: 200px;
+		background: black;
+		padding: 1em;
+		text-align: center;
+		align-content: center;
+		border-radius: 5px;
+	}
+}
 
 .intro{
 	display: flex;
@@ -1250,7 +1270,7 @@ footer{
 }
 
 
-	.numP, .subtotal, .total{
+	.numP,.delivery, .subtotal, .total{
 		margin-top: 1em;
 		display: flex;
     flex-direction: row;
@@ -1293,6 +1313,7 @@ footer{
 		border: none;
 		align-content: center;
 		margin-top: 2em;
+		outline: none;
 
 		
 	}
@@ -1323,15 +1344,20 @@ footer{
 		display: none;
 	}
 
+
+
 @media (max-width: 800px){
 .encabezado{
 	display: none
 }
+
 .menu-res{
 	display: flex;
 	width: 100%;
+	text-align: center;
 	background: #121212;
 	height: 50px;
+	align-content: space-between;
 	align-items: center;
 	justify-content: space-between;
 	font-family: 'Rubik', sans-serif;
@@ -1341,66 +1367,85 @@ footer{
 .menu-res h1{
 	color: #fff;
 	align-self: center;
-	justify-items: center;
 	margin-right: 8em;
+	margin-left: 0em;
+
 
 	
 }
 .fa-bars {
 	display:flex;
+	margin-left: 1em;
 	color:#fff;
-	margin-left: 2em;
+
 }
 
 .zonaCarrito{
 	background: #121212;
+
 	border: none;
-	padding-right: 1em;
+	padding-right: 2em;
 	justify-items: flex-start;
+	.carrito__num{
+		font-size: 10px;
+		margin-top:6px;	
+		height: 15px;
+		width: 15px;	
+		color: #000;
+	}
 	
 }
 
 
 	
 	.encabezado-peque{
-		padding: 0em;
+		padding: 1em;
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		justify-content: center;
-		justify-items: center;
-		align-content: center;
 		align-items: center;
 		width: 100%;
+		height: 100%;
+
 	
 		text-align: center;
+		&__enlace--primero{
+			color: #ffff;
+			margin-right: 0em;
+			margin-left: 0em;
+			font-size: 20px;
+			align-self: center;
+			text-decoration: none;
+			font-family: 'Rubik', sans-serif;
+		}
 
 	&__nav-der{
-		display: flex;
-		flex-direction: column;
-		padding: 0em;
-		text-align: center;
-		align-self: center;
+		display: none;
 	}
 	&__nav{
+		align-self: center;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
-		padding: 0em;
+		text-align: center;
+		align-self: center;
+
 	}
 
 	
 	&__enlace{
-		font-size: 20px;	
-		padding: 0em;	
-		margin-left: 0em;
-		margin-right: 0em;
+		color: #ffff;
+			margin-right: 0em;
+			margin-left: 0em;
+			font-size: 20px;
+			align-self: center;
+			text-decoration: none;
+			font-family: 'Rubik', sans-serif;
 	}
 
 	&__enlace--micuenta{
-		margin-left: 0;
-		margin-right: 0;
-		font-size: 20px;
-		align-self: center;
+display: none;
 
 
 	}

@@ -549,7 +549,29 @@ body {
   cursor: pointer;
   background: x;
   border: none;
+  outline: none;
   border-radius: 5px;
+}
+
+.producto .imgAgregar {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.producto .imgAgregar__img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .producto .textAgregar {
@@ -673,6 +695,9 @@ footer {
   .producto__nuevo {
     width: 100%;
     margin-top: 0px;
+  }
+  footer {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=listado-productos.css.map */

@@ -27,10 +27,10 @@
             <button data-pushbar-close> <i class="fas fa-times"></i></button>
             <div class="encabezado-peque">
                 <nav class="encabezado__nav encabezado-peque__nav">
-                  <a class="encabezado__enlace--primero linea" href="#section1">HOME</a>
-                  <a class="encabezado__enlace linea" href="#section2">ABOUT US</a>
-                  <a class="encabezado__enlace linea " href="#section3">CATALOG</a>
-                  <a class="encabezado__enlace linea" href="#section4">SALE</a>
+                  <a class="encabezado-peque__enlace--primero linea" href="/">HOME</a>
+                  <a class="encabezado-peque__enlace linea" href="/#section2">ABOUT US</a>
+                  <a class="encabezado-peque__enlace linea " href="/#section3">CATALOG</a>
+                  <a class="encabezado-peque__enlace linea" href="/#section4">SALE</a>
                 </nav>
                
                   
@@ -49,10 +49,10 @@
 
       <div class="encabezado">
         <nav class="encabezado__nav">
-          <a class="encabezado__enlace--primero linea" href="#section1">HOME</a>
-          <a class="encabezado__enlace linea" href="#section2">ABOUT US</a>
-          <a class="encabezado__enlace linea " href="#section3">CATALOG</a>
-          <a class="encabezado__enlace linea" href="#section4">SALE</a>
+          <a class="encabezado__enlace--primero linea" href="/">HOME</a>
+          <a class="encabezado__enlace linea" href="/#section2">ABOUT US</a>
+          <a class="encabezado__enlace linea " href="/#section3">CATALOG</a>
+          <a class="encabezado__enlace linea" href="/#section4">SALE</a>
         </nav>
         <div class="encabezado__nav-der">
           
@@ -71,7 +71,7 @@
           
       </div>
       <div class="zonaCarrito">
-      <a class="icono" href="#" data-pushbar-target="pushbar-carrito"><img width=20px src="images/carrito.png" /><span class="carrito__num"></span></a>
+      <a class="icono" href="#" data-pushbar-target="pushbar-carrito"><img class="imgCarrito" width=20px src="images/carrito.png" /><span class="carrito__num"></span></a>
           <div data-pushbar-id="pushbar-carrito" class="pushbar from_right pushbar-carrito" >
             <div class="btn-cerrar izquierda">
               <button data-pushbar-close> <i class="fas fa-times"></i></button>
@@ -87,10 +87,15 @@
               <h1 class="numP__titulo">Total Products:</h1>
               <p class="numP__total"></p>
               </div>
-              <div class="subtotal">
+                <div class="subtotal">
               <h1 class="subtotal__titulo">Subtotal:</h1>
-              <p class="subtotal__num">$9</p>
+              <p class="subtotal__num">$0</p>
               </div>
+              <div class="delivery">
+              <h1 class="delivery__titulo">Delivery:</h1>
+              <p class="delivery__num">$9</p>
+              </div>
+              
                  <div class="total">
               <h1 class="total__titulo">Total:</h1>
               <p class="total__num"></p>
@@ -111,7 +116,7 @@
 
       <ul class="tabs">
         <li><a href="#tab1"><span class="tab-text">1. Profile</span><span class="fas fa-user"></span > </a></li>
-            <li><a href="#tab2"><span  class="tab-text">2. Ubication</span><span class="fas fa-map-marker-alt"></span> </a></li>
+            <li><a href="#tab2"><span  class="tab-text">2. Location</span><span class="fas fa-map-marker-alt"></span> </a></li>
              <li><a href="#tab3"><span  class="tab-text">3. Payment</span><span class="fas fa-credit-card"></span> </a></li>
             
       </ul>
@@ -212,9 +217,9 @@
                 
               </footer>
    
-    <script src="/script/tienda.js"></script>
-      
-                            
+            <script src="/script/tienda.js"></script>
+            <script>"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"</script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
             <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
               integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
               crossorigin="anonymous"></script>
@@ -239,6 +244,8 @@
 
               });
               </script><script src="/script/form.js"></script>
+
+              <script src="/script/greenSock.js"></script>
      
     
 </body>

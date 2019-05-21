@@ -398,10 +398,30 @@ body{
        cursor: pointer;
        background: x;
        border: none;
+       outline: none;
        border-radius: 5px;
 
 
    }
+
+  
+
+   .imgAgregar{
+       width: 50%;
+       display: flex;
+       
+       justify-items: flex-end;
+       align-items: flex-end;
+       align-content: flex-end;
+       justify-content: flex-end;
+
+       &__img{
+         
+           align-self: flex-end;
+
+       }
+   }
+
 
 
    .textAgregar{
@@ -527,6 +547,11 @@ footer{
     }
     
    
+
+}
+
+footer{
+    width: 100%;
 
 }
 }

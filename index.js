@@ -45,6 +45,13 @@ app.get('/', function (req, res) {
  
 });
 
+
+app.get('/game', function (req, res) {
+
+  res.render('game');
+ 
+});
+
 app.get('/store/:categoria?', function (request, res) {
   var query = {};
   if ( request.params.categoria){

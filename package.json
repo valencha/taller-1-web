@@ -18,8 +18,10 @@
   "homepage": "https://github.com/valencha/taller-1-web#readme",
   "dependencies": {
     "assert": "^1.4.1",
+    "bxslider": "^4.2.14",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
+    "gsap": "^2.1.3",
     "handlebars": "^4.1.2",
     "mongodb": "^3.2.3",
     "node": "^11.14.0",
