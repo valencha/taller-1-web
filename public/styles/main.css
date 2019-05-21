@@ -300,7 +300,7 @@ body {
   border-radius: 5px;
 }
 
-.intro {
+.swiper1 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,16 +313,15 @@ body {
   -ms-flex-flow: column;
       flex-flow: column;
   background-size: cover;
-  height: 800px;
+  height: 95vh;
   background-image: url("../images/banner.jpg");
 }
 
-.contenedor {
+.swiper1 .contenedor {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  margin-top: 3em;
   margin-left: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,25 +333,26 @@ body {
           align-items: flex-start;
 }
 
-.contenedor__titulo {
+.swiper1 .contenedor__titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #808080;
 }
 
-.contenedor__titulo, .contenedor h1 {
+.swiper1 .contenedor__titulo, .swiper1 .contenedor h1 {
   color: #ffff;
   font-size: 150px;
   max-width: 200px;
   font-family: 'Rubik', sans-serif;
 }
 
-.contenedor__titulo, .contenedor span {
+.swiper1 .contenedor__titulo, .swiper1 .contenedor span {
   color: #000;
   font-family: 'Rubik', sans-serif;
 }
 
-.contenedor__descripcion {
+.swiper1 .contenedor__descripcion {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -362,7 +362,7 @@ body {
   font-size: 25px;
 }
 
-.contenedor__boton {
+.swiper1 .contenedor__boton {
   width: 200px;
   background: black;
   padding: 1em;
@@ -372,7 +372,7 @@ body {
   border-radius: 5px;
 }
 
-.contenedor__boton .botonprin {
+.swiper1 .contenedor__boton .botonprin {
   color: #ffff;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -381,7 +381,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.contenedor__boton:hover {
+.swiper1 .contenedor__boton:hover {
   background: white;
   padding: 1em;
   text-align: center;
@@ -390,7 +390,7 @@ body {
   border-radius: 5px;
 }
 
-.contenedor__boton:hover .botonprin {
+.swiper1 .contenedor__boton:hover .botonprin {
   color: #000;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -1185,9 +1185,17 @@ body {
   height: auto;
 }
 
+.galeria .swiper1 {
+  height: 100%;
+}
+
+.galeria .intro {
+  height: 100%;
+}
+
 .galeria .swiper-container {
   width: 50%;
-  height: 300px;
+  height: 100%;
   margin: 10px auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
