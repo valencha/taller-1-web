@@ -5,6 +5,7 @@ var win = new Audio("/res/sounds/win.mp3");
 var lose = new Audio("/res/sounds/lose.mp3");
 var audio = false;
 let status = document.getElementById("status")
+var codenum = document.querySelector("#codenum");
 var info = true;
 
 function doSlot(){
@@ -26,7 +27,7 @@ function doSlot(){
 	function spin1(){
 		i1++;
 		if (i1>=numeberSlot1){
-			//coin[0].play()
+			coin[0].play()
 			clearInterval(slot1);
 			return null;
 		}
@@ -39,7 +40,7 @@ function doSlot(){
 	function spin2(){
 		i2++;
 		if (i2>=numeberSlot2){
-			//coin[1].play()
+			coin[1].play()
 			clearInterval(slot2);
 			return null;
 		}
@@ -52,7 +53,7 @@ function doSlot(){
 	function spin3(){
 		i3++;
 		if (i3>=numeberSlot3){
-			//coin[2].play()
+			coin[2].play()
 			clearInterval(slot3);
 			testWin();
 			return null;
@@ -74,6 +75,7 @@ function testWin(){
 	var slot1 = document.getElementById("slot1").className
 	var slot2 = document.getElementById("slot2").className
 	var slot3 = document.getElementById("slot3").className
+	var random = randomInt(100,5000)
 
 	if (((slot1 == slot2 && slot2 == slot3) ||
 		(slot1 == slot2 && slot3 == "a7") ||
@@ -82,11 +84,12 @@ function testWin(){
 		(slot1 == slot2 && slot1 == "a7") ||
 		(slot1 == slot3 && slot1 == "a7") ||
 		(slot2 == slot3 && slot2 == "a7") ) && !(slot1 == slot2 && slot2 == slot3 && slot1=="a7")){
-		status.innerHTML = "YOU WIN!";
+		status.innerHTML = "YOU WIN! ";
+		codenum.innerHTML= "Endw"+ random;
 		win.play();
 	}else{
 		status.innerHTML = "YOU LOSE!"
-		//lose.play();
+		lose.play();
 	}
 	doing = false;
 }

@@ -5,6 +5,8 @@
 	margin-top: 4em;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 60vh;
+
 	&__intro{
 		width: 50%;
 		background: #BA68C8;
@@ -12,53 +14,89 @@
 
 	&__machine{
 		width: 50%;
-		background: #FFAE67;
+		padding: 20px;
+	
 	
 	}
 }
 
 
+.machinefondo{
+display: line;	
+width: 550px;
+height: 700px;
+position: absolute;
+margin-left: 2em;	
+margin-top: 3em;
+}
 
-
-
+.aviso{
+	width: 448px;
+	height: 110px;
+	margin-left: 5em;	
+	position: absolute;
+	margin-top: 8em;
+}
 
 section#status{
-	width: 100%;
-	margin-bottom: 25px;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	width: 448px;
+	height: 110px;
+	margin-left: 3.5em;
+	position: absolute;
+	margin-top: 6.8em;
 	border-radius: 5px;
 	text-align: center;
-	background-color: #37474F;
+	background-size: cover;
 	color: #FFFFFF;
 	font-size: 25px;
 	font-family: 'Roboto Mono', monospace;
 }
 section#Slots{
 	display: flex;
+	margin-left: 5.5em;
+	margin-top: 18em;
 	border-radius: 15px;
-	background-color: #FAFAFA;
-	justify-content: space-around;	
+	position: absolute;
+
 }
+#code{
+	width: 448px;
+	margin-left: 3em;
+	font-size: 30px;
+	position: absolute;
+	text-align: center;
+	margin-top: 86vh;
+	font-family: 'Roboto Mono', monospace;
+	color: #616161;
+}
+
 section#Gira{
 	margin-top: 25px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	border-radius: 5px;
 	text-align: center;
-	background-color: #AB47BC;
 	color: #FFFFFF;
 	font-size: 25px;
+	width: 76px;
+	margin-left: 22em;
+	margin-top: 3em;
+	height: 400px;
+	position: absolute;
+	background-image: url("/images/palanca.png");
+	background-size: contain;
+
 }
 section#Gira:hover{
-	background-color: #BA68C8;
+
 }
 section#options{
-	margin-top: 20px;
+	margin-top: 10em;
+	margin-left: 7em;
 	padding-top: 5px;
+	position: absolute;
 	border-radius: 5px;
-	background-color: #C62828;
-	color: #FFFFFF;
+
 }
 .option{
 	padding-left: 5px;
@@ -81,11 +119,12 @@ section#info{
 	margin-top: 5px;
 	margin-left: 15px;
 	margin-right: 15px;
-	background-size: 150px;
-	width: 150px;
-	height: 150px;
+	background-size: 118px;
+	width: 118px;
+	height: 118px;
 }
 .a1{
+
 	background-image: url("/res/tiles/seven.png");
 }
 .a2{
@@ -108,5 +147,5 @@ section#info{
 }
 
 footer{
-	margin-top: 4em;
+	margin-top: 20em;
 }

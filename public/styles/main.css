@@ -287,7 +287,7 @@ body {
   display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  background: #FFAE67;
+  background: #E8FFFD;
 }
 
 .juego__boton {
@@ -337,7 +337,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #808080;
 }
 
 .swiper1 .contenedor__titulo, .swiper1 .contenedor h1 {
@@ -391,6 +390,157 @@ body {
 }
 
 .swiper1 .contenedor__boton:hover .botonprin {
+  color: #000;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.swiper1 .juego {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: 95vh;
+  background: #E8FFFD;
+}
+
+.swiper1 .juego__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 95vh;
+  width: 800px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.swiper1 .juego__cont__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  justify-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.swiper1 .juego__cont__sobreimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  justify-items: flex-start;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.swiper1 .juego__contenedor {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.swiper1 .juego__contenedor__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper1 .juego__contenedor__titulo, .swiper1 .juego__contenedor h1 {
+  color: #F14A68;
+  font-size: 150px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.swiper1 .juego__contenedor__titulo, .swiper1 .juego__contenedor span {
+  color: #000;
+  font-family: 'Rubik', sans-serif;
+}
+
+.swiper1 .juego__contenedor__des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 400px;
+}
+
+.swiper1 .juego__contenedor__des p {
+  font-family: 'PT Sans', sans-serif;
+  color: #000;
+  font-size: 25px;
+}
+
+.swiper1 .juego__contenedor__boton {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 200px;
+  background: black;
+  padding: 1em;
+  margin-top: 1em;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 5px;
+}
+
+.swiper1 .juego__contenedor__boton .botonprin {
+  color: #ffff;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.swiper1 .juego__contenedor__boton:hover {
+  background: white;
+  padding: 1em;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 5px;
+}
+
+.swiper1 .juego__contenedor__boton:hover .botonprin {
   color: #000;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -1222,6 +1372,7 @@ footer {
   background: #000;
   height: 400px;
   padding: 3em;
+  margin-top: 4em;
 }
 
 footer .titulopie {

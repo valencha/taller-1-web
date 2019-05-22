@@ -264,7 +264,7 @@ text-align: left;
 .juego{
 	display: flex;
 	flex-basis: 100%;
-	background: #FFAE67;
+	background: #E8FFFD;
 		
 	&__boton{
 		width: 200px;
@@ -300,7 +300,7 @@ text-align: left;
 	
 	&__titulo{
 		display: flex;
-		background: #808080;
+	
 	}
 	&__titulo, h1{
 		
@@ -365,7 +365,129 @@ text-align: left;
 	
 	
 }
+.juego{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	height: 95vh;
+	background: #E8FFFD;
+
+	&__cont{
+		display: flex;
+		height: 95vh;
+		width: 800px;
+		justify-content: center;
+		justify-items:  center;
+		align-items: flex-end;
+		align-content: flex-end;
+
+
+		&__img{ 
+			display: flex;
+			position: absolute;
+			justify-content:  center;
+			align-items: flex-end;
+			
+			justify-items: center;
+			align-self: flex-end;
+		}
+		&__sobreimg{ 
+			display: flex;
+			position: absolute;
+			justify-content: flex-start;
+			align-items: flex-end;
+			
+			justify-items: flex-start;
+			align-self:flex-end;
+			
+		}
+	}
+	&__contenedor{
+	
+		flex-flow: column wrap;
+		display: flex;
+
+	justify-content: center;
+		align-items: flex-end;
+		
+	
+		&__titulo{
+			display: flex;
+			
+		
+		}
+		&__titulo, h1{
+			
+			color: #F14A68;
+			font-size: 150px;
+	
+			font-family: 'Rubik', sans-serif;
+		}
+		&__titulo, span{
+			color: #000;
+			font-family: 'Rubik', sans-serif;
+		}
+		&__des{
+			display: flex;
+			align-self: flex-start;
+			width: 400px;
+		}
+		
+		&__des p{
+			font-family: 'PT Sans', sans-serif;
+			color: #000;
+			font-size: 25px;
+		}
+		
+		&__boton{
+			align-self: flex-start;
+			width: 200px;
+			background: black;
+			padding: 1em;
+			margin-top: 1em;
+			text-align: center;
+			align-content: center;
+			border-radius: 5px;
+			
+			
+			.botonprin{
+				color: #ffff;
+				align-content: center;
+				
+				text-align: center;
+				text-decoration: none;
+				font-family: 'Roboto', sans-serif;
+			}
+		}
+		
+		&__boton:hover{
+			background: white;
+			padding: 1em;
+			text-align: center;
+			align-content: center;
+			border-radius: 5px;
+			
+			
+			.botonprin{
+				color: #000;
+				align-content: center;
+				text-align: center;
+				text-decoration: none;
+				font-family: 'Roboto', sans-serif;
+			}
+			
+		}
+		
+		
+		
+		
+		
+	}
 }
+
+}
+
 
 .sobrenosotros{
 	display: block;
@@ -1053,10 +1175,6 @@ text-align: left;
       -webkit-align-items: center;
       align-items: center;
 		}
-		
-
-
-
 }
 
 
@@ -1065,6 +1183,7 @@ footer{
 	background: #000;
 	height: 400px;
 	padding: 3em;
+	margin-top: 4em;
 	.titulopie{
 		color: #ffff;
 		margin-left: 1em;
