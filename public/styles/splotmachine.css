@@ -1,3 +1,18 @@
+.titulo {
+  color: #F14A68;
+  font-size: 120px;
+  max-width: 100%;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 5px -5px #FFF6E0;
+}
+
+html {
+  background: url(/images/fondogame.png);
+  background-size: cover;
+}
+
 .app {
   margin-top: 4em;
   display: -webkit-box;
@@ -6,26 +21,80 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60vh;
+  margin-bottom: 20vh;
 }
 
 .app__intro {
   width: 50%;
-  background: #BA68C8;
+  margin-left: 3em;
+}
+
+.app__intro__titulo {
+  color: #43B5A8;
+  font-family: 'Rubik', sans-serif;
+  margin-left: 3em;
+  font-size: 30px;
+}
+
+.app__intro__paso {
+  width: 600px;
+  margin-top: 30px;
+  margin-left: 5em;
+  font-family: 'PT Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__intro__paso__img {
+  width: 50px;
+}
+
+.app__intro__paso__img img {
+  width: 50px;
+}
+
+.app__intro__paso__texto {
+  margin-left: 20px;
+  width: 600px;
+  font-size: 18px;
+}
+
+.app .condicion {
+  width: 500px;
+  margin-top: 30px;
+  margin-left: 9em;
+  font-family: 'PT Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app .condicion__img {
+  width: 300px;
+}
+
+.app .condicion__img img {
+  width: 300px;
+}
+
+.app .condicion__texto {
+  margin-left: 5px;
+  width: 450px;
+  font-size: 14px;
 }
 
 .app__machine {
   width: 50%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .machinefondo {
   display: line;
   width: 550px;
-  height: 700px;
+  height: 696px;
   position: absolute;
   margin-left: 2em;
-  margin-top: 3em;
 }
 
 .aviso {
@@ -33,7 +102,7 @@
   height: 110px;
   margin-left: 5em;
   position: absolute;
-  margin-top: 8em;
+  margin-top: 5em;
 }
 
 section#status {
@@ -41,7 +110,7 @@ section#status {
   height: 110px;
   margin-left: 3.5em;
   position: absolute;
-  margin-top: 6.8em;
+  margin-top: 5em;
   border-radius: 5px;
   text-align: center;
   background-size: cover;
@@ -55,7 +124,7 @@ section#Slots {
   display: -ms-flexbox;
   display: flex;
   margin-left: 5.5em;
-  margin-top: 18em;
+  margin-top: 15em;
   border-radius: 15px;
   position: absolute;
 }
@@ -66,7 +135,7 @@ section#Slots {
   font-size: 30px;
   position: absolute;
   text-align: center;
-  margin-top: 86vh;
+  margin-top: 80vh;
   font-family: 'Roboto Mono', monospace;
   color: #616161;
 }
@@ -81,7 +150,7 @@ section#Gira {
   font-size: 25px;
   width: 76px;
   margin-left: 22em;
-  margin-top: 3em;
+  margin-top: 2em;
   height: 400px;
   position: absolute;
   background-image: url("/images/palanca.png");
@@ -89,7 +158,7 @@ section#Gira {
 }
 
 section#options {
-  margin-top: 10em;
+  margin-top: 7em;
   margin-left: 7em;
   padding-top: 5px;
   position: absolute;
@@ -154,6 +223,6 @@ section#info {
 }
 
 footer {
-  margin-top: 20em;
+  margin-top: 2em;
 }
 /*# sourceMappingURL=splotmachine.css.map */

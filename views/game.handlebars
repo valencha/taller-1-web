@@ -6,8 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="/styles/pushbar.css">
+				<link rel="stylesheet" href="/styles/splotmachine.css">
 		<link rel="stylesheet" href="/styles/main.css">
-		<link rel="stylesheet" href="/styles/splotmachine.css">
+
+		 <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+
 	
 	<title>Slot Machine</title>
 </head>
@@ -67,7 +72,7 @@
 					
 				</div>
 				<div class="zonaCarrito">
-				<a class="icono" href="#" data-pushbar-target="pushbar-carrito"><img class="imgCarrito" width=20px src="/images/carrito.png" /><h1 class="carrito__num"></h1></a>
+				<a class="icono" href="#" data-pushbar-target="pushbar-carrito"><img class="imgCarrito" width=30px src="/images/carrito.png" /><h1 class="carrito__num"></h1></a>
 					<div data-pushbar-id="pushbar-carrito" class="pushbar from_right pushbar-carrito" >
 					  <div class="btn-cerrar izquierda">
 						<button data-pushbar-close> <i class="fas fa-times"></i></button>
@@ -103,11 +108,66 @@
 				</div>
 				</section>
 			  </header>
+	
+		  <h1 class="titulo"> GAME <span style="color: black">SLOT</span></h1>
+			
 
 			  <section class="app">
+			
 				<article class="app__intro">
+					<h1 class="app__intro__titulo">Instructions</h1>
+
+					<div class= "app__intro__paso">
+						<div class="app__intro__paso__img">
+
+							<img src="/images/pasouno.png" alt="" srcset="">
+						</div>
+						<div class="app__intro__paso__texto"> <p class="app__intro__paso__texto-txt">Pull the lever of the machine by clicking on it, to make it react and start the game.</p></div>
+
+					</div>
 
 
+						<div class= "app__intro__paso">
+						<div class="app__intro__paso__img">
+
+							<img src="/images/pasodos.png" alt="" srcset="">
+						</div>
+						<div class="app__intro__paso__texto"> <p class="app__intro__paso__texto-txt">Wait for the machine to stop and if the following combinations come out you will earn discount vouchers:</p></div>
+
+
+					</div>
+					
+						<section class="condicion">
+							<div class="condicion__img">
+								<img src="/images/condicion1.png" alt="" srcset="">
+							</div>
+							<div class="condicion__texto"> <p>* The three boxes with the same figure, with the exception of the joker dog</p></div>
+						</section>
+
+
+						<section class="condicion">
+							<div class="condicion__img">
+								<img src="/images/condicion2.png" alt="" srcset="">
+							</div>
+							<div class="condicion__texto"> <p>* Two joker dogs and any figure</p></div>
+						</section>
+
+						<section class="condicion">
+							<div class="condicion__img">
+								<img src="/images/condicion3.png" alt="" srcset="">
+							</div>
+							<div class="condicion__texto"> <p>* Two equal figures and a joker dog</p></div>
+						</section>
+
+												<div class= "app__intro__paso">
+						<div class="app__intro__paso__img">
+
+							<img src="/images/pasotres.png" alt="" srcset="">
+						</div>
+						<div class="app__intro__paso__texto"> <p class="app__intro__paso__texto-txt">If you win, wait for a code to come out. You can copy it and save it to exchange it in the checkout section, and take surprises with the discounts won.</p></div>
+
+
+					</div>
 
 				</article>
 
@@ -127,7 +187,7 @@
 								<div id="slot2" class="a3"></div>
 								<div id="slot3" class="a4"></div>
 							</section>
-							<section  onclick="doSlot()" id="Gira"></section>
+							<section id="Gira"></section>
 							<section id="options">
 								<img src="/res/icons/audioOn.png" id="audio" class="option" onclick="toggleAudio()" />
 							</section>
@@ -169,19 +229,11 @@
 
 		
 	  </footer>
-
-
-	
-   <script src="/script/libs/pushbar.js"></script>
+ <script src="/script/libs/pushbar.js"></script>
               <script>
               var pushbar = new Pushbar ({
                 blur: true,
                 overlay: false
-
-              });
-                  var pushbar = new Pushbar ({
-                blur: true,
-                overlay: false 
 
               });
               </script>
@@ -192,7 +244,7 @@
 
 
               <script src="/script/greenSock.js"></script>
-							          <script src="/script/libs/pushbar.js"></script>
+							         
 							            <script src="/script/tienda.js"></script>
 													  <script src="/script/splot.js"></script>
 

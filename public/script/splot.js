@@ -6,9 +6,12 @@ var lose = new Audio("/res/sounds/lose.mp3");
 var audio = false;
 let status = document.getElementById("status")
 var codenum = document.querySelector("#codenum");
+var gira = document.querySelector("#Gira");
+
 var info = true;
 
 function doSlot(){
+
 	if (doing){return null;}
 	doing = true;
 	var numChanges = randomInt(1,4)*7
@@ -122,3 +125,41 @@ function toggleAudio(){
 function randomInt(min, max){
 	return Math.floor((Math.random() * (max-min+1)) + min);
 }
+
+
+
+
+
+	var cont;
+	var temp = JSON.parse(localStorage.getItem("giro"));
+	if(temp){
+		cont=1;
+	}else{
+		cont=0;
+	}
+
+	function contador (event){
+		console.log(temp);
+
+		cont++;
+		localStorage.setItem("giro",  JSON.stringify(cont));
+        
+		console.log(temp + "primero");
+		console.log(cont);
+	
+		if(temp == null && cont==1){
+			doSlot();
+		}
+
+	
+
+		else{
+			gira.style.display="none";
+			codenum.innerHTML= "¡SORRY!";
+		}
+	}
+		
+	gira.addEventListener('click',contador);
+
+
+

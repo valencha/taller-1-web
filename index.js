@@ -156,6 +156,7 @@ app.get('/store/producto/:id', function (request, response) {
           dir: request.body.address,
           tar: request.body.nocard,
           idholder: request.body.idholder,
+          code: request.body.code,
           productos: JSON.parse(request.body.productos),
           fecha: new Date(),
           estado: 'nuevo',
