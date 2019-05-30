@@ -109,11 +109,12 @@ function paginaCargada(){
                 if (totalNum != null) {
                 
                     totalNum.innerHTML = "$" + sumaTotal;
-                    
+                    if (sub != null) {
                     sub.innerHTML = "$" + sumaTotal;
                 }
+                }
    
-                      
+                if(inputDescuento!=null){   
                 inputDescuento.addEventListener('change', function(){
 
                     if(inputDescuento.value=='CANS1'){
@@ -135,6 +136,7 @@ function paginaCargada(){
                           to.innerHTML= " $"+total;
                       }
                 });
+            }
 
             });
 
