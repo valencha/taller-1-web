@@ -32,6 +32,14 @@ function recorrerBotones(boton) {
 
   }
 
+  
+function moverImg() {
+  var box = document.querySelectorAll(".imgCarrito");
+
+  TweenMax.staggerTo(box, 1, { rotation: 360 }, 0.5);
+
+}
+
   boton.addEventListener('mouseenter', moverCarrito);
   boton.addEventListener('mouseout', volverCarrito);  
   boton.addEventListener('click', moverImg);  
