@@ -29,7 +29,30 @@ var min=0;
 
 app.use(express.static('public'));
 
+MongoClient.connect(`mongodb+srv://cluster0-d3a7t.mongodb.net/tienda`,
 
+{
+auth: {
+
+  user: 'isabellajordan',
+  password: 'ValenIsa123'
+}
+
+
+
+},
+
+function(err,client){
+
+  if(err) throw err;
+  db= client.db('tienda');
+
+  app.listen(process.env.PORT || 1234);
+
+}
+
+
+);
 
 app.engine('handlebars', motorRender());
 app.set('view engine', 'handlebars');
