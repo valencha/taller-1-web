@@ -125,7 +125,7 @@
  <form action="/pago" method="POST" >
         <article id="tab1">
           <h1 class="tituloTab" >Profile</h1>
-          <input class="name" name="name"type="text" placeholder="Name">
+          <input class="name" name="nombre"type="text" placeholder="Name">
           <input class="id" name="id"type="text" name="id" id="" placeholder="Id">
           <input class="email"  type="email" name="em" id="" placeholder="Email">
    
@@ -158,14 +158,25 @@
 
           <input type="text" class="card" name= "nocard" placeholder="No. Card">
           <input type="text" class="idHolder" name="idholder" id="" placeholder="Id Holder">
-          <input type="text" class="idHolder" name="code" id="" placeholder="Discount code">
+          <input type="text" class="code" name="code" id="" placeholder="Discount code">
+          <h1>
+            SubTotal:
+          </h1>
+
+          <p class="sub"></p>
+           <h1>
+           Discount:
+          </h1>
+            <p class="dis"></p>
+          <h1>Total:</h1>
+             <p class="to"></p>
+
         <section class="opcionesDes">
       <div class="dropdown">
         <div class="select">
           <span>Select # of installments</span>
           <i class="fa fa-chevron-down li"></i>
         </div>
-        <input type="hidden" name="country">
         <ul class="dropdown-menu">
           <li id="Co">1</li>
           <li id="EEUU">2</li>

@@ -78,7 +78,7 @@ function testWin(){
 	var slot1 = document.getElementById("slot1").className
 	var slot2 = document.getElementById("slot2").className
 	var slot3 = document.getElementById("slot3").className
-	var random = randomInt(100,5000)
+	var random = randomInt(1,3)
 
 	if (((slot1 == slot2 && slot2 == slot3) ||
 		(slot1 == slot2 && slot3 == "a7") ||
@@ -88,7 +88,7 @@ function testWin(){
 		(slot1 == slot3 && slot1 == "a7") ||
 		(slot2 == slot3 && slot2 == "a7") ) && !(slot1 == slot2 && slot2 == slot3 && slot1=="a7")){
 		status.innerHTML = "YOU WIN! ";
-		codenum.innerHTML= "Endw"+ random;
+		codenum.innerHTML= "CANS"+ random;
 		win.play();
 	}else{
 		status.innerHTML = "YOU LOSE!"
@@ -155,11 +155,9 @@ function randomInt(min, max){
 
 		else{
 			gira.style.display="none";
-			codenum.innerHTML= "¡SORRY!";
+			codenum.innerHTML= "SORRY, YOU CAN ONLY PLAY ONCE!";
 		}
 	}
 		
 	gira.addEventListener('click',contador);
-
-
 

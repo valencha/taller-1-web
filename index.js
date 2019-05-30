@@ -149,7 +149,7 @@ app.get('/store/producto/:id', function (request, response) {
 
     app.post('/pago', function(request, response){
       var pedido = {
-          nombre: request.body.name,
+          nombre: request.body.nombre,
           id: request.body.id,
           email: request.body.em,
           ciudad: request.body.city,
@@ -160,6 +160,7 @@ app.get('/store/producto/:id', function (request, response) {
           productos: JSON.parse(request.body.productos),
           fecha: new Date(),
           estado: 'nuevo',
+          precio: request.body.precio,
       };
   
       var collection = db.collection('pedidos');

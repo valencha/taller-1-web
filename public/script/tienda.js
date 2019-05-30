@@ -5,6 +5,11 @@ function paginaCargada(){
    var nuevos= document.querySelector('.new__boton');
    var productoNuevo= document.querySelector('.producto__nuevo');
     var rangeBullet = document.getElementById("rs-bullet");
+    var inputPrecio = document.querySelector('.input-precio')
+    var inputDescuento = document.querySelector('.code');
+    var sub = document.querySelector('.sub');
+    var dis = document.querySelector('.dis');
+    var to = document.querySelector('.to');
   
     function buscarPorPrecio(){
         console.log(rango.value);
@@ -92,18 +97,45 @@ function paginaCargada(){
                 for (let i = 1; i < producto.precio.length; i++) {
                     temp += producto.precio[i];
                 }
+                
                 suma += parseInt(temp);
                 if (subtotalNum != null) {
                     subtotalNum.innerHTML = "$" + suma;
                 }
+
                 var delivery=9;
                 var sumaTotal=suma;
                 sumaTotal+=delivery;
                 if (totalNum != null) {
                 
                     totalNum.innerHTML = "$" + sumaTotal;
+                    
+                    sub.innerHTML = "$" + sumaTotal;
                 }
    
+                      
+                inputDescuento.addEventListener('change', function(){
+
+                    if(inputDescuento.value=='CANS1'){
+                      var des= sumaTotal*0.2;
+                      var entero = parseInt(des);
+                      dis.innerHTML = "20%";
+                        inputPrecio.value = sumaTotal-entero;
+                        var total = sumaTotal-entero;
+                        to.innerHTML= " $"+total;
+ 
+                    }
+
+                    if(inputDescuento.value=='CANS2'){
+                        var des= sumaTotal*0.5;
+                        var entero = parseInt(des);
+                        dis.innerHTML = "50%";
+                          inputPrecio.value = sumaTotal-entero;
+                          var total = sumaTotal-entero;
+                          to.innerHTML= " $"+total;
+                      }
+                });
+
             });
 
             var eliminarProducto = document.querySelectorAll('.articulo__basura');
@@ -145,6 +177,11 @@ function paginaCargada(){
                 precio: precio,
                 imagen: imagen,
                descripcion: descripcion,
+
+
+
+
+               
             };
 
        
