@@ -8,6 +8,9 @@ const dbName = 'tienda';
 
 const client = new MongoClient(url, {useNewUrlParser: true });
 var db= null;
+
+
+/*
 client.connect(function(err){
   
   assert.equal(null, err);
@@ -16,6 +19,7 @@ client.connect(function(err){
   //client.close();
   
 });
+*/
 
 var app = express();
 
