@@ -289,6 +289,7 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   color: #000;
   font-weight: bold;
   font-size: 18px;
+  margin-top: 20px;
 }
 
 .descuentos__total {
@@ -312,7 +313,6 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
 
 .dis {
   font-family: 'Open Sans', sans-serif;
-  margin-top: 25px;
   color: #d33a3a;
   font-size: 18px;
   font-weight: normal;
