@@ -11,6 +11,7 @@ function aviso(){
         botonTraga.style.display = 'block';
         
         TweenLite.to(botonTraga, 1, { ease: Bounce.easeOut, y: 10 });
+        TweenLite.to(botonTraga, 1, { ease: Bounce.easeOut, y: 0 });
         //TweenMax.to('.botonTraga', 1, {opacity:1, y:0, delay:1, ease: Back.easeOut.config(1.7)});
       }else{
         botonTraga.style.display = 'none';
