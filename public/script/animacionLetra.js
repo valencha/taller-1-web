@@ -16,7 +16,7 @@ function mover(){
     }
   }
 
-  titulo.addEventListener('load',mover);
+  titulo.addEventListener('onLoad',mover);
   
  
 
