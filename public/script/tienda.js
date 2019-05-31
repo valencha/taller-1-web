@@ -6,7 +6,7 @@ function paginaCargada(){
    var productoNuevo= document.querySelector('.producto__nuevo');
     var rangeBullet = document.getElementById("rs-bullet");
     var inputPrecio = document.querySelector('.input-precio')
-    var inputDescuento = document.querySelector('.code');
+    var inputDescuento = document.querySelector('.cod');
     var sub = document.querySelector('.sub');
     var dis = document.querySelector('.dis');
     var to = document.querySelector('.to');
