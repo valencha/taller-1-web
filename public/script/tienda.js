@@ -167,7 +167,7 @@ function paginaCargada(){
 
     function recorrerBotones(boton){
 
-     
+        
         function agregarAlCarrito(){
             var padre = this.parentNode;
             var nombre = padre.querySelector('.producto__titulo').innerText;
@@ -185,6 +185,10 @@ function paginaCargada(){
 
                
             };
+            var tl = new TimelineLite();
+            var box = document.querySelectorAll(".imgCarrito");
+          
+            tl.to(box, 0.5, {rotation:360, ease: Bounce.easeOut});
 
        
              console.log(precio);
@@ -194,15 +198,8 @@ function paginaCargada(){
             actualizarCarrito();     
             //window.location.reload(true);
         }
-        function moverImg() {
-            var tl = new TimelineLite();
-            var box = document.querySelectorAll(".imgCarrito");
-          
-            tl.to(box, 0.5, {rotation:360, ease: Bounce.easeOut});
-          
-          }
+     
         boton.addEventListener('click', agregarAlCarrito);
-        boton.addEventListener('click', moverImg);
     }
     if(botones != null){
         botones.forEach(recorrerBotones);
