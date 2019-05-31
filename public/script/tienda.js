@@ -129,7 +129,7 @@ function paginaCargada(){
                     if(inputDescuento.value=='CANS1'){
                  
                         estado.style.backgroundImage = "url('/images/check.gif')";
-                        tl2.to(estado,1, {opacity:0, ease:SteppedEase.config(16)},0.6);
+                        tl2.to(estado,1.8, {opacity:0, ease:SteppedEase.config(1)},0.6);
                         tl2.repeat(1);
                       var des= sumaTotal*0.2;
                       var entero = parseInt(des);
@@ -141,6 +141,9 @@ function paginaCargada(){
                     }
 
                     if(inputDescuento.value=='CANS2'){
+                        estado.style.backgroundImage = "url('/images/check.gif')";
+                        tl2.to(estado,1.8, {opacity:0, ease:SteppedEase.config(1)},0.6);
+                        tl2.repeat(1);
                         var des= sumaTotal*0.5;
                         var entero = parseInt(des);
                         dis.innerHTML = "50%";
