@@ -54,6 +54,8 @@ function paginaCargada(){
 
     btnEliminar.addEventListener('click', limpiarCarrito);
 
+    
+
     function limpiarCarrito() {
         listaProductos = [];
         listaCarrito.innerHTML = '';
@@ -68,6 +70,10 @@ function paginaCargada(){
 
     function actualizarCarrito(){
         var suma = 0;
+        var tl = new TimelineMax();
+        var box = document.querySelector(".imgCarrito");
+      
+        tl.staggerTo(box, 1, { rotation: 360 }, 0.5).to(box, 0.001, { rotation: -360 }, 0.5);
         carritoNum.innerHTML =listaProductos.length;
 
         noProductos.innerHTML = listaProductos.length;
@@ -181,10 +187,7 @@ function paginaCargada(){
                descripcion: descripcion,
 
             };
-            var tl = new TimelineLite();
-            var box = document.querySelectorAll(".imgCarrito");
           
-            tl.staggerTo(box, 1, { rotation: 360 }, 0.5).to(box, 0.001, { rotation: -360 }, 0.5);
             
             listaProductos.push(producto);
             localStorage.setItem('listaProductos', JSON.stringify(listaProductos));
