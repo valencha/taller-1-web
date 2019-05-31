@@ -28,12 +28,7 @@ function recorrerBotones(boton) {
   }
 
   
-function moverImg() {
-  var box = document.querySelectorAll(".imgCarrito");
 
-  tl.add( TweenMax.to(box, 0.2, {scale:1.2, ease: Bounce.easeOut}) );
-
-}
 
   boton.addEventListener('mouseenter', moverCarrito);
   boton.addEventListener('mouseout', volverCarrito);  
@@ -69,3 +64,6 @@ function volverImg() {
 
 img.addEventListener('mouseenter', moverImg);
 img.addEventListener('mouseout', volverImg);    
+
+
+
