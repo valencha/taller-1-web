@@ -1,3 +1,5 @@
+import { TweenLite } from "gsap";
+
 function paginaCargada(){
   
     var rango = document.querySelector('.rs-range');
@@ -124,8 +126,10 @@ function paginaCargada(){
    
                 if(inputDescuento!=null){   
                 inputDescuento.addEventListener('change', function(){
-                    var tl2=new TimelineMax();
-                    tl2.to(estado,1, {opacity:1},0.5);
+                    var tl2=new TweenLite();
+                   tl2.set( estado, { backgroundImage : 'url (/images/carga.gif)',opacity:1 }); 
+
+
                     if(inputDescuento.value=='CANS1'){
                       var des= sumaTotal*0.2;
                       var entero = parseInt(des);
