@@ -280,12 +280,14 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   font-family: 'Open Sans', sans-serif;
   color: #555;
   font-size: 18px;
+  font-weight: normal;
 }
 
 .dis {
   font-family: 'Open Sans', sans-serif;
   color: #555;
   font-size: 18px;
+  font-weight: normal;
 }
 
 .to {
