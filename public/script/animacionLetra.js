@@ -3,7 +3,7 @@ var game= document.querySelector('.game');
 var slot= document.querySelector('.slot');
 
 
-TweenMax.from(game,1,{opacity:0 , x: -200});
+TweenMax.from(game,1,{opacity:0 , x: -2000});
 
 function mover(){
     moverTitulo();
