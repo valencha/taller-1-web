@@ -129,7 +129,7 @@ function paginaCargada(){
                     if(inputDescuento.value=='CANS1'){
                  
                         estado.style.backgroundImage = "url('/images/check.gif')";
-                        tl2.to(estado,1, {opacity:1, ease:SteppedEase.config(16)},0.6);
+                        tl2.to(estado,1, {opacity:0, ease:SteppedEase.config(16)},0.6);
                         tl2.repeat(1);
                       var des= sumaTotal*0.2;
                       var entero = parseInt(des);
