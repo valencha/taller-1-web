@@ -254,6 +254,9 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
 }
 
 .descuentos__titulosPeques {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Open Sans', sans-serif;
   color: #000;
   font-weight: bold;
@@ -261,6 +264,9 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
 }
 
 .descuentos__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 30px;
   font-family: 'Rubik', sans-serif;
   color: #000;
