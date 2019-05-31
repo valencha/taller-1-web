@@ -24,7 +24,7 @@ function mover(){
     }
   }
 
-  titulo.addEventListener('onLoad',mover);
+  titulo.addEventListener('click',mover);
   
  
 
