@@ -134,7 +134,7 @@ input{
 }
 
 .check {
-    display: inline-block;
+    position: absolute;
     transform: rotate(45deg);
     height: 24px;
     width:  12px;

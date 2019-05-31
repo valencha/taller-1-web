@@ -185,7 +185,7 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
 }
 
 .check {
-  display: inline-block;
+  position: absolute;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   height: 24px;
