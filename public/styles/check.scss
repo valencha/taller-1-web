@@ -177,22 +177,49 @@ input{
     display: flex;
     flex-direction: column;
     flex-basis: auto;
-    background: red;
+    margin-top: 50px;
 
 
 
 }
 
 .sub{
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
 
+    p{
+        font-family: 'Open Sans', sans-serif;
+        color: #555;
+        font-size: 14px;
+    }
 }
 
 .dis{
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
 
+    p{
+        font-family: 'Open Sans', sans-serif;
+        color: #FFAE67;
+        font-size: 14px;
+    }
 }
 
 .to{
+    font-family: 'Rubik', sans-serif;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
 
+    p{
+        font-family: 'Open Sans', sans-serif;
+        color: #555;
+        font: 20px;
+    }
 }
 
 
