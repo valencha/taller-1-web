@@ -250,6 +250,7 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
           flex-direction: column;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
+  background: red;
 }
 
 .opcionesDes {
