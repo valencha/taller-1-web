@@ -31,14 +31,14 @@ function recorrerBotones(boton) {
 function moverImg() {
   var box = document.querySelectorAll(".imgCarrito");
 
-  tl.to(box,0.5,{rotation:360},0.7).to(box,0.5,{rotation:-360},0.9);
+  tl.add( TweenMax.to(box, 0.2, {scale:1.2, ease: Bounce.easeOut}) );
 
 }
 
   boton.addEventListener('mouseenter', moverCarrito);
   boton.addEventListener('mouseout', volverCarrito);  
   boton.addEventListener('click', moverImg);  
-}
+} 
 
 if (botones != null) {
   //botones.forEach(recorrerBotones());
