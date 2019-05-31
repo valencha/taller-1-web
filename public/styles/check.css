@@ -276,13 +276,13 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
 
 .sub {
   font-family: 'Open Sans', sans-serif;
-  color: #000;
+  color: #555;
   font-size: 18px;
 }
 
 .dis {
   font-family: 'Open Sans', sans-serif;
-  color: #000;
+  color: #555;
   font-size: 18px;
 }
 
