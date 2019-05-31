@@ -171,13 +171,12 @@ input{
     }
 }
 
-
 .descuentos{
 
     display: flex;
     flex-direction: column;
     flex-basis: auto;
-    margin-top: 10px;
+    margin-top: 50px;
 
     &__titulosPeques{
         font-family: 'Open Sans', sans-serif;
@@ -188,6 +187,7 @@ input{
     }
 
     &__total{
+        margin-top: 30px;
         font-family: 'Rubik', sans-serif;
         color: #000;
         font-weight: bold;
@@ -195,35 +195,29 @@ input{
     
     }
 
-
-
-
 }
 
 .sub{
-    
-        font-family: 'Open Sans', sans-serif;
-        color: #555;
-        font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+        color: #000;
+        font-size: 18px;
 }
 
-
-
 .dis{
-   
-        font-family: 'Open Sans', sans-serif;
-        color: #FFAE67;
-        font-size: 14px;
-    
+    font-family: 'Open Sans', sans-serif;
+        color: #000;
+        font-size: 18px;
 }
 
 .to{
-  
-        font-family: 'Open Sans', sans-serif;
-        color: #555;
-        font: 20px;
-    
+    font-family: 'Open Sans', sans-serif;
+        color: #FFAE67;
+        font-weight: bold;
+        font-size: 20px;
 }
+    
+   
+
 
 
 .opcionesDes{
