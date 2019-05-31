@@ -1,8 +1,13 @@
 var titulo= document.querySelector(".titulo");
+var game= document.querySelector('.game');
+var slot= document.querySelector('.slot');
+
+
+TweenMax.from(game,1,{opacity:0 , x: -200});
 
 function mover(){
-    lanzarBalon();
-    async function lanzarBalon(){
+    moverTitulo();
+    async function moverTitulo(){
       TweenMax.to(titulo, 1, {y:100,x:100});
       TweenMax.to(titulo, 1, {y:0,x:500});
       TweenMax.to(titulo, 1, {y:30,x:800});
