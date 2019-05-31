@@ -127,6 +127,10 @@ function paginaCargada(){
                     var tl2=new TimelineMax();
                     tl2.to(estado,1, {opacity:1},0.5);
                     if(inputDescuento.value=='CANS1'){
+                        var tl3=new TimelineMax();
+                        estado.style.backgroundImage = "url('/images/check.gif')";
+                        tl3.to(estado,2, {opacity:1, ease:SteppedEase.config(2)},0.7).to(estado,2, {opacity:0});
+                       
                       var des= sumaTotal*0.2;
                       var entero = parseInt(des);
                       dis.innerHTML = "20%";
@@ -137,6 +141,10 @@ function paginaCargada(){
                     }
 
                     if(inputDescuento.value=='CANS2'){
+                        var tl4=new TimelineMax();
+                        estado.style.backgroundImage = "url('/images/check.gif')";
+                        tl4.to(estado,2, {opacity:1, ease:SteppedEase.config(2)},0.7).to(estado,2, {opacity:0});
+                    
                         var des= sumaTotal*0.5;
                         var entero = parseInt(des);
                         dis.innerHTML = "50%";
