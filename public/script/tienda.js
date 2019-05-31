@@ -164,6 +164,8 @@ function paginaCargada(){
                         var tl2=new TimelineMax();
                         estado.style.backgroundImage = "url('/images/carga.gif')";
                         tl2.to(estado,1, {opacity:1},0.5);
+                        dis.innerHTML = " ";
+                        to.innerHTML= " ";
                     }
                 });
             }
