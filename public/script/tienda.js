@@ -180,23 +180,15 @@ function paginaCargada(){
                 imagen: imagen,
                descripcion: descripcion,
 
-
-
-
-               
             };
             var tl = new TimelineLite();
             var box = document.querySelectorAll(".imgCarrito");
           
-            tl.to(box, 0.5, {rotation:360, ease: Bounce.easeOut});
-
-       
-             console.log(precio);
+            tl.staggerTo(box, 1, { rotation: 360 }, 0.5);
             
             listaProductos.push(producto);
             localStorage.setItem('listaProductos', JSON.stringify(listaProductos));
             actualizarCarrito();     
-            //window.location.reload(true);
         }
      
         boton.addEventListener('click', agregarAlCarrito);
