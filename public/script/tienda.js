@@ -127,8 +127,9 @@ function paginaCargada(){
                     var tl2=new TimelineMax();
                     tl2.to(estado,1, {opacity:1},0.5);
                     if(inputDescuento.value=='CANS1'){
-                        tl2.to(estado,1, {opacity:0},0.5).to(estado,1, {opacity:1, repeat:1},0.5);
+                 
                         estado.style.backgroundImage = "url('/images/check.gif')";
+                        TweenMax.to(estado,1, {opacity:1, repeat:1},0.5);
                       var des= sumaTotal*0.2;
                       var entero = parseInt(des);
                       dis.innerHTML = "20%";
