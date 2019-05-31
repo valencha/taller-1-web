@@ -11,7 +11,7 @@ function paginaCargada(){
     var dis = document.querySelector('.dis');
     var to = document.querySelector('.to');
 
-    var estado = document.querySelector('.estado');
+    var estado = document.querySelector('.codigo__estado');
   
     function buscarPorPrecio(){
         console.log(rango.value);
