@@ -240,6 +240,19 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   height: 50px;
 }
 
+.descuentos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  background: red;
+}
+
 .opcionesDes {
   position: relative;
   z-index: 1;
