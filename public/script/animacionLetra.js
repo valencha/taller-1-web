@@ -3,9 +3,12 @@ var game= document.querySelector('.game');
 var slot= document.querySelector('.slot');
 
 
-TweenMax.from(game,1,{opacity:0 , x: -2000});
+
 
 function mover(){
+
+  TweenMax.from(game,1,{opacity:0 , x: -2000});
+
     moverTitulo();
     async function moverTitulo(){
       TweenMax.to(titulo, 1, {y:100,x:100});
