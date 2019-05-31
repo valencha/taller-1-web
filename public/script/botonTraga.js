@@ -10,7 +10,7 @@ function aviso(){
         //navbar.style.backdrop-filter = 'blur(2px)';
         botonTraga.style.display = 'block';
         
-        TweenLite.to(botonTraga, 1, {opacity:1, ease: Bounce.easeOut, y: 200 });
+        TweenLite.to(botonTraga, 1, {opacity:1, ease: Bounce.easeOut, y: 150 });
        
         //TweenMax.to('.botonTraga', 1, {opacity:1, y:0, delay:1, ease: Back.easeOut.config(1.7)});
       }else{
