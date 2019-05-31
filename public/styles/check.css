@@ -240,6 +240,10 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   height: 50px;
 }
 
+.estado {
+  background: #555;
+}
+
 .descuentos {
   display: -webkit-box;
   display: -ms-flexbox;
