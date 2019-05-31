@@ -3,11 +3,11 @@ var game= document.querySelector('.game');
 var slot= document.querySelector('.slot');
 
 
-
+TweenMax.from(titulo, 1, { opacity: 0 , x: -2000});
 
 function mover(){
 
-      TweenMax.from(titulo, 1, { opacity: 0 , x: -2000});
+    
 
     }
 
