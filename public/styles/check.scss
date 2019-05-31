@@ -141,7 +141,36 @@ input{
     border-bottom:7px solid green;
     border-right:7px solid green;
   }
-
+  .crossmark{
+    margin-top:-30px;
+    margin-right:40px;
+    position:relative;
+    display:inline-block;
+    &:after{
+          position: absolute;
+      content: '';
+      display: block;
+      width: 60px;
+      height: 0px;
+      border: solid #E00;
+      border-width: 0 0px 15px 0;
+      transform: rotate(45deg);
+      left:0;
+      top:0;
+    }
+    &:before{
+          position: absolute;
+      content: '';
+      display: block;
+      width: 60px;
+      height: 0px;
+      border: solid #E00;
+      border-width: 0 0px 15px 0;
+      transform: rotate(-45deg);
+      left:0;
+      top:0;
+    }
+  }
 .contenedorBoton{
     width: 100%;
     height: 30px;
@@ -171,7 +200,7 @@ input{
     display: flex;
     justify-content: flex-end;
     &__aviso{
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'PT Sans', sans-serif;
         font-size: 10px;
     }
     &__img{
@@ -193,26 +222,26 @@ input{
 }
 
 .sub{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color: #000;
     font-weight: bold;
     font-size: 18px;
 
     p{
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'PT Sans', sans-serif;
         color: #555;
         font-size: 14px;
     }
 }
 
 .dis{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color: #000;
     font-weight: bold;
     font-size: 18px;
 
     p{
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'PT Sans', sans-serif;
         color: #FFAE67;
         font-size: 14px;
     }
