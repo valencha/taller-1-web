@@ -10,6 +10,8 @@ function paginaCargada(){
     var sub = document.querySelector('.sub');
     var dis = document.querySelector('.dis');
     var to = document.querySelector('.to');
+
+    var estado = document.querySelector('.estado');
   
     function buscarPorPrecio(){
         console.log(rango.value);
@@ -123,7 +125,7 @@ function paginaCargada(){
                 if(inputDescuento!=null){   
                 inputDescuento.addEventListener('change', function(){
                     var tl=new TimelineMax();
-                    tl.to(btn, 0.8, {backgroundImage:"/images/carga.gif"});
+                    tl.to(estado, 0.8, {backgroundImage:"/images/carga.gif"});
                     if(inputDescuento.value=='CANS1'){
                       var des= sumaTotal*0.2;
                       var entero = parseInt(des);
