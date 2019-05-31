@@ -28,6 +28,6 @@
     "require": "^2.4.20"
   },
   "devDependencies": {
-    "nodemon": "^1.18.11"
+    "nodemon": "^1.19.1"
   }
 }

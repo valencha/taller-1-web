@@ -310,7 +310,7 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
 
 .dis {
   font-family: 'Open Sans', sans-serif;
-  color: #555;
+  color: #d33a3a;
   font-size: 18px;
   font-weight: normal;
   margin-right: 10px;
