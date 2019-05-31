@@ -242,6 +242,8 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
 
 .estado {
   background: #555;
+  width: 50px;
+  height: 50px;
 }
 
 .descuentos {
