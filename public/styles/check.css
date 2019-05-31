@@ -287,7 +287,6 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   color: #000;
   font-weight: bold;
   font-size: 18px;
-  margin-right: 10px;
 }
 
 .descuentos__total {
@@ -299,7 +298,6 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   color: #000;
   font-weight: bold;
   font-size: 24px;
-  margin-right: 10px;
 }
 
 .sub {
@@ -307,6 +305,7 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   color: #555;
   font-size: 18px;
   font-weight: normal;
+  margin-right: 10px;
 }
 
 .dis {
@@ -314,13 +313,16 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   color: #555;
   font-size: 18px;
   font-weight: normal;
+  margin-right: 10px;
 }
 
 .to {
+  margin-top: 25px;
   font-family: 'Open Sans', sans-serif;
   color: #FFAE67;
   font-weight: bold;
   font-size: 20px;
+  margin-right: 10px;
 }
 
 .opcionesDes {
