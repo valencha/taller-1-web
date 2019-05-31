@@ -6,6 +6,8 @@
   text-align: center;
   margin-top: 50px;
   text-shadow: 5px -5px #FFF6E0;
+  -webkit-transition: 400ms;
+  transition: 400ms;
 }
 
 html {
