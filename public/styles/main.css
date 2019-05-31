@@ -32,8 +32,8 @@ body {
   position: fixed;
   right: 120px;
   top: 700px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
   border-radius: 100%;
 }
 
