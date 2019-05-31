@@ -7,28 +7,23 @@ function recorrerBotones(boton) {
   var hijo = boton.children[0];
   function moverCarrito() {
 
-    //var box = document.querySelector(".imgAgregar__img");
+    
     tl.play();
 
-    //TweenMax.to(hijo,0.5, {x:"90px",opacity:1},0.5);
+
 
     tl.to(hijo, 0.5, { x: "-90px", opacity: 0 },0.7)
       .to(hijo, 0.5, { x: "0px", opacity: 1 },0.9);
-    // TweenMax.to(box, 0.5, {x:"90px"},0.8);
-    //TweenMax.to(hijo,0.5, {x:"0px",opacity:1},1.8);
+  
 
   }
 
   function volverCarrito() {
-    //var box = document.querySelector(".imgAgregar__img");
+
 
 
     tl.reverse();
     tl.to(hijo, 0.5, { x: "0px", opacity: 1 },0.7);
-  
-
-    // TweenMax.to(box, 0.5, {x:"90px"},0.8);
-
 
   }
 
@@ -36,7 +31,7 @@ function recorrerBotones(boton) {
 function moverImg() {
   var box = document.querySelectorAll(".imgCarrito");
 
-  TweenMax.staggerTo(box, 1, { rotation: 360 }, 0.5);
+  tl.to(box,0.5,{rotation:360},0.7).to(box,0.5,{rotation:-360},0.9);
 
 }
 
