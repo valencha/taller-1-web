@@ -317,7 +317,6 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
 }
 
 .to {
-  margin-top: 25px;
   font-family: 'Open Sans', sans-serif;
   color: #FFAE67;
   font-weight: bold;
