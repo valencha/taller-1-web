@@ -1,4 +1,4 @@
-import { TweenLite } from "gsap";
+
 
 function paginaCargada(){
   
