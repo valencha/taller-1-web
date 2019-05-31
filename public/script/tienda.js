@@ -140,11 +140,7 @@ function paginaCargada(){
  
                     }
 
-                    else {
-                        var tl2=new TimelineMax();
-                        estado.style.backgroundImage = "url('/images/carga.gif')";
-                        tl2.to(estado,1, {opacity:1},0.5);
-                    }
+                
 
                     if(inputDescuento.value=='CANS2'){
                         var tl4=new TimelineMax();
