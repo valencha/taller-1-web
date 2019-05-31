@@ -30,6 +30,11 @@ function recorrerBotones(boton) {
   
 
 
+
+
+
+
+
   boton.addEventListener('mouseenter', moverCarrito);
   boton.addEventListener('mouseout', volverCarrito);  
   boton.addEventListener('click', moverImg);  
