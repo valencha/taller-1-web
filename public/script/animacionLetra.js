@@ -7,9 +7,7 @@ var slot= document.querySelector('.slot');
 
 function mover(){
 
- 
-
-      TweenMax.from(game, 1, { opacity:0 , x: -2000});
+      TweenMax.from(titulo, 1, { opacity:0 , x: -2000});
 
     }
 
