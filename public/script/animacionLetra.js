@@ -16,12 +16,7 @@ function mover(){
     }
   }
 
-  titulo.addEventListener('click',mover);
+  titulo.addEventListener('mouseenter',mover);
   
-  function falloArriba(){
-    
-  }
-  function falloAbajo(){
-    
-  }
+ 
 
