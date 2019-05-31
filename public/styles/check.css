@@ -290,7 +290,7 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   font-weight: bold;
   font-size: 18px;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 7px;
 }
 
 .descuentos__total {
