@@ -124,8 +124,8 @@ function paginaCargada(){
    
                 if(inputDescuento!=null){   
                 inputDescuento.addEventListener('change', function(){
-                    var tl=new TimelineMax();
-                    tl.to(estado,1, {backgroundImage:"/images/carga.gif"},0.5);
+                    var tl2=new TimelineMax();
+                    tl2.to(estado,1, {backgroundColor:"#0000"},0.5);
                     if(inputDescuento.value=='CANS1'){
                       var des= sumaTotal*0.2;
                       var entero = parseInt(des);
