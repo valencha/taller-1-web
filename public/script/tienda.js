@@ -127,7 +127,7 @@ function paginaCargada(){
                 if(inputDescuento!=null){   
                 inputDescuento.addEventListener('change', function(){
                     var tl2=new TweenLite();
-                   tl2.set( estado, { backgroundImage : 'url (/images/carga.gif)',opacity:1 }); 
+                   TweenLite.set( estado, { backgroundImage : 'url (/images/carga.gif)',opacity:1 }); 
 
 
                     if(inputDescuento.value=='CANS1'){
