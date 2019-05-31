@@ -309,7 +309,7 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   color: #555;
   font-size: 18px;
   font-weight: normal;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .dis {
@@ -317,7 +317,7 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   color: #d33a3a;
   font-size: 18px;
   font-weight: normal;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .to {
@@ -325,7 +325,7 @@ input:hover::placeholder, input:focus::placeholder, input:active:focus::placehol
   color: #FFAE67;
   font-weight: bold;
   font-size: 20px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .opcionesDes {
