@@ -16,7 +16,7 @@ function mover(){
     }
   }
 
-  titulo.addEventListener('mouseenter',mover);
+  titulo.addEventListener('load',mover);
   
  
 
