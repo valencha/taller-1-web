@@ -70,10 +70,7 @@ function paginaCargada(){
 
     function actualizarCarrito(){
         var suma = 0;
-        var tl = new TimelineMax();
-        var box = document.querySelector(".imgCarrito");
       
-        tl.staggerTo(box, 1, { rotation: 360 }, 0.5).to(box, 0.001, { rotation: -360 }, 0.5);
         carritoNum.innerHTML =listaProductos.length;
 
         noProductos.innerHTML = listaProductos.length;
@@ -173,7 +170,10 @@ function paginaCargada(){
 
     function recorrerBotones(boton){
 
-        
+        var tl = new TimelineMax();
+        var box = document.querySelector(".imgCarrito");
+      
+        tl.staggerTo(box, 1, { rotation: 360 }, 0.5).to(box, 0.001, { rotation: -360 }, 0.5);
         function agregarAlCarrito(){
             var padre = this.parentNode;
             var nombre = padre.querySelector('.producto__titulo').innerText;
